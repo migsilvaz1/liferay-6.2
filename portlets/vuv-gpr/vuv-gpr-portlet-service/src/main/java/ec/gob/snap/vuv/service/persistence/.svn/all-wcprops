@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence
+END
+PasoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/PasoUtil.java
+END
+ServicioActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/ServicioActionableDynamicQuery.java
+END
+InstitucionUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/InstitucionUtil.java
+END
+Act_InstitucionalUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/Act_InstitucionalUtil.java
+END
+ServicioPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/ServicioPersistence.java
+END
+CentroUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CentroUtil.java
+END
+PasoActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/PasoActionableDynamicQuery.java
+END
+CasoPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CasoPersistence.java
+END
+RequisitoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/RequisitoUtil.java
+END
+InstitucionActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/InstitucionActionableDynamicQuery.java
+END
+IndicadorUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/IndicadorUtil.java
+END
+Act_InstitucionalActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/Act_InstitucionalActionableDynamicQuery.java
+END
+IndicadorPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/IndicadorPersistence.java
+END
+CentroActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CentroActionableDynamicQuery.java
+END
+CasoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CasoUtil.java
+END
+RequisitoActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/RequisitoActionableDynamicQuery.java
+END
+RequisitoPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/RequisitoPersistence.java
+END
+CentroPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CentroPersistence.java
+END
+Act_InstitucionalPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/Act_InstitucionalPersistence.java
+END
+IndicadorActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/IndicadorActionableDynamicQuery.java
+END
+ServicioUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/ServicioUtil.java
+END
+InstitucionPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/InstitucionPersistence.java
+END
+CasoActionableDynamicQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/CasoActionableDynamicQuery.java
+END
+PasoPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/service/persistence/PasoPersistence.java
+END

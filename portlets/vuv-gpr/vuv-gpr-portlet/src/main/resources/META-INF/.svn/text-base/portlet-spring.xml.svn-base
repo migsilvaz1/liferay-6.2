@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="ec.gob.snap.vuv.service.Act_InstitucionalLocalService" class="ec.gob.snap.vuv.service.impl.Act_InstitucionalLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.Act_InstitucionalPersistence" class="ec.gob.snap.vuv.service.persistence.Act_InstitucionalPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.CasoLocalService" class="ec.gob.snap.vuv.service.impl.CasoLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.CasoPersistence" class="ec.gob.snap.vuv.service.persistence.CasoPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.CentroLocalService" class="ec.gob.snap.vuv.service.impl.CentroLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.CentroPersistence" class="ec.gob.snap.vuv.service.persistence.CentroPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.IndicadorLocalService" class="ec.gob.snap.vuv.service.impl.IndicadorLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.IndicadorPersistence" class="ec.gob.snap.vuv.service.persistence.IndicadorPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.InstitucionLocalService" class="ec.gob.snap.vuv.service.impl.InstitucionLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.InstitucionPersistence" class="ec.gob.snap.vuv.service.persistence.InstitucionPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.PasoLocalService" class="ec.gob.snap.vuv.service.impl.PasoLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.PasoPersistence" class="ec.gob.snap.vuv.service.persistence.PasoPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.RequisitoLocalService" class="ec.gob.snap.vuv.service.impl.RequisitoLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.RequisitoPersistence" class="ec.gob.snap.vuv.service.persistence.RequisitoPersistenceImpl" parent="basePersistence" />
+	<bean id="ec.gob.snap.vuv.service.ServicioLocalService" class="ec.gob.snap.vuv.service.impl.ServicioLocalServiceImpl" />
+	<bean id="ec.gob.snap.vuv.service.persistence.ServicioPersistence" class="ec.gob.snap.vuv.service.persistence.ServicioPersistenceImpl" parent="basePersistence" />
+</beans>

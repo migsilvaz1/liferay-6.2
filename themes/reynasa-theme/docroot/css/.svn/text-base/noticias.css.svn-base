@@ -1,0 +1,71 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+.aui{
+	
+	.noticia {
+    	width: 33%;
+    	margin-right: 1em;
+    	float: left;
+	}
+	.listado-noticias {
+    	border-bottom: 1px solid #C6C6C6;
+   		text-align: justify;
+   		padding-top: 2%;
+	}
+	.navegacion li{
+			margin-left: 10%;
+	}
+	.resaltado {
+    	font-size: 120%;
+	}
+	.resaltado a:HOVER, .resaltado a:FOCUS{
+    	text-decoration: none !important;
+	}
+	.column.omega {
+    	margin-right: 0px;
+	}
+	.col2 {
+    	width: 47%;
+	}
+	.column, .columns {
+    	display: inline;
+    	padding-right: 4%;
+    	position: relative;
+    	display: table-cell !important;
+	}
+	.fila {
+    	margin-bottom: 15px;
+	}
+	.row {
+		display: table-row;
+	}
+	.align-right {
+    	text-align: right;
+	}
+	#pagination2{
+		display: table;
+	}
+	.column h4{
+		position: absolute;
+		bottom: 5px;
+	}
+	
+	.tags{
+		color: #9D9C9C;
+		font-size: 90%;
+		float: right;
+		text-align: justify;
+	}
+	.ultimo span{
+		border-bottom: none !important;
+	}
+	.accordion-group {
+		border: none;
+	}
+}
+.ltr .column, .rtl .column-last {
+	float: none !important;
+
+	}

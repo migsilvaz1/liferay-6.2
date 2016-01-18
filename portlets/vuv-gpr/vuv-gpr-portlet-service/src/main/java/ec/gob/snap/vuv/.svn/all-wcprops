@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/495/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv
+END
+NoSuchAct_InstitucionalException.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchAct_InstitucionalException.java
+END
+NoSuchInstitucionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchInstitucionException.java
+END
+NoSuchCasoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchCasoException.java
+END
+NoSuchPasoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchPasoException.java
+END
+NoSuchIndicadorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchIndicadorException.java
+END
+NoSuchRequisitoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchRequisitoException.java
+END
+NoSuchCentroException.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchCentroException.java
+END
+NoSuchServicioException.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet-service/src/main/java/ec/gob/snap/vuv/NoSuchServicioException.java
+END

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.gfi.chg.model.impl.AreaModelImpl">
+		<attributes>
+			<id name="areaId" />
+			<basic name="name" />
+			<basic name="mainEmail" />
+			<basic name="userId" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.gfi.chg.model.impl.ContactModelImpl">
+		<attributes>
+			<id name="contactId" />
+			<basic name="areaId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="status" />
+			<basic name="name" />
+			<basic name="surname" />
+			<basic name="activity" />
+			<basic name="address" />
+			<basic name="city" />
+			<basic name="postalCode" />
+			<basic name="email" />
+			<basic name="telephone" />
+			<basic name="subject" />
+			<basic name="description" />
+			<basic name="response" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.gfi.chg.model.impl.TracingModelImpl">
+		<attributes>
+			<id name="tracingId" />
+			<basic name="areaId" />
+			<basic name="contactId" />
+			<basic name="status" />
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="comment">
+				<column name="COMMENT_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.gfi.chg.model.impl.AreaImpl" name="Area">
+		<table name="chg_Area" />
+		<attributes />
+	</entity>
+	<entity class="com.gfi.chg.model.impl.ContactImpl" name="Contact">
+		<table name="chg_Contact" />
+		<attributes />
+	</entity>
+	<entity class="com.gfi.chg.model.impl.TracingImpl" name="Tracing">
+		<table name="chg_Tracing" />
+		<attributes />
+	</entity>
+</entity-mappings>

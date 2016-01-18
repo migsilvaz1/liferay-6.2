@@ -1,0 +1,234 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+@include respond-to(phone, tablet) {
+	 
+	.aui {
+	
+		body {
+			font-size: 80%;
+		}
+	
+		h1 {
+			font-size: 150% !important;
+		}
+		
+		.head, #banner, .cabecera {
+			background-color: transparent !important;
+		}
+		
+		.enlaces{
+			margin-right: 0 !important;
+		}
+		
+		#openModal {
+			display: none;
+		}
+		
+		
+		#navigation.open .navbar-inner {
+			padding: 0;
+		}
+		
+		#wrapper #banner .preheading #navigation .navbar-inner ul > li {
+			margin-bottom: 3px !important;
+			width: 100%;
+			text-align: left;
+		}
+		
+		#menubar {
+			width: 100% !important;
+			background-color: transparent;
+		}
+		
+		.nav-collapse.collapse {
+			position: absolute;
+			z-index: 400;
+			width: 100%;
+			background-color: transparent !important;
+		}
+		
+		.carousel {
+			line-height: 120% !important;
+			min-height: 320px;
+		}
+		.carousel-item {
+			min-height: 280px;
+		}
+		.carousel-item img {
+			min-height: 320px;
+		}
+	
+		#menubar li:first-child {
+    		margin-left: 0 !important;
+    		
+		}
+	
+		.modalDialog > div {
+			margin: 0 auto !important;
+		}
+		#wrapper {
+			#content {
+				.shadow-inner-left, .shadow-inner-right {
+					@include box-shadow(none);
+				}
+
+				#team {
+					.span3 {
+						padding-bottom: 80px;
+						text-align: center;
+
+						img {
+							width: 50%
+						}
+
+						.effect .more-info {
+							padding: 0;
+							position: relative;
+							top: 0;
+
+							h3, p {
+								display: none;
+							}
+
+							span {
+								background-color: #FFF;
+								padding: 10px;
+
+								@include opacity(1);
+							}
+
+							.social {
+								bottom: inherit;
+								margin: 2%;
+								padding: 2%;
+								position: relative;
+								width: auto;
+
+								img {
+									width: 15px;
+								}
+
+								a {
+									padding: 3px;
+								}
+							}
+						}
+					}
+				}
+
+				#aboutus {
+					background-position: left;
+					padding: 0 20px 100px 20px;
+				}
+
+				.component.carousel menu li .carousel-menu-prev {
+					left: 10px;
+				}
+
+				.component.carousel menu li .carousel-menu-next {
+					right: 10px;
+				}
+
+				.myCarousel_a.carousel-content {
+					p {
+						font-size: 90%;
+					}
+
+					h1 {
+						font-size: 25px;
+						line-height: 28px;
+						padding: 20px 0;
+					}
+
+					h2 {
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					.container {
+						top: 0;
+
+						.margins {
+							margin: 0 25% 0 8%;
+						}
+
+						.btn-large {
+							margin-top: 20px;
+						}
+					}
+				}
+
+				.myCarousel_b {
+					.photo {
+						width: 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(phone) {
+	.aui {
+	
+	#alertCookies {
+		width: auto !important;
+	}
+		#btnCarrousel {
+			overflow: hidden !important;
+			position: absolute !important;
+			top: 75% !important;
+			margin-bottom: 20% !important;
+			margin-top: 0px !important;
+			font-size: 100% !important;
+			padding: 2% !important;
+	}
+	
+		#wrapper {
+			#content {
+				#team {
+					.span3 .effect .more-info {
+						margin: 0 auto;
+						width: 80%;
+
+						.social img {
+							padding: 0 5px;
+							width: 30px;
+						}
+					}
+				}
+
+				.myCarousel_a.carousel-content {
+					.container {
+						.margins {
+							margin: 0 5%;
+							width: 90%;
+						}
+
+						h1 {
+							font-size: 19px;
+							line-height: 20px;
+							padding: 5px 0 0;
+						}
+
+						p, h2 {
+							display: none;
+						}
+					}
+
+					menu li .carousel-menu-prev, menu li .carousel-menu-next {
+						display: none;
+					}
+				}
+
+				.myCarousel_b {
+					.photo {
+						width: 20%;
+					}
+				}
+			}
+		}
+	}
+}

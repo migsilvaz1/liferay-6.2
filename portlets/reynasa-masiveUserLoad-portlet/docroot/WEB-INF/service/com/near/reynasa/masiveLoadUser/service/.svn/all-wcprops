@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service
+END
+MasiveLoadUserLocalServiceWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserLocalServiceWrapper.java
+END
+MasiveLoadUserServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserServiceUtil.java
+END
+MasiveLoadUserServiceClp.java
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserServiceClp.java
+END
+MasiveLoadUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserService.java
+END
+ClpSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/ClpSerializer.java
+END
+MasiveLoadUserServiceWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserServiceWrapper.java
+END
+MasiveLoadUserLocalServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserLocalServiceUtil.java
+END
+MasiveLoadUserLocalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserLocalService.java
+END
+MasiveLoadUserLocalServiceClp.java
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/service/com/near/reynasa/masiveLoadUser/service/MasiveLoadUserLocalServiceClp.java
+END

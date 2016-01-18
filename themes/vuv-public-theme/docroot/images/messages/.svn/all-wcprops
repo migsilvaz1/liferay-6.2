@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/images/messages
+END
+error.png
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/images/messages/error.png
+END
+alert.png
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/images/messages/alert.png
+END
+info.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/images/messages/info.png
+END
+success.png
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/images/messages/success.png
+END

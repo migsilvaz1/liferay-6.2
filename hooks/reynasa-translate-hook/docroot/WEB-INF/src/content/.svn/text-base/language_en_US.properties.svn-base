@@ -1,0 +1,344 @@
+#LOOK AND FEEL 
+bullet-style=Bullet style
+show-site-name-default=Show site name default
+include-jquery=Include jquery
+max-page-width=Max page width
+font-size=Font size
+font-family=Font family
+heading-font-family=Heading font family
+show-portlet-icons=Show portlet icons
+show-portlet-titles=Show portlet titles
+show-breadcrumb=Show breadcrumb
+show-page-title=Show page title
+header-height=Header height
+header-font-size=Header font size
+header-main-color=Header main color
+header-font-color=Header font color
+menu-background-color=Menu background color
+menu-font-color=Menu font color
+accent-main-color=Accent main color
+menu-icon-size=Menu icon size
+show-menu-minimize=Show menu minimize
+show-search=Show search
+show-languages=Show languages
+show-footer=Show footer
+footer-text=Footer text
+data-color=Description color
+accent-menu-font-color=Accent menu font color
+
+site.userId=User Id
+site.remoteAddr=IP
+site.userCode=User code
+site.userName=User name
+site.date=Hour
+site.date.other=Date
+site.action.description=Connection
+
+last-conetion=Last connection
+
+#Cookies
+theme.label.legal.advice.msg=Esta web utiliza 'cookies' propias y de terceros para ofrecerte una mejor experiencia y servicio. Al navegar o utilizar nuestros servicios, aceptas el uso que hacemos de ellas.
+
+#footer
+aviso.legal=Disclaimer
+condiciones.generales=Terms and Conditions
+comunica.con.nosotros=Contact us
+ayuda=Help
+
+#meses
+enero=January
+febrero=February
+marzo=March
+abril=April
+mayo=May
+junio=June
+julio=July
+agosto=August
+septiembre=September
+octubre=October
+noviembre=November
+diciembre=December
+
+#breadcrumb
+detalle.acceso=Access details
+acceso.dia=Hits per day
+acceso.mes=Hits per month
+
+#button
+back.button=Back
+
+#config
+tipo.grafica=Graph type
+guardar=Save
+tipo.agrupada=Grouped
+tipo.detallada=Detailed
+estadisticas.actualizar=Update
+estadisticas.mes=month
+estadisticas.meses=months
+estadisticas.acumular=Collect data for months
+estadisticas.valor.corte=Cutoff
+estadisticas.sin.acceso=Show users without access
+ambito.grafica=Scope
+ambito.personal=Personal
+ambito.general=General
+
+export.xls=Excel
+export.csv=CSV
+
+info.datos=No data to display
+
+#Portlet Mailing Masivo
+mailing.title=Masive Mailing
+mailing.department=Department
+mailing.success=The list of emails sent successfully
+mailing.chain=Chain
+mailing.zone=Zone
+mailing.clasification=Clasification
+mailing.business.type=Business Type
+mailing.comercial=Comercial
+mailing.delegation=Delegation
+mailing.clasification=Clasification
+mailing.mail.campaign=Campaign Title
+mailing.promotion.points=Promotion Points
+mailing.registered=registered
+mailing.travel.request=Travel Request
+mailing.cash.request=Cash Request
+mailing.mail.subject=Title
+mailing.client.name=Client's name
+mailing.client.number=Client's number
+mailing.employee.name=Employee name
+mailing.employee.number=Employee number
+mailing.center.name=Center's name
+mailing.center.number=Center's number
+mailing.user.name=User's name
+mailing.billing.amount=Billing amount
+mailing.billing.points=Billing points
+mailing.promotion.points=Promotion points
+mailing.billing.consumed.points=Billing consumed points
+mailing.consumed.promotion.points=Promotion consumed points
+mailing.billing.available.points=Billing available points
+mailing.promotion.available.points=Promotion available points
+mailing.back.to.filter=Back to filter
+
+#Portlet Gestión Sites
+server.info=Information site
+user.info=User info
+colorScheme=Color schemes
+size.error=File size should not be more than 5Mb
+extension.error=Please enter a value with a valid extension (jpg, png).
+distribuidores.menu.busquedaCoincidencias=Search
+distribuidor.boton.add=Add
+distribuidor.screenName=Screen Name
+distribuidor.emailAddress=Email Address
+distribuidor.firstName=First Name
+distribuidor.lastName=Last Name
+distribuidor.birthday=Birthday
+distribuidor.name=Name
+distribuidor.description=Description
+distribuidor.colorScheme=Color scheme
+distribuidor.logo=Logo
+distribuidor.cDistr=Código Distribuidor
+distribuidor.CIF=CIF
+distribuidor.denominacion=Designation
+distribuidor.direcc1=Address1
+distribuidor.direcc2=Address2
+distribuidor.municipio=Town
+distribuidor.cp=Postcode
+distribuidor.provincia=Province
+distribuidor.aActivo=Active year
+distribuidor.dpCierre=Days post Close
+distribuidor.rPuntos=Ratio points
+distribuidor.boton.edit=Edit
+distribuidor.calculo=Calculation type
+distribuidor.decimal.error=Only 2 decimals allowed
+baja=Drop
+reactivar=Reactivate
+ultima.actualizacion=Last update: 
+codigo.unico=Please enter a unique code.
+distribuidor-exist=The distributor must exist in the Plex database.
+privacy.legal.data=Cookies and privacy policy
+iframe.hook=Hook
+iframe.hook.reynasa=Apply Reynasa hook
+
+#Mensajes de error
+ERR000=There was an error during operation
+ERR001=The input parameters are incorrect or the function is not suitable for making the request
+ERR002=Requested plex function not found
+ERR003=User can not be null. The field is required
+ERR004=Dealer code belonging to the user object can not be null. The field is required
+ERR005=Dealer code belonging to the user object can not be empty. The field is required
+ERR006=The order number can not be null. The field is required
+ERR007=The order number must be greater than 0. The field is required
+ERR008=The system does not fetch the data correctly. Please consult the administrator
+ERR009=The user code can not be null
+ERR010=The client code belonging to the user object can not be null
+ERR011=The order can not be null. The field is required
+ERR012=Role code belonging to the user can not be null
+ERR013=Role code belonging to the user can not be empty
+ERR014=The product code can not be null
+ERR015=Product amount can not be null
+ERR016=The shipping address can not be null
+ERR017=You can not place the order. It has not been validated
+ERR018=The shipping address can not be empty
+ERR019=The category code can not be null
+ERR020=The category code can not be empty
+ERR021=Dealer code obtained for the user is null or empty
+ERR022=The category name parameter can not be null or empty
+ERR023=The minimum price parameter can not be null
+ERR024=The maximum price parameter can not be null
+ERR025=Dealer code parameter can not be null
+ERR026=Dealer object can not be null
+ERR027=Dealer code must be greater than 0
+ERR028=The user code can not be empty
+ERR029=The Value parameter changing Favorites can not be null
+
+#Portal
+volver.a.noticias=Back to news
+ver.mas=SEE MORE
+
+#Mensajes Login
+authentication-failed=Authentication failed.Consult system administrator if the problem persists.
+
+#MasiveUsers
+process=Processing
+fin-process=Finalized
+fichero-debe-ser=file must be .csv
+fichero=File
+modo-ejecucion=csv file execution mode
+ejecucion=Execution
+carga-fichero=csv file load
+inmediata=Inmediate
+programada=Scheduled
+user=User
+estado-ejecucion=State execution
+fecha-peticion=Request date
+archivo-procesado=File processed
+archivo-errores=File errors
+success-read-and-added=Upload success
+
+#Portlet Mailing Masivo
+mailing-filter-to-start=Start by searching Clients or Employees
+asunto-carga=Masive user load
+contenido-carga=Scheduled masive user load has finished
+mailing.title=Masive Mailing
+mailing.department=Departament
+mailing.success=Email list hast been successfuly sent
+mailing.chain=Chain
+mailing.zone=Zone
+mailing.clasification=Clasification
+mailing.mail.campaign=Campaign Title
+mailing.business.type=Business
+mailing.comercial=Comercial
+mailing.delegation=Delegation
+mailing.clasification=Classification
+mailing.promotion.points=Promotion points
+mailing.registered=Registered
+mailing.travel.request=Travel requested
+mailing.cash.request=Cash requested
+mailing.mail.subject=Title
+mailing.client.name=Client name
+mailing.client.number=Client number
+mailing.employee.name=Employee name
+mailing.employee.number=Employee number
+mailing.center.name=Center name
+mailing.center.number=Center number
+mailing.user.name=User name
+mailing.billing.amount=Billing amount
+mailing.billing.points=Billing points
+mailing.promotion.points=Promotion points
+mailing.billing.consumed.points=Consumed billing points
+mailing.consumed.promotion.points=Consumed promotion points
+mailing.billing.available.points=Available billing points
+mailing.promotion.available.points=Available promotion points
+mailing.back.to.filter=Back to filter
+
+# Administracion de envios
+confirmation.title = Confirmaci&oacute;n de env&iacute;o de email
+confirmation.block.title.toSend = El email ser&aacute; enviado:
+confirmation.block.title.sent = El email ha sido enviado:
+confirmation.block.notInput.text = Env&iacute;o no seleccionado
+confirmation.send.successfully = Email programado para su env&iacute;o
+confirmation.cancel.successfully = El email no ser&aacute; enviado 
+confirmation.accumulate.successfully = Las noticias del email seran acumuladas para el pr&oacute;ximo email
+registro.envios.enlace=Ver historio de envios
+registro.envios.column.type=Tipo
+registro.envios.column.idStructure=Estructura
+registro.envios.column.idGroup=Sitio
+registro.envios.column.startDate=Fecha de Inicio
+registro.envios.column.endDate=Fecha de Finalizaci&oacute;n
+registro.envios.column.progress=Progreso
+registro.envios.column.state=Estado
+registro.envios.column.simulation=Simulacion
+registro.envios.label.type.0=Inmediato
+registro.envios.label.type.1=Diario a supervisor
+registro.envios.label.type.2=Diario
+registro.envios.label.type.3=Mensual a supervisor
+registro.envios.label.type.4=Mensual
+registro.envios.label.type.5=Manual
+registro.envios.label.state.0=Abierto
+registro.envios.label.state.1=Interrumpido
+registro.envios.label.state.2=Cerrado
+registro.envios.error.structure.not.found= Estructura no encontrada
+registro.envios.error.group.not.found= Sitio no encontrado
+registro.envios.error.folder.not.found= Carpeta no encontrada
+
+# Ejecucicion de Envios
+admin.send.mail.important.title = Envio de email (periodo: 5 min)
+admin.send.mail.daily.title  = Envio de email (periodo: 24h)
+admin.send.mail.daily.check.title = Envio de email check (periodo: 24h)
+admin.send.mail.monthly.title = Envio de email (periodo: 1 mes)
+admin.send.mail.monthly.check.title = Envio de email check (periodo: 1 mes) 
+admin.result.title = Resultado
+admin.result.nodata = No hay resultados
+
+# Lista de usuarios
+users.subscription.no.structure.site = No hay suscripciones disponibles para este sitio.
+users.subscription.select.structure = Seleccione una suscripci&oacute;n:
+users.subscription.no.users = No hay usuarios suscritos a dicho contenido.
+users.subscription.no.searched = Seleccione un contenido y pulse Buscar
+users.subscription.users.list.title = Lista de usuarios suscritos a {0}
+
+#Envio Email Manual
+error-envio-mail = Se ha producido un error en el envio del e-mail.
+success-envio-mail = Proceso de envio de emails iniciado correctamente. Recibira un email con los resultados cuando termine.
+no-estructuras-site = No hay suscripciones disponibles en el SITE.
+send-to-users-subscribed-to = Enviado a los usuarios suscrito a 
+envio-mail-todos-usuarios = Todos los usuarios de la intranet
+envio-mail-comunidad-usuarios = Todos los usuarios de la comunidad
+confirm-envio-mail-todos-usuarios = Usted va a enviar el correo a todos los usuarios de la intranet
+confirm-envio-mail-comunidad-usuarios = Usted va a enviar el correo a todos los usuarios de la comunidad
+confirm-envio-mail-estructura = Usted va a enviar el correo a todos los usuarios de la estructura seleccionada
+confirm-envio-mail-equipo = Usted va a enviar el correo a todos los usuarios del equipo seleccionado
+envio-mail-result-subject-ok = Emails enviados correctamente
+envio-mail-result-subject-ko = El envio de emails ha fallado
+envio-mail-result-body-ok = El resultado del envio de emails es el siguiente
+envio-mail-result-body-ko = El envio manual de emails ha fallado, contacte con su administrador para solucionar el problema.
+envio-mail-result-body-ok-no-users = No hay ningun usuario.
+envio-mail-estructuras = Estructuras
+envio-mail-equipos = Equipos
+
+# Subscription List By User
+subscription.list.by.user.tittle= Lista de suscripciones
+subscription.list.by.user.no.subscriptions= Actualmente no estas subscrito a ning&uacute;n contenido.
+subscription-list-by-user-label-type= Tipo
+subscription-list-by-user-label-community= Comunidad
+subscription-list-by-user-label-content-folder= Contenido/Carpeta
+subscription-list-by-user-label-subscription-date= Fecha de suscripci&oacute;n
+subscription-list-by-user-label-unsubscription= Baja de suscripciones
+subscription-list-by-user-label-automatic= Suscriptiones autom&aacute;ticas
+subscription.list.by.user.type.content= Contenido
+subscription.list.by.user.type.document= Documento
+subscription.list.by-user.type.remove.ok= La baja de la subscripci&oacute;n se ha realizado correctamente
+subscription.list.by-user.type.remove.error = Se ha producido un error dando de baja la suscripci&oacute;n
+subscription.list.by-user.type.remove.label = Estas seguro que quieres eliminar la suscripcion?
+subscription.list.by-user.label.type.tooltip= El tipo Contenido hace referencia a un tipo de contenido dentro del portal, como podria ser One News y el tipo Documento hace referencia a una carpeta de la biblioteca de documentos del portal. En caso de estar suscrito a un tipo de contenido recibira un correo cuando se publique un contenido de dicho tipo y el administrador lo seleccione para su envio. En caso de estar suscrito a una carpeta recibira un correo cuando se suba, actualice o elimine un documento en dicha carpeta o en cualquier de sus carpetas hijas en las que tenga permiso de visualizacion.
+subscription.list.by-user.label.automatic.tooltip= En caso de valer true la suscripcion no la habra realizado el usuario, sino que habra sido suscrito de forma automatica por el portal. En caso de valer false la suscripcion la habra realizado el usuario manualmente.
+
+# View
+mailing-no-results=Sin resultados
+mail-send-success=Env&iacute;o satisfactorio
+mailing-error-liferay-server=Error del servidor Liferay
+mailing-finish=Finalizado
+Mail-has-been-send-successfully=Correo enviado satisfactoriamente
+mailing.back.to.filter=Filtro
+mail.previsualizacion=Previsualizaci&oacute;n

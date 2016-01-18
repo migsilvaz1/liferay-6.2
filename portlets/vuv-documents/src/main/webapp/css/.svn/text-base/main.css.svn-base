@@ -1,0 +1,116 @@
+#contenedorPortletEmbebido .lfr-asset-column-actions a {
+	color: #757575;
+}
+
+#contenedorPortletEmbebido h3 {
+	font-size: x-large;
+}
+
+#contenedorPortletEmbebido .navbar {
+	margin: 0px;
+}
+
+#contenedorPortletEmbebido .taglib-header {
+	margin: 0px;
+	padding: 0px;
+	font-size: small !important;
+}
+
+#contenedorPortletEmbebido .lfr-asset-metadata {
+	display: none;
+}
+
+#contenedorPortletEmbebido .entry-thumbnail img {
+	display: none;
+}
+
+#contenedorPortletEmbebido .entry-title {
+	padding: 0px !important;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#contenedorPortletEmbebido .input-append {
+	vertical-align: middle;
+}
+
+#contenedorPortletEmbebido .input-append input {
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+}
+
+#contenedorPortletEmbebido .input-append button {
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+	height: 30px;
+}
+
+#contenedorPortletEmbebido .last {
+	text-align: right;
+}
+
+#contenedorPortletEmbebido .last .btn-group .lfr-icon-menu-text {
+	display: none;
+}
+
+#contenedorPortletEmbebido .table {
+	border: none;
+}
+
+#contenedorPortletEmbebido .table-cell {
+	vertical-align: middle;
+}
+
+#contenedorPortletEmbebido .header-title {
+	margin-left: 0px;
+}
+
+#contenedorPortletEmbebido .navbar-inner {
+	background: none;
+	border: none !important;
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+
+#contenedorPortletEmbebido table {
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+
+#contenedorPortletEmbebido td {
+	border: none;
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+
+#contenedorPortletEmbebido th{
+	background-color: #1E63AA;
+	color: white;
+	border: none;
+	border: 0px solid #000000;
+}
+
+#contenedorPortletEmbebido .lfr-icon-menu img {
+	display: none;
+}
+
+#contenedorPortletEmbebido .entry-thumbnail {
+	margin-right: 3px;
+}
+
+#contenedorPortletEmbebido .lfr-asset-avatar {
+	display: none;
+}
+
+#contenedorPortletEmbebido input[type='checkbox'] {
+	margin-top: 0px;
+}

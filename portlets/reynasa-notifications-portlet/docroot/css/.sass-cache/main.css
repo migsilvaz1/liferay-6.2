@@ -1,0 +1,99 @@
+#menu_listado_notificaciones {
+  width: 100%; }
+
+.tablaFormularioNuevaNotificacion td {
+  padding-right: 10px;
+  width: 100%; }
+
+#formularioNuevaNotificacion td {
+  padding-left: 10px; }
+
+#formularioNuevaNotificacion input {
+  height: 20px; }
+
+#formularioNuevaNotificacion option {
+  height: 20px; }
+
+.inputPortletNotificaciones {
+  height: 20px !important; }
+
+.noMostrar {
+  display: none; }
+
+.menuLateralListNotificaciones {
+  padding: 10px 0px 10px 0px;
+  background-color: #b9b9b9;
+  border-style: solid;
+  border-width: thin;
+  border-color: #cccccc;
+  -moz-border-radius: 4px 4px 4px 4px;
+  /*Firefox*/
+  -webkit-border-radius: 4px 4px 4px 4px;
+  /*Safari y Chrome*/
+  border-radius: 4px 4px 4px 4px;
+  /*Opera*/ }
+
+.menuLateralListNotificaciones a:hover {
+  background-color: #333333 !important; }
+
+.menuLateralListNotificaciones a:focus {
+  background-color: #333333 !important; }
+
+.botonSinFondo {
+  background: transparent;
+  border-style: none; }
+
+.cabeceraNotificacion {
+  cursor: pointer;
+  padding: 10px 10px;
+  background: linear-gradient(#555555, #333333);
+  color: white;
+  -moz-border-radius: 4px 4px 4px 4px;
+  /*Firefox*/
+  -webkit-border-radius: 4px 4px 4px 4px;
+  /*Safari y Chrome*/
+  border-radius: 4px 4px 4px 4px;
+  /* Opera */
+  margin-bottom: 5px; }
+
+.cabeceraNotificacion:hover {
+  background: #333; }
+
+.contenidoNotificacion {
+  padding: 15px 15px;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  background-color: white;
+  -moz-border-radius: 0px 0px 4px 4px;
+  /*Firefox*/
+  -webkit-border-radius: 0px 0px 4px 4px;
+  /*Safari y Chrome*/
+  border-radius: 0px 0px 4px 4px;
+  /* Opera */
+  border-style: solid;
+  border-width: thin;
+  border-color: #ddd; }
+
+.mensajeErrorNotificacion {
+  display: none;
+  margin-bottom: 4px !important;
+  /* 	background-color: #FFBB33 !important; */
+  /* 	color: #FF8800 !important; */
+  /* 	border-color: #FF8800 !important; */ }
+
+.notificacionfechaPrevista {
+  color: #7f7f7f; }
+
+.notificacionRemitente {
+  margin-top: 12px; }
+
+.notificacionTitulo {
+  margin-top: 5px;
+  font-weight: bold; }
+
+.letrasMayusculas {
+  text-transform: uppercase; }
+
+.botonSearchNotificacion {
+  padding: 5px 10px !important; }
+

@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl
+END
+IndicadorBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/IndicadorBaseImpl.java
+END
+CasoModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CasoModelImpl.java
+END
+Act_InstitucionalCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/Act_InstitucionalCacheModel.java
+END
+PasoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/PasoImpl.java
+END
+IndicadorModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/IndicadorModelImpl.java
+END
+RequisitoCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/RequisitoCacheModel.java
+END
+Act_InstitucionalImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/Act_InstitucionalImpl.java
+END
+ServicioBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/ServicioBaseImpl.java
+END
+IndicadorCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/IndicadorCacheModel.java
+END
+RequisitoModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/RequisitoModelImpl.java
+END
+RequisitoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/RequisitoImpl.java
+END
+Act_InstitucionalModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/Act_InstitucionalModelImpl.java
+END
+IndicadorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/IndicadorImpl.java
+END
+ServicioCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/ServicioCacheModel.java
+END
+PasoModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/PasoModelImpl.java
+END
+InstitucionBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/InstitucionBaseImpl.java
+END
+CentroBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CentroBaseImpl.java
+END
+ServicioImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/ServicioImpl.java
+END
+ServicioModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/ServicioModelImpl.java
+END
+InstitucionCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/InstitucionCacheModel.java
+END
+CentroCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CentroCacheModel.java
+END
+CasoBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CasoBaseImpl.java
+END
+InstitucionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/InstitucionImpl.java
+END
+CentroImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CentroImpl.java
+END
+CentroModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CentroModelImpl.java
+END
+CasoCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CasoCacheModel.java
+END
+InstitucionModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/InstitucionModelImpl.java
+END
+PasoBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/PasoBaseImpl.java
+END
+CasoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/CasoImpl.java
+END
+Act_InstitucionalBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/Act_InstitucionalBaseImpl.java
+END
+PasoCacheModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/PasoCacheModel.java
+END
+RequisitoBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/model/impl/RequisitoBaseImpl.java
+END

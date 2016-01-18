@@ -1,0 +1,316 @@
+@import "compass";
+@import "mixins";
+@import "aui_variables";
+
+/* ---------- Dockbar ---------- */
+
+@include respond-to(phone, tablet) {
+	.aui {
+
+		* {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+
+		body {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	
+
+		.nav {
+			margin: 0;
+		}/*//nav*/
+
+
+		.dockbar-split .dockbar, .dockbar {
+			float: right;
+			height: auto;
+			position: relative;
+			z-index: 401;
+
+			.info-items {
+				height: auto;
+				position: static;
+				width: 300px;
+			}
+
+			.navbar-inner {
+				width: auto;
+
+				.btn-navbar {
+					background: transparent;
+					border: none;
+					float: left;
+					font-size: 24px;
+					padding: 12px 15px;
+
+					&:hover {
+						background-color: #5BBAE8;
+					}
+
+					&.open {
+						background-color: #F5AF45;
+					}
+				}
+
+				.nav-account-controls {
+					padding: 0 5px;
+
+					.user-avatar-image {
+						display: none;
+					}
+				}
+
+				.nav-add-controls {
+					background: transparent;
+					border-top-width: 0;
+					position: static;
+					z-index: 350;
+					padding: 0 5px;
+
+					> li {
+						float: none;
+						margin: 0;
+						position: relative;
+
+						&.toggle-controls a {
+							clip: rect(auto auto auto auto);
+							position: static;
+							visibility: visible;
+						}
+
+						.page-preview-controls {
+							display: none;
+						}
+
+						> a {
+							background: transparent;
+							text-align: left;
+							white-space: nowrap;
+
+							&:hover {
+								background: #F3f3f3;
+							}
+
+							[class^="icon-"], [class^="icon-"], [class*=" icon-"] {
+								font-size: 22px;
+								margin-top: 0;
+							}
+
+							&.toggle-controls-link {
+								background: transparent;
+
+								[class^="icon-"], [class^="icon-"], [class*=" icon-"] {
+									color: #FFF;
+								}
+							}
+
+							.nav-item-label {
+								background: transparent;
+								display: inline;
+								left: 0;
+								margin-left: 0;
+								margin-top: 0;
+								padding: 0;
+								position: relative;
+							}
+
+							&:hover .nav-item-label {
+								display: inline;
+							}
+
+							.icon-caret-down {
+								display: none;
+							}
+						}
+					}
+				}
+
+				.nav-collapse {
+					z-index: 400;
+
+					&.open {
+						overflow: visible;
+					}
+
+					> .nav {
+						background: #009AE5;
+						border-width: 0;
+						left: auto;
+						margin: 0;
+						min-width: 160px;
+						position: absolute;
+						right: 0;
+						z-index: 400;
+
+						> li {
+							&.dropdown {
+								.dropdown-menu li a {
+									font-size: 16px;
+									line-height: 32px;
+								}
+
+								&.open {
+									> .dropdown-toggle {
+										color: #FFFFFF;
+									}
+								}
+							}
+
+							> a {
+								color: #FFF;
+								font-size: 16px;
+								margin: 5px 0;
+								padding: 6px 15px;
+
+								&:focus, &:hover {
+									background-color: #5BBAE8;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.portlet-dockbar {
+			display: block;
+			width: 100%;
+			background: $vuvGrey-d;
+			@include clearfix();
+		}
+		#_145_navSiteNavigationNavbarBtn {
+			display: none;
+		}
+		
+		header#banner {	
+			#heading {
+				.site-title {
+					margin-left: 15px;
+				}//site-title
+
+			}//#heading
+		
+		.page-title{
+			margin-left: 15px;
+		}
+		}//header#banner
+		
+		.signed-out #_145_navAddControlsNavbarBtn {
+			display: none;
+		}
+
+		#footer {
+			.other-links {
+				clear:both;
+				border-top:1px solid $vuvGrey-l;
+				border-bottom: 1px solid $vuvGrey-l;
+				width:100%;
+
+				ul {
+					list-style-type: none;
+					display: block !important;
+					width:100%;
+					padding:0;
+					margin:0;
+					margin-top:-1px !important;
+					width: 100%;
+					text-align: center;
+					border-right: 0 none;
+					
+					li { 
+						margin-bottom:-1px !important;
+						border-bottom: 1px solid $vuvGrey-l;
+						display: inline-block !important;
+						float:left;
+						border-left:1px solid $vuvGrey-l;
+						a {
+							color: $vuvGrey-md;
+							display:block;
+							padding:4px 10px;
+							border-right:1px solid $vuvGrey-l;
+							margin-right:-1px;
+							border-top:1px solid  $vuvGrey-l;
+						}
+
+						&:last-child { 
+							/*border-right: 1px solid $vuvGrey-l;*/
+						}
+						/*float:left;*/	
+					}/*li*/
+				}/*ul */
+			}/*other-links*/
+
+			.credits{
+				text-align: left !important;
+				span {
+					display: block !important;
+					float:none !important;
+				}
+				.logo{
+					
+					margin:25px 10px 0 !important;
+					padding:30px 10px 20px; 
+				}
+			}//credits
+
+		}//#footer
+
+		.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+			margin: 0 !important;
+		}
+	}//aui
+
+	.aui .dockbar-split .dockbar .navbar-inner {
+		background: transparent  !important;
+		background-color:transparent !important;	
+	}
+	.aui .dockbar .navbar-inner, .aui .dockbar-split .dockbar .navbar-inner {
+	background-image:transparent !important;
+	background-color: transparent !important;
+		i{
+			opacity:0.5;
+			&:hover {
+				opacity:1;
+			}//hover
+		}//i
+	}//navbar-inner
+	
+}//respond-to
+
+
+
+@media only screen and (max-width:500px) {
+	.aui {
+		//.dockbar-split {
+			.portlet-dockbar {
+				// position:absolute;
+				.dockbar {
+					.navbar-inner {
+						background-color: transparent !important;
+						background-image: none !important;
+						
+						.btn-navbar {
+							&.open {
+								background-color: transparent !important;
+							}
+
+						}//.btn-navbar
+					}//navbar-inner
+				}//.dockbar-split
+			}//.portlet-dockbar
+		//}.dockbar-split
+
+		#_145_navSiteNavigationNavbarBtn {
+			display: block;
+		}
+	}//.aui
+	.aui .dockbar-split .dockbar .navbar-inner {
+		background-image: transparent !important;
+		background-color: transparent !important;
+		i {
+			opacity: 1 !important;
+		}
+	}
+}/* media500px */

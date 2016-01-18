@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/519/trunk/SDK/hooks/vuv-content/src/main/webapp/WEB-INF
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/519/trunk/SDK/hooks/vuv-content/src/main/webapp/WEB-INF/liferay-plugin-package.properties
+END
+liferay-hook.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/519/trunk/SDK/hooks/vuv-content/src/main/webapp/WEB-INF/liferay-hook.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/519/trunk/SDK/hooks/vuv-content/src/main/webapp/WEB-INF/web.xml
+END

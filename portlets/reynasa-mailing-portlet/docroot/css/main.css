@@ -1,0 +1,40 @@
+.ltr .column.right, .right{
+	float: right !important;
+}
+
+.moveAll .inner {
+    width: 10px;
+}
+
+.btn-submit {
+    display: block;
+    padding: 1%;
+}
+
+.field.wr100{
+	width: 100%;
+}
+
+.hr-mailing{
+	border-top: 1px solid #d6d6d6;
+}
+
+.no-break .checkbox{
+	width: 100%;
+}
+
+.mailing-move-boxes{
+	margin-left: auto;
+	margin-right: auto;
+	
+	.selector-container {
+		display: inline-block;
+	}
+}
+
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	
+}

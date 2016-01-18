@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence
+END
+IndicadorPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/IndicadorPersistenceImpl.java
+END
+RequisitoPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/RequisitoPersistenceImpl.java
+END
+CentroPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/CentroPersistenceImpl.java
+END
+ServicioPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/ServicioPersistenceImpl.java
+END
+Act_InstitucionalPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/Act_InstitucionalPersistenceImpl.java
+END
+InstitucionPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/InstitucionPersistenceImpl.java
+END
+CasoPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/CasoPersistenceImpl.java
+END
+PasoPersistenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/persistence/PasoPersistenceImpl.java
+END

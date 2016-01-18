@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/525/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF/src/com/liferay/custom/action
+END
+CustomPostLoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/525/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF/src/com/liferay/custom/action/CustomPostLoginAction.java
+END

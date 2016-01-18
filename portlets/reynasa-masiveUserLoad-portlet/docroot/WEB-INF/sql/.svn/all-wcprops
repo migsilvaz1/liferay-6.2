@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/sql
+END
+indexes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/sql/indexes.sql
+END
+indexes.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/sql/indexes.properties
+END
+sequences.sql
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/sql/sequences.sql
+END
+tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/sql/tables.sql
+END

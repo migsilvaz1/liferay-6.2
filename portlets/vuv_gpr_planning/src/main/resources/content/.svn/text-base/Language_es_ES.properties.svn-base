@@ -1,0 +1,6 @@
+sincro.institutions=Instituciones sincronizadas
+sincro.services=Servicios sincronizados
+sincro.buttom.phrase=Pulse el siguiente botón para iniciar la sincronización con el GPR
+sincro.button.label=Sincronizar
+clean.buttom.phrase=Pulse el siguiente botón para iniciar la limpieza de contenidos del GPR
+clean.button.label=Limpiar

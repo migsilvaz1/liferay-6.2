@@ -1,0 +1,77 @@
+10
+
+dir
+653
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos/trunk/SDK/portlets/reynasa-mailing-portlet/docroot
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos
+
+
+
+2015-07-01T10:32:00.760000Z
+648
+m.silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ce187b71-4a01-0010-a865-0147f71eb258
+
+META-INF
+dir
+
+WEB-INF
+dir
+
+css
+dir
+
+html
+dir
+
+icon.png
+file
+
+
+
+
+2015-06-23T14:19:08.000000Z
+be8150319d9bec0c7c6a58eba0e72e66
+2015-03-02T18:26:52.310000Z
+163
+ja.rodriguez.ramirez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+467
+
+js
+dir
+

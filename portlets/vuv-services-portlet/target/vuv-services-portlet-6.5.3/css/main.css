@@ -1,0 +1,15 @@
+#search {
+    background-color: #1e63aa;
+    border-radius: 10px;
+    color: white;
+    padding: 0px !important;
+}
+
+#search .span12 {
+	margin-bottom: 0px;
+	padding-top: 36px !important;
+}
+
+.ui-slider-label{
+	color: #dbdbdb !important;
+}

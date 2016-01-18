@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/542/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao
+END
+LabelDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/542/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/LabelDAO.java
+END
+MultipleSubFormDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/530/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/MultipleSubFormDAO.java
+END
+InputDateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/542/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/InputDateDAO.java
+END
+InputDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/538/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/InputDAO.java
+END
+OutputTextDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/530/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/OutputTextDAO.java
+END
+SelectBoxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/530/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/java/ec/gob/snap/vuv/dynamic/form/dao/SelectBoxDAO.java
+END

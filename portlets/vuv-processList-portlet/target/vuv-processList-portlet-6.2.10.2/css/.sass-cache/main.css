@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.vuv-processlist-portlet .multiple-sub-form-table table {
+  width: 100%; }
+.vuv-processlist-portlet .formAction .control-group-inline, .vuv-processlist-portlet .formAction .inline {
+  margin-right: 2em; }
+.vuv-processlist-portlet .formAction .control-group input {
+  height: 2em;
+  margin-bottom: auto;
+  margin-top: auto; }
+.vuv-processlist-portlet .alert.alert-buttons {
+  background-color: #eaeaea;
+  border-color: #d4d4d4; }
+.vuv-processlist-portlet #processes {
+  width: 100% !important; }
+  .vuv-processlist-portlet #processes.collapsed .child > ul {
+    white-space: pre-wrap;
+    max-width: 100%;
+    word-break: break-all;
+    word-wrap: initial; }
+  .vuv-processlist-portlet #processes thead tr th {
+    background-color: #1e63aa;
+    color: #fff; }
+  .vuv-processlist-portlet #processes td.priorityCell {
+    display: block;
+    position: inherit;
+    text-align: center;
+    font-size: 0px; }
+    .vuv-processlist-portlet #processes td.priorityCell::before {
+      font-size: initial; }
+  .vuv-processlist-portlet #processes .red {
+    color: #e21f1d; }
+  .vuv-processlist-portlet #processes .green {
+    color: #008245; }
+  .vuv-processlist-portlet #processes .yellow {
+    color: #f4c400; }
+  .vuv-processlist-portlet #processes td, .vuv-processlist-portlet #processes th, .vuv-processlist-portlet #processes table {
+    border: none !important;
+    white-space: nowrap; }
+  .vuv-processlist-portlet #processes input {
+    height: auto;
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box; }
+.vuv-processlist-portlet .no-margin-left {
+  margin-left: 0px !important; }
+.vuv-processlist-portlet .mtop1 {
+  margin-top: 1%; }
+.vuv-processlist-portlet .margin-0-0-1em {
+  margin: 0 0 1em; }
+.vuv-processlist-portlet .right {
+  float: right; }
+.vuv-processlist-portlet .clear {
+  clear: both; }
+.vuv-processlist-portlet #processes_filter {
+  display: none; }
+.vuv-processlist-portlet #processes_length {
+  float: left;
+  clear: both; }
+.vuv-processlist-portlet #processes_processing {
+  background-image: url("../images/processing.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+.vuv-processlist-portlet .glyphicon {
+  top: 0 !important; }
+

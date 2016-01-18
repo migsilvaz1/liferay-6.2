@@ -1,0 +1,54 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+.aui {
+	.blue {
+		#wrapper {
+			#content {
+				.green {
+					color: #4585A6;
+				}
+
+				.btn.green {
+					background: #4585A6;
+				}
+
+				ul.green-list {
+					list-style-image: url(@theme_image_path@/color_schemes/blue/contents/green-list-item.png);
+				}
+
+				#team {
+					h3 {
+						color: #4585A6;
+					}
+
+					.effect {
+						.more-info {
+							background: #4585A6;
+						}
+					}
+				}
+
+				.component.carousel .carousel-green.carousel-content {
+					menu li {
+						.carousel-menu-prev, .carousel-menu-next {
+							background: url(@theme_image_path@/color_schemes/blue/carousel/prev-green.png) white no-repeat center;
+							border: 3px solid #4585A6;
+						}
+
+						.carousel-menu-next {
+							background-image: url(@theme_image_path@/color_schemes/blue/carousel/next-green.png);
+						}
+
+						.carousel-menu-index {
+							&.carousel-menu-active {
+								border: 2px solid #4585A6;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

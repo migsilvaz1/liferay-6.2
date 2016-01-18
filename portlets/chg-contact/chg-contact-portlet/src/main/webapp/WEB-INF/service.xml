@@ -1,0 +1,96 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.gfi.chg">
+	<namespace>chg</namespace>
+	<entity name="Contact" local-service="true"
+		remote-service="false">
+
+		<!-- PK fields -->
+		<column name="contactId" type="long" primary="true"></column>
+		
+		<!-- FK fields -->
+		<column name="areaId" type="long"></column>
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+        <column name="createDate" type="Date"></column>
+        <column name="status" type="int"></column>
+		<column name="name" type="String">
+		</column>
+		<column name="surname" type="String"></column>
+        <column name="activity" type="String"></column>
+        <column name="address" type="String"></column>
+        <column name="city" type="String"></column>
+        <column name="postalCode" type="String"></column>
+        <column name="email" type="String"></column>
+        <column name="telephone" type="String"></column>
+        <column name="subject" type="String"></column>
+        <column name="description" type="String"></column>
+        <column name="response" type="String"></column>
+        
+        <!-- Finder methods -->
+        <finder name="ContactId" return-type="Collection">
+                <finder-column name="contactId" />
+        </finder>
+        <finder name="CreateDate" return-type="Collection">
+                <finder-column name="createDate" />
+        </finder>
+        <finder name="Email" return-type="Collection">
+                <finder-column name="email" />
+        </finder>
+        <finder name="Subject" return-type="Collection">
+                <finder-column name="subject" />
+        </finder>
+        <finder name="Status" return-type="Collection">
+                <finder-column name="status" />
+        </finder>
+        <finder name="AreaId" return-type="Collection">
+                <finder-column name="areaId" />
+        </finder>
+	</entity>
+	
+    <entity name="Area" local-service="true" remote-service="false">
+    	<!-- PK fields -->
+        <column name="areaId" type="long" primary="true"></column>
+        
+        <!-- Audit fields -->
+        <column name="name" type="String"></column>
+        <column name="mainEmail" type="String"></column>
+        <column name="userId" type="long"></column>
+        
+        <!-- Finder methods -->
+        <finder name="AreaId" return-type="Collection">
+                <finder-column name="areaId" />
+        </finder>
+        <finder name="Name" return-type="Collection">
+                <finder-column name="name" />
+        </finder>
+        <finder name="UserId" return-type="Collection">
+                <finder-column name="userId" />
+        </finder>
+    </entity>
+    
+    <entity local-service="true" remote-service="false" name="Tracing">
+    
+    	<!-- PK fields -->
+        <column name="tracingId" primary="true" type="long"></column>
+        
+        <!-- FK fields -->
+		<column name="areaId" type="long"></column>
+		<column name="contactId" type="long"></column>
+		
+        <column name="status" type="int"></column>
+        <column name="modifiedDate" type="Date"></column>
+        <column name="comment" type="String"></column>
+        
+        <!-- Finder methods -->
+        <finder name="AreaId" return-type="Collection">
+                <finder-column name="areaId" />
+        </finder>
+        <finder name="ContactId" return-type="Collection">
+                <finder-column name="contactId" />
+        </finder>
+    </entity>
+	
+</service-builder>

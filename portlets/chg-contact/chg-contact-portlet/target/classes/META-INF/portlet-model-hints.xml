@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.gfi.chg.model.Area">
+		<field name="areaId" type="long" />
+		<field name="name" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="mainEmail" type="String" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="com.gfi.chg.model.Contact">
+		<field name="contactId" type="long" />
+		<field name="areaId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="status" type="int" />
+		<field name="name" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="surname" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="activity" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="address" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="city" type="String" />
+		<field name="postalCode" type="String" />
+		<field name="email" type="String" />
+		<field name="telephone" type="String" />
+		<field name="subject" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="description" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="response" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+	</model>
+	<model name="com.gfi.chg.model.Tracing">
+		<field name="tracingId" type="long" />
+		<field name="areaId" type="long" />
+		<field name="contactId" type="long" />
+		<field name="status" type="int" />
+		<field name="modifiedDate" type="Date" />
+		<field name="comment" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+	</model>
+</model-hints>

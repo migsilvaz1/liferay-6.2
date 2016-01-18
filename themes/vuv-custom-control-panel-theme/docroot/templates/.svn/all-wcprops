@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates
+END
+navigation.vm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates/navigation.vm
+END
+init_custom.vm
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates/init_custom.vm
+END
+portal_pop_up.vm
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates/portal_pop_up.vm
+END
+portal_normal.vm
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates/portal_normal.vm
+END
+portlet.vm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/templates/portlet.vm
+END

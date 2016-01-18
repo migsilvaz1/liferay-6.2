@@ -1,0 +1,74 @@
+10
+
+dir
+595
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY/trunk/SDK/portlets/vuv-institutions/src/main/webapp
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY
+
+
+
+2015-07-17T11:55:02.612000Z
+514
+m.silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3297bac1-4b01-0010-9211-5f47b49ada27
+
+WEB-INF
+dir
+
+css
+dir
+
+html
+dir
+
+icon.png
+file
+
+
+
+
+2015-07-31T09:36:50.000000Z
+be8150319d9bec0c7c6a58eba0e72e66
+2015-05-17T10:37:03.541000Z
+163
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+467
+
+js
+dir
+

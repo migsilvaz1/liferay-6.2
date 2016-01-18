@@ -1,0 +1,218 @@
+#set( $generalColor = $theme.getSetting("accent-main-color") )
+#set( $textColor = $theme.getSetting("font-color") )
+#set( $menuFontColor = $theme.getSetting("menu-font-color") )
+#set( $menuBackgroundColor = $theme.getSetting("menu-background-color") )
+#set( $maxPageWidth = $theme.getSetting("max-page-width") )
+#set( $accentMenuFontColor = $theme.getSetting("accent-menu-font-color") )
+#set( $dataColor = $theme.getSetting("data-color") )
+#set( $showLanguages = $theme.getSetting("show-languages") )
+
+#set( $colorSchemeId = $colorScheme.getColorSchemeId())
+#if($colorSchemeId == "01")
+	#set( $generalColor = "#3366FF" )
+	#set( $menuBackgroundColor = "#4D79FF" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/blue_scheme/arrow-up-blue.png") white no-repeat center !important;
+		}
+	</style>
+#elseif($colorSchemeId == "02")
+	#set( $generalColor = "#E60000" )
+	#set( $menuBackgroundColor = "#FF1A1A" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/red_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>
+#elseif($colorSchemeId == "03")
+	#set( $generalColor = "#FF9237" )
+	#set( $menuBackgroundColor = "#CC5F00" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/arrow-up.png") white no-repeat center !important;
+		}
+	</style>
+#elseif($colorSchemeId == "04")
+	#set( $generalColor = "#59B300" )
+	#set( $menuBackgroundColor = "#66CC00" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/green_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>
+#elseif($colorSchemeId == "05")
+	#set( $generalColor = "#850AFF" )
+	#set( $menuBackgroundColor = "#9124FF" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/purple_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>	
+	
+#elseif($colorSchemeId == "06")
+	#set( $generalColor = "#20B2AA" )
+	#set( $menuBackgroundColor = "#1C9C96" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/lightseagreen_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>	
+#elseif($colorSchemeId == "07")
+	#set( $generalColor = "#E9967A" )
+	#set( $menuBackgroundColor = "#E68665" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/darksalmon_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>	
+#elseif($colorSchemeId == "08")
+	#set( $generalColor = "#DAA520" )
+	#set( $menuBackgroundColor = "#E1AF33" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/goldenrod_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>	
+	
+#elseif($colorSchemeId == "09")
+	#set( $generalColor = "#7B68EE" )
+	#set( $menuBackgroundColor = "#907EF1" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/mediumslateblue_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>
+	
+#elseif($colorSchemeId == "10")
+	#set( $generalColor = "#808000" )
+	#set( $menuBackgroundColor = "#999900" )
+	<style type="text/css">
+	.arrow-top-visible .arrow-top {
+			background: url("/reynasa-theme/images/color_schemes/olive_scheme/arrow-up.png") white no-repeat center !important;
+		}
+	</style>
+	
+#end
+
+#if($showLanguages == "false")
+<style type="text/css">
+.language{
+ display: none !important;
+}
+</style>
+#else
+<style type="text/css">
+.language{
+ display: inherit !important;
+}
+</style>
+#end
+
+<style type="text/css">
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li:hover a, 
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a, 
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:hover, 
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:focus, 
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li a.aactive {
+		color: $generalColor;
+		border-bottom: 3px solid $generalColor;
+	}
+	.aui #wrapper #content .green {
+		color: ${generalColor};
+	}
+	.aui #wrapper #content .btn.green {
+		background: ${generalColor};
+	}
+	.aui #wrapper #content #team h3 {
+		color: ${generalColor};
+	}
+	.aui #wrapper #content #team .effect .more-info {
+		background: v${generalColor};
+	}
+	.aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-prev, .carousel-menu-next {
+		border: 3px solid ${generalColor};
+	}
+	.aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-index.carousel-menu-active {
+		border: 2px solid ${generalColor};
+	}
+	.aui .portlet-borderless.web-form-portlet form fieldset .btn.btn-primary {
+			background: ${generalColor} !important;
+	}
+	.aui .cabecera {background-color: $theme.getSetting("header-main-color"); height: $theme.getSetting("header-height");}
+ 	
+ 	.aui #data {
+		color: ${dataColor};
+	}
+	.aui .container {
+		width: ${maxPageWidth};
+	}
+	
+	.aui .arrow-top-visible .arrow-top {
+		border: 3px solid ${generalColor};
+	}
+	.aui .user-avatar, .aui .user-avatar-link,.aui .user-avatar.open .user-avatar-link{
+		background-color: ${generalColor} !important;
+		background-image: none !important;
+	}
+	.aui .breadcrumb .active a{
+		color:${generalColor};
+	}
+	
+	.aui .user-avatar-link:HOVER, .user-avatar-link:FOCUS {
+		background-color: ${menuBackgroundColor} !important;
+	}
+	
+	.aui .navbar .nav > li > .dropdown-menu:after {
+		border-bottom: 6px solid ${menuBackgroundColor};
+	}
+
+	.aui .dockbar-user-notifications .user-notifications-count {
+		background-color: ${generalColor} !important;
+		border: 1px solid ${generalColor} !important;
+	}
+	.aui body {
+		color: ${textColor};
+		font-weight: 200;
+	}	
+
+	.aui .dockbar .divider-vertical {
+		border-right-color: ${textColor};
+	}
+
+	.aui .navbar .nav > li.open > a {
+			color: ${textColor};
+	}
+
+	.aui .modify-pages .delete-tab {
+		background: ${textColor};
+	}	
+	
+	.aui .align-right a{
+		color: ${generalColor};
+	}
+	
+	.aui .icon-circle-arrow-left{
+		color: ${generalColor};
+	}
+	
+	.aui .resaltado {
+		color: ${generalColor};
+	}
+	.aui .title-text {
+		color: ${generalColor} !important;
+	}
+	
+	.aui .resaltado a{
+		color: ${generalColor};
+	}
+
+@include respond-to(phone, tablet) {
+	.aui #wrapper #banner .preheading #navigation .navbar-inner ul > li {
+		background-color: ${menuBackgroundColor};
+	}
+	.aui #wrapper #content #team .span3 .effect .more-info span {
+		color: ${textColor};
+	}
+}
+	
+</style>

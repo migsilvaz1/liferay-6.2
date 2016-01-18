@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/401/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/401/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF/portlet.xml
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/297/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF/liferay-portlet.xml
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/39/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF/liferay-plugin-package.properties
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/83/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF/liferay-display.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/39/trunk/SDK/portlets/vuv_highlightLink_portlet/src/main/webapp/WEB-INF/web.xml
+END

@@ -1,0 +1,1717 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <variables>
+        <proceso>
+            <bpm>Bpms</bpm>
+            <idProcesoBPM>1236</idProcesoBPM>
+            <deploymentId>ec.gob.snap.vuv.meer:LicenciaPersonal:</deploymentId>
+            <processId>LicenciaPersonal.LicenciaPersonal</processId>
+            <version>1.0</version>
+            <processInstanceId />
+            <taskId />
+            <codOperation>INIT_PROCESS</codOperation>
+        </proceso>
+        <local>
+            <var name="boton" type="ec.gob.snap.vuv.meer.licenciapersonal.Boton" />
+            <var name="persona" type="ec.gob.snap.vuv.meer.licenciapersonal.Persona" />
+            <var name="solicitud" type="ec.gob.snap.vuv.meer.licenciapersonal.Solicitud" />
+            <var name="trabajoActual" type="ec.gob.snap.vuv.meer.licenciapersonal.TrabajoActual" />
+        </local>
+        <output />
+    </variables>
+    <formulario>
+        <acciones>
+            <button id="boton_idBoton" order="37" parent="boton" property="idBoton">
+                <properties>
+                    <label>
+                        <es>Aceptar</es>
+                        <en>OK</en>
+                        <qu>kichwaAceptar</qu>
+                    </label>
+                    <accion>A</accion>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                </properties>
+            </button>
+            <button id="boton_idBoton" order="37" parent="boton" property="idBoton">
+                <properties>
+                    <label>
+                        <es>Rechazar</es>
+                        <en>Cancel</en>
+                        <qu>kichwaRechazar</qu>
+                    </label>
+                    <accion>R</accion>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                </properties>
+            </button>
+        </acciones>
+        <outputText id=":decorator_0" order="0">
+            <properties>
+                <label>
+                    <es>&lt;p style="text-align:center;"&gt;&lt;strong&gt;FORMULARIO DE SOLICITUD DE LICENCIA PERSONAL Y OFICIAL DE SEGURIDAD RADIOLÓGICA&lt;/strong&gt;&lt;/p&gt;</es>
+                    <en>&lt;p style="text-align:center;"&gt;&lt;strong&gt;ingles&lt;/p&gt;</en>
+                    <qu>&lt;p style="text-align:center;"&gt;&lt;strong&gt;espanol&lt;/p&gt;</qu>
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_1" order="1">
+            <properties>
+                <label>
+                    <es>&lt;p style="text-align:center;"&gt;SUBSECRETARIA DE CONTROL Y APLICACIONES NUCLEARES - SCAN&lt;/p&gt;</es>
+                    <en>&lt;p style="text-align:center;"&gt;es&lt;/p&gt;</en>
+                    <qu>&lt;p style="text-align:center;"&gt;qu&lt;/p&gt;</qu>
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_2" order="2">
+            <properties>
+                <label>
+                    <es></es>
+                    <en></en>
+                    <qu></qu>
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_3" order="3">
+            <properties>
+                <label>
+                    <es />
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <selectBox id="solicitud_tipoDocumento" order="4" parent="solicitud" property="tipoDocumento">
+            <properties>
+                <label>
+                    <es>Tipo Documento</es>
+                    <en>Document type</en>
+                    <qu>kichwa</qu>
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>true</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+                <size>30</size>
+                <onChangeScript>&lt;![CDATA[if(document.getElementById("&lt;portlet:namespace/&gt;solicitud_tipoDocumento").value=='C'){document.getElementById('&lt;portlet:namespace/&gt;personaForm_container').style.display = "none"; document.getElementById('&lt;portlet:namespace/&gt;instrFormalList_container').style.display = "none"; document.getElementById('&lt;portlet:namespace/&gt;persona_cedula').style.display = "block";} else{document.getElementById('&lt;portlet:namespace/&gt;personaForm_container').style.display = "block"; document.getElementById('&lt;portlet:namespace/&gt;persona_cedula').style.display = "none"; document.getElementById('&lt;portlet:namespace/&gt;instrFormalList_container').style.display = "block";}]]&gt;</onChangeScript>
+            </properties>
+            <options>
+                <option>
+                    <label>
+                        <es>Cédula</es>
+                        <en>writ</en>
+                        <qu>kichwaCedula</qu>
+                    </label>
+                    <value>C</value>
+                </option>
+                <option>
+                    <label>
+                        <es>Pasaporte</es>
+                        <en>writ</en>
+                        <qu>kichwaPasaporte</qu>
+                    </label>
+                    <value>P</value>
+                </option>
+            </options>
+        </selectBox>
+        <inputText id="persona_ciudad" order="8" parent="persona" property="ciudad">
+            <properties>
+                <label>
+                    <es>Ciudad</es>
+                    <en>CITY</en>
+                    <qu>CIUDAD QU</qu>
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es>Ciudad Titulo</es>
+                    <en>City Title</en>
+                    <qu>Ciudad Qu Titulo</qu>
+                </title>
+                <size>40</size>
+                <maxLength>100</maxLength>
+            </properties>
+        </inputText>
+        <textArea id="persona_pasaporte_" order="0" parent="persona" property="pasaporte_">
+        <properties>
+             <label>
+                 <es>Pasaporte</es>
+                 <en>Passport</en>
+                 <qu>Quichua</qu>
+              </label>
+              <value>171685553252</value>
+              <type>java.lang.String</type>
+               <fieldRequired>false</fieldRequired>
+               <readOnly>false</readOnly>
+               <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+                <size>20</size>
+                <maxLength>250</maxLength>
+                <height>5</height>
+         </properties>
+ 		</textArea>
+ 		<inputDate id="persona_fecha_" order="0" parent="persona" property="fecha">
+		    <properties>
+	            <label>
+                   <es>Fecha Inicial</es>
+                   <en>Date Initial</en>
+                   <qu>Quichua</qu>
+                </label>
+                <value>20-07-2015 11:00:20</value>
+                <type>java.util.Date</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+               <onChangeScript></onChangeScript>
+	     </properties>
+		</inputDate>
+<!-- 		<attachmentFile>
+		    <properties>
+		        <label> 
+		            <es>SELECT FILE</es>
+		            <en>SELECT FILE</en>
+		            <qu>select file</qu>
+		        </label>
+		        <value></value>
+		        <type>BASE64</type>
+		        <typeFile></typeFile>
+		        <typeFilePermitted>[doc, pdf, jpg, gif]</typeFilePermitted>
+		        <nameFile></nameFile>
+		        <pathFile></pathFile>
+		    </properties>
+		</attachmentFile> -->
+        <inputText id="persona_cedula" order="5" parent="persona" property="cedula">
+            <properties>
+                <label>
+                    <es>Cédula</es>
+                    <en>writ</en>
+                    <qu>kichwaCedula</qu>
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+                <size>20</size>
+                <maxLength>10</maxLength>
+            </properties>
+        </inputText>
+        <subForm id="personaForm_container" order="6">
+            <inputText id="persona_pasaporte" order="0" parent="persona" property="pasaporte">
+                <properties>
+                    <label>
+                        <es>Pasaporte</es>
+                        <en>Passport</en>
+                        <qu>Passport Qu</qu>
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="persona_apellidos" order="1" parent="persona" property="apellidos">
+                <properties>
+                    <label>
+                        <es>Apellidos</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="persona_nombres" order="2" parent="persona" property="nombres">
+                <properties>
+                    <label>
+                        <es>Nombres</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="persona_sexo" order="3" parent="persona" property="sexo">
+                <properties>
+                    <label>
+                        <es>Sexo</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+        </subForm>
+        <selectBox id="persona_parroquia" order="7" parent="persona" property="parroquia">
+            <properties>
+                <label>
+                    <es>Parroquia</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+            <options>
+                <option>
+                    <label>
+                        <es>AZUAY - CUENCA - BELLAVISTA</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value>AZUAY - CUENCA - BELLAVISTA</value>
+                </option>
+                <option>
+                    <label>
+                        <es>AZUAY - CUENCA - CAÑARIBAMBA</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - CAÑARIBAMBA</value>
+                </option>
+                <option>
+                    <label>
+                        <es> AZUAY - CUENCA - EL BATÁN</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - EL BATÁN</value>
+                </option>
+                <option>
+                    <label>
+                        <es>AZUAY - CUENCA - EL SAGRARI</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - EL SAGRARIO</value>
+                </option>
+                <option>
+                    <label>
+                        <es> AZUAY - CUENCA - EL VECINO</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - EL VECINO</value>
+                </option>
+                <option>
+                    <label>
+                        <es> AZUAY - CUENCA - GIL RAMÍREZ DÁVALOS</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - GIL RAMÍREZ DÁVALOS</value>
+                </option>
+                <option>
+                    <label>
+                        <es> AZUAY - CUENCA - HUAYNACÁPAC</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - HUAYNACÁPAC</value>
+                </option>
+                <option>
+                    <label>
+                        <es> AZUAY - CUENCA - MACHÁNGARA</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value> AZUAY - CUENCA - MACHÁNGARA</value>
+                </option>
+            </options>
+        </selectBox>
+        <inputText id="persona_telefono" order="10" parent="persona" property="telefono">
+            <properties>
+                <label>
+                    <es>Teléfono</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </inputText>
+        <inputText id="persona_email" order="11" parent="persona" property="email">
+            <properties>
+                <label>
+                    <es>Email</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </inputText>
+        <outputText id=":decorator_4" order="12">
+            <properties>
+                <label>
+                    <es>&lt;p&gt;Trabajo Actual: &lt;/p&gt;</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <subForm id="solicitud_trabajoActualForm_container" order="14" parent="solicitud" property="trabajoActualForm">
+            <inputText id="trabajoActual_nombreRazonSocial" order="0" parent="trabajoActual" property="nombreRazonSocial">
+                <properties>
+                    <label>
+                        <es>Nombre Razón Social</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <outputText id=":decorator_0" order="1">
+                <properties>
+                    <label>
+                        <es />
+                        <en />
+                        <qu />
+                    </label>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>true</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                </properties>
+            </outputText>
+            <checkedBox id="trabajoActual_estatal" order="2" parent="trabajoActual" property="estatal">
+                <properties>
+                    <label>
+                        <es>Estatal</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.Boolean</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </checkedBox>
+            <checkedBox id="trabajoActual_privada" order="3" parent="trabajoActual" property="privada">
+                <properties>
+                    <label>
+                        <es>Privada:</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.Boolean</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </checkedBox>
+            <inputText id="trabajoActual_provincia" order="4" parent="trabajoActual" property="provincia">
+                <properties>
+                    <label>
+                        <es>Provincia</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="trabajoActual_ciudad" order="5" parent="trabajoActual" property="ciudad">
+                <properties>
+                    <label>
+                        <es>Ciudad</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="trabajoActual_telefono" order="6" parent="trabajoActual" property="telefono">
+                <properties>
+                    <label>
+                        <es>Telefono</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <inputText id="trabajoActual_direccion" order="7" parent="trabajoActual" property="direccion">
+                <properties>
+                    <label>
+                        <es>Direccion</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>false</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+            </inputText>
+            <selectBox id="trabajoActual_practicaList" order="8" parent="trabajoActual" property="practicaList">
+                <properties>
+                    <label>
+                        <es>Practica</es>
+                        <en />
+                        <qu />
+                    </label>
+                    <value />
+                    <type>java.lang.String</type>
+                    <fieldRequired>false</fieldRequired>
+                    <readOnly>false</readOnly>
+                    <groupWithPrevious>true</groupWithPrevious>
+                    <title>
+                        <es />
+                        <en />
+                        <qu />
+                    </title>
+                </properties>
+                <options>
+                    <option>
+                        <label>
+                            <es>Practica 1</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value>Practica1</value>
+                    </option>
+                    <option>
+                        <label>
+                            <es>Practica 2</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value>Practica2</value>
+                    </option>
+                    <option>
+                        <label>
+                            <es>Practica 3</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value>Practica3</value>
+                    </option>
+                </options>
+            </selectBox>
+        </subForm>
+        <outputText id=":decorator_6" order="15">
+            <properties>
+                <label>
+                    <es>Nueva tablita</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <multipleSubForm id="solicitud_institucionLaboralList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="true" order="16" parent="solicitud" property="institucionLaboralList">
+            <addItemText>
+                <es>Añadir</es>
+                <en>Add</en>
+                <qu>kichwaAñadir</qu>
+            </addItemText>
+            <cancelItemText>
+                <es>Cancelar</es>
+                <en>Cancel</en>
+                <qu>KichwaCancelar</qu>
+            </cancelItemText>
+            <newItemText>
+                <es>Nuevo</es>
+                <en>New</en>
+                <qu>KichwaAñadir</qu>
+            </newItemText>
+            <subForm>
+                <inputText id="institucionLaboral_numero" order="0" parent="institucionLaboral" property="numero">
+                    <properties>
+                        <label>
+                            <es>Numero</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.Integer</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="institucionLaboral_ruc" order="1" parent="institucionLaboral" property="ruc">
+                    <properties>
+                        <label>
+                            <es>RUC</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="institucionLaboral_institucion" order="2" parent="institucionLaboral" property="institucion">
+                    <properties>
+                        <label>
+                            <es>Institución</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <selectBox id="institucionLaboral_practica" order="3" parent="institucionLaboral" property="practica">
+                    <properties>
+                        <label>
+                            <es>Práctica</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Práctica 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica3</value>
+                        </option>
+                    </options>
+                </selectBox>
+            </subForm>
+        </multipleSubForm>
+        <outputText id=":decorator_7" order="17">
+            <properties>
+                <label>
+                    <es>NUEVO DECORADOR</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_8" order="18">
+            <properties>
+                <label>
+                    <es>NUEVO DECORADOR: INSTRUCCION FORMATIVA</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <multipleSubForm id="instrFormalList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="false" order="19" parent="solicitud" property="instruccionFormalList">
+            <addItemText>
+                <es>Añadir Item</es>
+                <en />
+                <qu />
+            </addItemText>
+            <cancelItemText>
+                <es>Cancelar</es>
+                <en />
+                <qu />
+            </cancelItemText>
+            <newItemText>
+                <es>Guardar Datos</es>
+                <en />
+                <qu />
+            </newItemText>
+            <subForm>
+                <inputText id="instruccionFormal_institucionEducativa" order="0" parent="instruccionFormal" property="institucionEducativa">
+                    <properties>
+                        <label>
+                            <es>Institucion Educativa</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="instruccionFormal_tituloObtenido" order="1" parent="instruccionFormal" property="tituloObtenido">
+                    <properties>
+                        <label>
+                            <es>Titulo Obtenido</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="instruccionFormal_tipo" order="2" parent="instruccionFormal" property="tipo">
+                    <properties>
+                        <label>
+                            <es>Tipo</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+            </subForm>
+        </multipleSubForm>
+        <multipleSubForm id="solicitud_radioIsotopoList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="true" order="29" parent="solicitud" property="radioIsotopoList">
+            <addItemText>
+                <es>Añadir</es>
+                <en />
+                <qu />
+            </addItemText>
+            <cancelItemText>
+                <es>CAncelar</es>
+                <en />
+                <qu />
+            </cancelItemText>
+            <newItemText>
+                <es>Nuevo</es>
+                <en />
+                <qu />
+            </newItemText>
+            <subForm>
+                <selectBox id="radioIsotopo_campoAplicacion" order="0" parent="radioIsotopo" property="campoAplicacion">
+                    <properties>
+                        <label>
+                            <es>Campo de aplicacion</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Aplicacion 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Aplicacion 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Aplicacion 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <selectBox id="radioIsotopo_practica" order="1" parent="radioIsotopo" property="practica">
+                    <properties>
+                        <label>
+                            <es>Práctica</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Práctica 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <selectBox id="radioIsotopo_nombreRadioisotopo" order="2" parent="radioIsotopo" property="nombreRadioisotopo">
+                    <properties>
+                        <label>
+                            <es>Radio Isotopo</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Radio Isotopo 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>RadioIsotopo1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Radio isotopo 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>RadioIsotopo2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Radio Isotopo 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>RadioIsotopo3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <inputText id="radioIsotopo_tipoFuenteAbierta" order="3" parent="radioIsotopo" property="tipoFuenteAbierta">
+                    <properties>
+                        <label>
+                            <es>Fuente Abierta</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="radioIsotopo_tipoFuenteSellada" order="4" parent="radioIsotopo" property="tipoFuenteSellada">
+                    <properties>
+                        <label>
+                            <es>Fuente Sellada</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <selectBox id="radioIsotopo_actividadMaxima" order="5" parent="radioIsotopo" property="actividadMaxima">
+                    <properties>
+                        <label>
+                            <es>Actividad Máxima</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Unidad Medida 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>UnidaMediad1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Unidad Medida 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>UnidaMediad2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Unidad Medida 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>UnidaMediad3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <inputText id="radioIsotopo_numeroPracticas" order="6" parent="radioIsotopo" property="numeroPracticas">
+                    <properties>
+                        <label>
+                            <es>Numero prácticas</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.Integer</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+            </subForm>
+        </multipleSubForm>
+        <checkedBox id="solicitud_tld" order="32" parent="solicitud" property="tld">
+            <properties>
+                <label>
+                    <es>Solicitud</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.Boolean</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </checkedBox>
+        <checkedBox id="solicitud_trabaja" order="13" parent="solicitud" property="trabaja">
+            <properties>
+                <label>
+                    <es>Trabaja</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.Boolean</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+                <onChangeScript>&lt;![CDATA[if(document.getElementById("&lt;portlet:namespace/&gt;solicitud_trabaja").value=='false'){document.getElementById('&lt;portlet:namespace/&gt;solicitud_trabajoActualForm_container').style.display = "none";} else{document.getElementById('&lt;portlet:namespace/&gt;solicitud_trabajoActualForm_container').style.display = "block";}]]&gt;</onChangeScript>
+            </properties>
+        </checkedBox>
+        <outputText id=":decorator_9" order="20">
+            <properties>
+                <label>
+                    <es>DECORADOR 9</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <multipleSubForm id="solicitud_capacitacionList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="true" order="21" parent="solicitud" property="capacitacionList">
+            <addItemText>
+                <es>ADD ITEM</es>
+                <en />
+                <qu />
+            </addItemText>
+            <cancelItemText>
+                <es>CANCEL ITEM</es>
+                <en />
+                <qu />
+            </cancelItemText>
+            <newItemText>
+                <es>NEW ITEM</es>
+                <en />
+                <qu />
+            </newItemText>
+            <subForm>
+                <selectBox id="capacitacion_tipoEventoList" order="0" parent="capacitacion" property="tipoEventoList">
+                    <properties>
+                        <label>
+                            <es>Capacitación</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Seminario</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>seminario</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Curso</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value> curso</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Taller</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value> taller</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <inputText id="capacitacion_nombreEvento" order="1" parent="capacitacion" property="nombreEvento">
+                    <properties>
+                        <label>
+                            <es>Nombre Evento</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="capacitacion_institucion" order="2" parent="capacitacion" property="institucion">
+                    <properties>
+                        <label>
+                            <es>Institucion</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="capacitacion_anio" order="3" parent="capacitacion" property="anio">
+                    <properties>
+                        <label>
+                            <es>Año</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.Integer</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+            </subForm>
+        </multipleSubForm>
+        <outputText id=":decorator_10" order="22">
+            <properties>
+                <label>
+                    <es>DECORADOR 10</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <multipleSubForm id="solicitud_experienciaProfesionalAreaList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="true" order="23" parent="solicitud" property="experienciaProfesionalAreaList">
+            <addItemText>
+                <es>ADD ITEM</es>
+                <en />
+                <qu />
+            </addItemText>
+            <cancelItemText>
+                <es>CANCEL ITEM</es>
+                <en />
+                <qu />
+            </cancelItemText>
+            <newItemText>
+                <es>NEW ITEM</es>
+                <en />
+                <qu />
+            </newItemText>
+            <subForm>
+                <inputText id="experienciaProfesionalArea_institucion" order="0" parent="experienciaProfesionalArea" property="institucion">
+                    <properties>
+                        <label>
+                            <es>Institución</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="experienciaProfesionalArea_areaAplicacion" order="1" parent="experienciaProfesionalArea" property="areaAplicacion">
+                    <properties>
+                        <label>
+                            <es>Area aplicación</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="experienciaProfesionalArea_tiempo" order="2" parent="experienciaProfesionalArea" property="tiempo">
+                    <properties>
+                        <label>
+                            <es>Tiempo (Experiencia profesional)</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.Integer</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+            </subForm>
+        </multipleSubForm>
+        <outputText id=":decorator_11" order="24">
+            <properties>
+                <label>
+                    <es>DECORADOR 11</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_12" order="26">
+            <properties>
+                <label>
+                    <es>DECORADOR 12</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <multipleSubForm id="solicitud_equipoOperaList_container" isCreatable="true" isEditable="false" isEnableTableEnterData="false" isErasable="true" order="27" parent="solicitud" property="equipoOperaList">
+            <addItemText>
+                <es>ADD ITEM</es>
+                <en />
+                <qu />
+            </addItemText>
+            <cancelItemText>
+                <es>CANCEL ITEM</es>
+                <en />
+                <qu />
+            </cancelItemText>
+            <newItemText>
+                <es>NEW ITEM</es>
+                <en />
+                <qu />
+            </newItemText>
+            <subForm>
+                <selectBox id="equipoOpera_campoAplicacion" order="0" parent="equipoOpera" property="campoAplicacion">
+                    <properties>
+                        <label>
+                            <es>Campo de aplicación</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>false</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Aplicación 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Aplicación 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Aplicación 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Aplicacion3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <selectBox id="equipoOpera_practica" order="1" parent="equipoOpera" property="practica">
+                    <properties>
+                        <label>
+                            <es>Práctica</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>Práctica 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Práctica 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>Practica3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <selectBox id="equipoOpera_tipoEquipo" order="2" parent="equipoOpera" property="tipoEquipo">
+                    <properties>
+                        <label>
+                            <es>Tipo de equipo</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                    <options>
+                        <option>
+                            <label>
+                                <es>tipo 1</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>TipoEquipo1</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>Tipo 2</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>TipoEquipo2</value>
+                        </option>
+                        <option>
+                            <label>
+                                <es>tipo 3</es>
+                                <en />
+                                <qu />
+                            </label>
+                            <value>TipoEquipo3</value>
+                        </option>
+                    </options>
+                </selectBox>
+                <inputText id="equipoOpera_energiaMaxima" order="3" parent="equipoOpera" property="energiaMaxima">
+                    <properties>
+                        <label>
+                            <es>Energía máxima</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+                <inputText id="equipoOpera_intensidadMaxima" order="4" parent="equipoOpera" property="intensidadMaxima">
+                    <properties>
+                        <label>
+                            <es>Intensidad máxima</es>
+                            <en />
+                            <qu />
+                        </label>
+                        <value />
+                        <type>java.lang.String</type>
+                        <fieldRequired>false</fieldRequired>
+                        <readOnly>false</readOnly>
+                        <groupWithPrevious>true</groupWithPrevious>
+                        <title>
+                            <es />
+                            <en />
+                            <qu />
+                        </title>
+                    </properties>
+                </inputText>
+            </subForm>
+        </multipleSubForm>
+        <outputText id=":decorator_13" order="28">
+            <properties>
+                <label>
+                    <es>Decorador 13</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_14" order="30">
+            <properties>
+                <label>
+                    <es>Decorador 14</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <outputText id=":decorator_15" order="31">
+            <properties>
+                <label>
+                    <es>Decorador 15</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+        <checkedBox id="solicitud_film" order="33" parent="solicitud" property="film">
+            <properties>
+                <label>
+                    <es>film</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.Boolean</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </checkedBox>
+        <checkedBox id="solicitud_lapicera" order="34" parent="solicitud" property="lapicera">
+            <properties>
+                <label>
+                    <es>Lapicera</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.Boolean</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </checkedBox>
+        <inputText id="solicitud_otros" order="35" parent="solicitud" property="otros">
+            <properties>
+                <label>
+                    <es>Otros</es>
+                    <en />
+                    <qu />
+                </label>
+                <value />
+                <type>java.lang.String</type>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>false</readOnly>
+                <groupWithPrevious>true</groupWithPrevious>
+                <title>
+                    <es />
+                    <en />
+                    <qu />
+                </title>
+            </properties>
+        </inputText>
+        <outputText id=":decorator_16" order="36">
+            <properties>
+                <label>
+                    <es>DECORADOR 16</es>
+                    <en />
+                    <qu />
+                </label>
+                <fieldRequired>false</fieldRequired>
+                <readOnly>true</readOnly>
+                <groupWithPrevious>false</groupWithPrevious>
+            </properties>
+        </outputText>
+    </formulario>
+</template>

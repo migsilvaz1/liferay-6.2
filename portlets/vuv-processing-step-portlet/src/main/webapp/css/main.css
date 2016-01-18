@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix')
+		format('embedded-opentype'),
+		url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+		url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+		url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+		url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')
+		format('svg');
+}
+.vuv-processing-step-portlet{
+	
+	.multiple-sub-form-table table{
+		width: 100%;
+	}
+	
+	.formAction .control-group-inline, .formAction .inline{
+		margin-right: 2em;
+	}
+	.formAction .control-group input {
+	    height: 2em;
+	    margin-bottom: auto;
+	    margin-top: auto;
+	}
+	
+	.alert.alert-buttons{
+	    background-color: #eaeaea;
+	    border-color: #d4d4d4;
+	}
+	
+	.multiple-sub-form-table{
+		thead tr th {
+	    	background-color: #1e63aa;
+	    	color: #fff;
+		}
+		
+		.table-sort-indicator{
+		    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		    bottom: auto;
+		    font-family: "Glyphicons Halflings";
+		    height: auto;
+		    opacity: 0.5;
+		    width: auto;
+			&::after{
+			    content: "";
+    			opacity: 0.2;
+			}
+		}
+		
+		.table-sorted .table-sort-indicator::after{
+			content: "" !important;
+			opacity: 0.7 !important;
+		}
+		.table-sorted.table-sorted-desc .table-sort-indicator::after{
+			content: "" !important;
+			opacity: 0.7 !important;
+		}
+	}
+	
+	#tasks{
+		width: 100% !important;
+		
+		&.collapsed .child > ul {
+		    white-space: pre-wrap;
+		    max-width: 100%;
+		    word-break: break-all;
+		    word-wrap: initial;
+		}
+		
+		thead tr th {
+	    	background-color: #1e63aa;
+	    	color: #fff;
+		}
+		
+		td.priorityCell{
+		   display: block;
+		   position: inherit;
+		   text-align: center; 
+		   font-size: 0px;
+		   
+		   &::before{
+		   		font-size: initial;
+		   }
+		}
+
+		.red{
+			color: #e21f1d;
+		}
+		
+		.green{
+			color: #008245;
+		}
+		
+		.yellow{
+			color: #f4c400;
+		}
+		
+	    td,th,table{
+			border: none !important;
+			white-space: nowrap;
+		}
+		
+		input {
+			height: auto;
+			width: 100%;
+			padding: 3px;
+			box-sizing: border-box;
+		}
+	}
+	.no-margin-left {
+		margin-left: 0px !important;
+	}
+	
+	.mtop1 {
+		margin-top: 1%;
+	}
+	
+	.margin-0-0-1em{
+	    margin: 0 0 1em;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+	.clear{
+		clear: both;
+	}
+	
+	
+	#tasks_filter{
+		display: none;
+	}
+	
+	#tasks_length{
+		float: left;
+		clear: both;
+	}
+	
+	#tasks_processing{
+		background-image: url("../images/processing.gif");
+		background-position: center center;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	}
+
+	
+	.glyphicon{
+		top: 0 !important;
+	}
+}

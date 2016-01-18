@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="ec.gob.snap.vuv.model.Act_Institucional">
+		<field name="id_act_institucional" type="long" />
+		<field name="id_GPR_act_institucional" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_servicio" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Caso">
+		<field name="id_caso" type="long" />
+		<field name="id_GPR_caso" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_servicio" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Centro">
+		<field name="id_centro" type="long" />
+		<field name="id_GPR_centro" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_caso" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Indicador">
+		<field name="id_indicador" type="long" />
+		<field name="id_GPR_indicador" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_servicio" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Institucion">
+		<field name="id_institucion" type="long" />
+		<field name="id_GPR_institucion" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Paso">
+		<field name="id_paso" type="long" />
+		<field name="id_GPR_paso" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_caso" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Requisito">
+		<field name="id_requisito" type="long" />
+		<field name="id_GPR_requisito" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_paso" type="long" />
+	</model>
+	<model name="ec.gob.snap.vuv.model.Servicio">
+		<field name="id_GPR_servicio" type="long" />
+		<field name="content" type="long" />
+		<field name="timeStamp" type="Date" />
+		<field name="id_servicio" type="long" />
+		<field name="id_institucion" type="long" />
+	</model>
+</model-hints>

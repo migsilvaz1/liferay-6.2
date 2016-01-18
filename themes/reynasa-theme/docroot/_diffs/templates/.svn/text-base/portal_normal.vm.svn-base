@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+#parse ($init)
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+	$theme.include($top_head_include)
+</head>
+#set ($css_class = "${css_class} dockbar-split")
+<body class="$css_class">
+<div class="super-global-container">
+<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+
+$theme.include($body_top_include)
+
+#dockbar()
+<p id="lastConection" class="lastConection nav nav-account-controls">
+#language ("last-conetion"): $date.getDate($user.getLastLoginDate(),"dd/MM/yyy HH:mm:ss", $locale)
+</p>
+<div id="alertCookies" class="alert alert-warning fade in" style=" display:none; margin-bottom: 0px; text-align: justify; line-height: 2; font-size: 90%; position: fixed; bottom: 0; z-index: 10; width: 97%;">
+   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	   #language("theme.label.legal.advice.msg")
+	   <a href="/group$theme_display.getSiteGroup().getFriendlyURL()/politica-de-privacidad" style="margin-left: 1em;">  
+	       <strong>#language("privacy.legal.data")</strong>
+	   </a>         
+	
+	   <button id="acceptCookies" type="button" class="btn btn-near btn-primary" style="margin-bottom: 0px; padding: 4px 12px; font-size: 90%; margin-left: 1em; width: 100px;">  
+	       #language("ok")
+   </button>
+   <div class="clearfix"></div>
+</div>
+<div id="wrapper">
+	<header id="banner" class="container" role="banner">
+		<div class="preheading">
+			<div class="span3" id="heading">
+				<h1 class="site-title">
+					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+					</a>
+				</h1>
+			</div>
+			
+			#if ($has_navigation || $is_signed_in)
+				#parse ("$full_templates_path/navigation.vm")
+			#end
+		</div>
+	</header>
+	#set ($main-container-fluid = $theme.getSetting("main-container-fluid"))
+
+		<div id="content">
+		
+		<a class="arrow-top scroll-animate" href="#wrapper"></a>
+		<div class="container">
+		#set ($currentURL = "$theme_display.getPortalURL()$theme_display.getURLCurrent()")
+		#set ($defaultMinURL = "$theme_display.getPortalURL()/")
+		#set ($showBreadcrumbs = $theme_display.getThemeSetting('show-breadcrumbs'))
+		#if ($currentURL != $home_url && $currentURL != $defaultMinURL && $showBreadcrumbs == true)
+		#breadcrumbs()
+		#end
+		</div>
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+</div>
+<footer id="footer" role="contentinfo">
+
+	#set ($showFooter = $theme.getSetting("show-footer"))
+	#set ($footerContent = $theme.getSetting("footer-text"))
+	#if (($footerContent!="") && $showFooter=="true")
+	<div class="container" style="text-align: justify;">
+		
+		<p class="powered-by span5">
+			$footerContent
+		</p>
+		
+		
+		<p>
+			<div class="span6 enlaces" >
+			<a href= "$theme_display.getSiteGroup().getPathFriendlyURL(true, $theme_display)$theme_display.getSiteGroup().getFriendlyURL()/aviso-legal">
+				#language("aviso.legal")
+			</a>
+				- 
+			<a href="$theme_display.getSiteGroup().getPathFriendlyURL(true, $theme_display)$theme_display.getSiteGroup().getFriendlyURL()/condiciones-generales">
+
+    		#language("condiciones.generales")
+
+			</a>
+				- 
+			<a href="$theme_display.getSiteGroup().getPathFriendlyURL(true, $theme_display)$theme_display.getSiteGroup().getFriendlyURL()/comunica-con-nosotros">
+
+    		#language("comunica.con.nosotros")
+
+			</a>
+				- 
+			<a href="$theme_display.getSiteGroup().getPathFriendlyURL(true, $theme_display)$theme_display.getSiteGroup().getFriendlyURL()/ayuda">
+
+    		#language("ayuda")
+
+			</a>
+			</p>
+			</div>
+			</div>
+	#end
+
+
+</footer>
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+</div>
+</body>
+
+</html>

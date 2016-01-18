@@ -1,0 +1,11 @@
+IX_EC551706=reynasa_MasiveLoadUser.groupIdAndCompanyId
+
+IX_D4D64B1E=reynasa_masiveLoadUser.UUID_G
+IX_42D2570C=reynasa_masiveLoadUser.Uuid
+IX_BEEF0D9C=reynasa_masiveLoadUser.Uuid_C
+IX_743C22E6=reynasa_masiveLoadUser.groupIdAndCompanyId
+
+IX_35E9A85E=reynasa_masiveuserload.UUID_G
+IX_154511CC=reynasa_masiveuserload.Uuid
+IX_28A01ADC=reynasa_masiveuserload.Uuid_C
+IX_35DEE026=reynasa_masiveuserload.groupIdAndCompanyId

@@ -1,0 +1,34 @@
+.aui{
+	.toc{
+		border: 1px solid #AAA;
+		background-color: #F9F9F9;
+		padding: 0px 1em;
+	}
+	
+	.right{
+		float: right !important;
+		margin-bottom: 1%;
+	}
+	.toggler {
+		margin-bottom: 2%;
+	}
+	
+	#portlet-content{
+		display: block !important;
+	}
+	
+	#page{
+		width: 100%;
+	}
+	
+	#items{
+		display: inline-block !important;
+		width: 100% !important;
+	}
+	.contentTable{
+		display: inline-block;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	
+}

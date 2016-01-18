@@ -1,0 +1,8 @@
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/process/InputCaseData.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterface.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfaceLocator.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfacePortType.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfaceSoapBindingStub.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfacePortTypeProxy.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/vuv/ProcessListPortlet.java
+/opt/liferay-developer-studio/liferay-plugins-sdk-6.2-ee-sp9/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/process/CaseData.java

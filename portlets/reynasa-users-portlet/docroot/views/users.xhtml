@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:alloy="http://liferay.com/faces/alloy"
+    xmlns:liferay-ui="http://liferay.com/faces/ui"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:portal="http://liferay.com/faces/portal">
+
+    <p:ajaxStatus onstart="PF('statusDialog').show()"
+        onsuccess="PF('statusDialog').hide()" />
+
+    <p:dialog widgetVar="statusDialog" modal="false" draggable="false"
+        closable="false" resizable="false" showHeader="false">
+        <p:graphicImage value="/images/ajax-loader.gif" />
+    </p:dialog>
+    <!-- Consulta -->
+    <h:form id="f1" styleClass="aui-form">
+        <p:messages id="messages" globalOnly="true" layout="table" showDetail="false" autoUpdate="true"/>
+        <h:panelGroup layout="block" rendered="#{usersViewBean.viewMode}">
+                        <f:facet name="header">
+        Consulta
+
+                        </f:facet>
+            <alloy:row style="margin-top:60px">
+                <alloy:fieldset label="#{i18n['personal']}">
+                    <alloy:column width="15">
+                        <alloy:fieldset style="margin-left:30px">
+                            <alloy:field id="codigoUsuarioFieldReadOnly"
+                                label="#{i18n['Código']}">
+                                <p:inputText id="codigoReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.codigo}" />
+                                <h:message for="codigo" />
+                            </alloy:field>
+                            <alloy:field id="rolFieldReadOnly" label="#{i18n['Rol']}">
+                                <p:selectOneMenu id="rolReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.rolCod}">
+                                    <p:ajax listener="#{usersModelBean.onRoleChange}"
+                                        update="codigoClienteField" />
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{role.key}"
+                                        itemLabel="#{role.value}"
+                                        value="#{usersModelBean.roleListEdit.entrySet()}" var="role" />
+                                </p:selectOneMenu>
+                                <h:message for="rol" />
+                            </alloy:field>
+                            <alloy:field id="codigoCentroFieldReadOnly"
+                                rendered="#{usersViewBean.centroVisible}"
+                                label="#{i18n['Centro']}">
+                                <p:selectOneMenu id="codigoCentroReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.centroCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{centro.key}"
+                                        itemLabel="#{centro.value}"
+                                        value="#{usersModelBean.centroList.entrySet()}" var="centro" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoCentro" />
+                            </alloy:field>
+                            <alloy:field id="emailFieldReadOnly"
+                                label="#{i18n['email-address']}">
+                                <p:inputText id="emailReadOnly" inlineMessage="true"
+                                    disabled="true" label="#{i18n['email-address']}"
+                                    validatorMessage="#{i18n['invalid-email-address']}"
+                                    value="#{usersModelBean.selectedUser.email}">
+                                    <f:validateRegex pattern=".+[@].+[.].+" />
+                                </p:inputText>
+                                <h:message for="email" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+
+                    <alloy:column width="15">
+                        <alloy:fieldset style="margin-left:130px">
+                            <alloy:field id="nombreFieldReadOnly" label="#{i18n['Nombre']}">
+                                <p:inputText id="nombreReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.nombre}" />
+                                <h:message for="nombre" />
+                            </alloy:field>
+                            <alloy:field id="distribuidorFieldReadOnly" label="#{i18n['Distribuidor']}">
+                                <p:inputText id="distribuidorReadOnly" rendered="#{usersViewBean.updateRendered}" disabled="true"
+                                    value="#{usersModelBean.selectedUser.distrDen}" />
+                                <p:selectOneMenu id="distribuidorEdicionReadOnly" rendered="#{!usersViewBean.updateRendered}" disabled="true"
+                                    value="#{usersModelBean.selectedUser.distrCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{distributor.key}"
+                                        itemLabel="#{distributor.value}"
+                                        value="#{usersModelBean.distributorList.entrySet()}"
+                                        var="distributor" />
+                                </p:selectOneMenu>  
+                                <h:message for="distribuidor" />
+                            </alloy:field>
+                            <alloy:field id="codigoDelegacionFieldReadOnly"  rendered="#{usersViewBean.delegacionVisible}"
+                                label="#{i18n['Delegación']}">
+                                <p:selectOneMenu id="codigoDelegacionReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.delegCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{delegacion.key}"
+                                        itemLabel="#{delegacion.value}"
+                                        value="#{usersModelBean.delegacionList.entrySet()}"
+                                        var="delegacion" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoDelegacion" />
+                            </alloy:field>
+                            <alloy:field id="cifFieldReadOnly" label="#{i18n['CIF']}">
+                                <p:inputText id="cifReadOnly" value="#{usersModelBean.selectedUser.cif}" disabled="true" />
+                                <h:message for="cif" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                    
+                    <alloy:column width="15">
+                        <alloy:fieldset style="margin-left:260px">
+                            <alloy:field id="apellidosFieldReadOnly" label="#{i18n['last-name']}">
+                                <p:inputText id="apellidosReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.apellidos}" />
+                                <h:message for="apellidos" />
+                            </alloy:field>
+                            <alloy:field id="codigoClienteFieldReadOnly" rendered="#{usersViewBean.clienteVisible}"
+                                label="#{i18n['Código Cliente']}">
+                                <p:selectOneMenu id="codigoClienteReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.clienteCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{client.key}"
+                                        itemLabel="#{client.value}"
+                                        value="#{usersModelBean.clientListEdit.entrySet()}"
+                                        var="client" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoCliente" />
+                            </alloy:field>
+                        
+                        <alloy:field id="codigoEmpleadoFieldReadOnly"  rendered="#{usersViewBean.empleadoVisible}"
+                                label="#{i18n['Empleado']}">
+                                <p:selectOneMenu id="codigoEmpleadoReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.empleadoCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{empleado.key}"
+                                        itemLabel="#{empleado.value}"
+                                        value="#{usersModelBean.empleadoList.entrySet()}"
+                                        var="empleado" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoEmpleado" />
+                            </alloy:field>
+                        <alloy:field id="fechaNacimientoFieldReadOnly"
+                                label="#{i18n['Fecha Nacimiento']}">
+                                <p:calendar id="buttonReadOnly" disabled="true" locale="es"
+                                    value="#{usersModelBean.selectedUser.fechaNacimiento}" />
+                            </alloy:field>
+                        </alloy:fieldset>   
+                    </alloy:column>
+                </alloy:fieldset>
+                
+                <alloy:fieldset label="#{i18n['Contacto']}"
+                    style="width:100%;margin-left:30px">
+                    <alloy:field id="direccionFieldReadOnly" label="#{i18n['Dirección']}"
+                        style="width:100%">
+                        <p:inputText id="direccionReadOnly" disabled="true"
+                            value="#{usersModelBean.selectedUser.direccion1}"
+                            style="width:100%" />
+                        <h:message for="direccion" />
+                    </alloy:field>
+                </alloy:fieldset>
+                <alloy:fieldset label="#{i18n['Contacto']}" style="margin-left:30px">
+                    <alloy:column width="15">
+                        <alloy:fieldset>
+                            <div style="clear: both" />
+                            <alloy:field id="municipioFieldReadOnly" label="#{i18n['Municipio']}">
+                                <p:inputText id="municipioReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.municipio}" />
+                                <h:message for="municipio" />
+                            </alloy:field>
+                            <alloy:field id="telefonoMovilFieldReadOnly"
+                                label="#{i18n['Teléfono Móvil']}">
+                                <p:inputText id="telefonoMovilReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.telefonoMovil}" />
+                                <h:message for="telefonoMovil" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                    <alloy:column width="15">
+                        <alloy:fieldset style="margin-left:130px">
+                            <alloy:field id="codigoPostalFieldReadOnly"
+                                label="#{i18n['Código Postal']}">
+                                <p:inputText id="codigoPostalReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.codigoPostal}" />
+                                <h:message for="codigoPostal" />
+                            </alloy:field>
+                            <alloy:field id="provinciaFieldReadOnly" label="#{i18n['Provincia']}">
+                                <p:inputText id="provinciaReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.provincia}" />
+                                <h:message for="provincia" />
+                            </alloy:field>
+
+                        </alloy:fieldset>
+                    </alloy:column>
+                    <alloy:column width="15">
+                        <alloy:fieldset style="margin-left:260px">
+                            <alloy:field id="telefonoFijoFieldReadOnly"
+                                label="#{i18n['Teléfono Fijo']}">
+                                <p:inputText id="telefonoFijoReadOnly" disabled="true"
+                                    value="#{usersModelBean.selectedUser.telefonoFijo}" />
+                                <h:message for="telefonoFijo" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                </alloy:fieldset>
+            </alloy:row>
+            <alloy:row width="100">
+                <alloy:fieldset label="#{i18n['personal']}" style="margin-left:30px" width="100">
+                    <alloy:column width="15">
+                            <h:outputText value="Puede canjear: " />
+                            <p:selectBooleanCheckbox
+                                value="#{usersModelBean.selectedUser.usuarioPuedeCanjear}" disabled="true" />
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Puede administrar: " />
+                            <p:selectBooleanCheckbox
+                                value="#{usersModelBean.selectedUser.usuarioPuedeAdministrarRol}" disabled="true" />
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Puede Suplantar: " />
+                            <p:selectBooleanCheckbox
+                                value="#{usersModelBean.selectedUser.usuarioPuedeSuplantar}" disabled="true" />
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Activo: " />
+                            <p:selectBooleanCheckbox
+                                value="#{usersModelBean.selectedUser.usuarioActivo}" disabled="true" />
+
+
+                    </alloy:column>
+                </alloy:fieldset>
+                <br />
+                <alloy:fieldset label="#{i18n['Auditoría']}"
+                    style="margin-left:30px" rendered="#{usersViewBean.updateRendered}">
+                    <alloy:column width="15">
+                        <alloy:fieldset>
+                            <div style="clear: both" />
+                            <alloy:field id="activoFechaFieldReadOnly" label="#{i18n['Fecha ult modificación']}">
+                                <p:calendar id="activoFechaReadOnly" disabled="true" locale="es"
+                                    value="#{usersModelBean.selectedUser.fechaAlta}" />
+                                <h:message for="activoFecha" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                    <alloy:column width="50">
+                        <alloy:fieldset style="margin-left:130px">
+                            <div style="clear: both" />
+                            <alloy:field id="auditUsuarioAltaReadOnly"
+                                label="#{i18n['Usuario ult modificación']}">
+                                <p:inputText disabled="true"
+                                    value="#{usersModelBean.selectedUser.auditUsuarioUltAccion}" />
+                                <h:message for="AuditUsuarioAlta" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                </alloy:fieldset>
+
+            </alloy:row>
+            <portal:buttonRow style="float:right">
+                <p:commandButton id="pushButtonCancelReadOnly" class="btn-primary"
+                    actionListener="#{usersBackingBean.cancel}" immediate="true"
+                    update=":f1" value="#{i18n['cancel']}" />
+            </portal:buttonRow>
+        </h:panelGroup>
+        <!-- Fin consulta -->
+        
+        <!-- Alta/edicion -->
+        <h:panelGroup layout="block" rendered="#{usersViewBean.formRendered}">
+                        <f:facet name="header">
+        Alta/Edición
+
+                        </f:facet>
+            <alloy:row style="margin-top:60px">
+                <alloy:fieldset label="#{i18n['personal']}">
+                    <div id="firstCol" class="span4">
+                        <alloy:fieldset style="margin-left:30px">
+                            
+                            <alloy:field id="codigoUsuarioField" label="#{i18n['Código']}">
+                                <ui:fragment rendered="#{!usersViewBean.updateRendered}">
+                                <p:inputText id="codigo" required="true" 
+                                    requiredMessage="#{i18n['required']}"
+                                    value="#{usersModelBean.selectedUser.codigo}" 
+                                    validatorMessage="#{i18n['invalid-code-format']}" tabindex="1">
+                                    <f:validateRegex pattern="(?!(postfix)|(cyrus)|(anonymous)|(ANONYMOUS)|(guest)|(GUEST)|(.+[@].+[.].+)|(\n)|(\s))+?[a-zA-Z0-9.]+(?!_)+" />
+                                    <f:validateLength  maximum="75" minimum="5" />
+                                </p:inputText>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{usersViewBean.updateRendered}">
+                                <p:inputText id="codigoUnmod" value="#{usersModelBean.selectedUser.codigo}" disabled="true"/>
+                                </ui:fragment>
+                                <h:message for="codigo" />
+                            </alloy:field>
+                            
+                            <alloy:field id="rolField" label="#{i18n['Rol']}">
+                                <p:selectOneMenu id="rol" required="true" p:tabindex="4"
+                                    requiredMessage="#{i18n['required']}"
+                                    value="#{usersModelBean.selectedUser.rolCod}">
+                                    <p:ajax listener="#{usersModelBean.onRoleChange}"
+                                update="codigoClienteField, distribuidorField, codigoEmpleadoField, codigoDelegacionField, codigoCentroField" />
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{role.key}"
+                                        itemLabel="#{role.value}"
+                                        value="#{usersModelBean.roleListEdit.entrySet()}" var="role" />
+                                </p:selectOneMenu>
+                                <h:message for="rol" />
+                            </alloy:field>
+                            
+                            <alloy:field id="codigoCentroField"  rendered="#{usersViewBean.centroVisible}"
+                                label="#{i18n['Centro']}">
+                                <p:selectOneMenu id="codigoCentro" p:tabindex="7"
+                                    value="#{usersModelBean.selectedUser.centroCod}" 
+                                    required="#{!usersModelBean.editableCentro}"
+                                    requiredMessage="#{i18n['required']}"
+                                    disabled="#{!usersModelBean.editableCentro}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{centro.key}"
+                                        itemLabel="#{centro.value}"
+                                        value="#{usersModelBean.centroList.entrySet()}"
+                                        var="centro" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoCentro" />
+                            </alloy:field>
+                            
+                            <alloy:field id="emailField" label="#{i18n['email-address']}">
+                                <p:inputText id="email" inlineMessage="true" tabindex="10"
+                                    label="#{i18n['email-address']}"
+                                    validatorMessage="#{i18n['invalid-email-address']}"
+                                    value="#{usersModelBean.selectedUser.email}"
+                                    required="true"
+                                    requiredMessage="#{i18n['required']}"
+                                    >
+                                    <f:validateRegex pattern=".+[@].+[.].+" />
+                                </p:inputText>
+                                <h:message for="email" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </div>
+                    <div id="secondCol" class="span4">
+                        <alloy:fieldset>
+                            <alloy:field id="nombreField" label="#{i18n['Nombre']}">
+                                <p:inputText id="nombre" required="true" tabindex="2"
+                                    requiredMessage="#{i18n['required']}"
+                                    value="#{usersModelBean.selectedUser.nombre}" />
+                                <h:message for="nombre" />
+                            </alloy:field>
+                            <alloy:field id="distribuidorField" label="#{i18n['Distribuidor']}">
+                                <p:selectOneMenu id="distribuidorEdicion" p:tabindex="5"
+                                    value="#{usersModelBean.distrCod}" required="true" 
+                                    requiredMessage="#{i18n['required']}"
+                                    disabled="#{!usersViewBean.canEditDistribuidor}">
+                                    <p:ajax listener="#{usersModelBean.onDistributorEditChange}"
+                                update="codigoClienteField,codigoDelegacionField,codigoCentroField,codigoEmpleadoField"/>
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{distributor.key}"
+                                        itemLabel="#{distributor.value}"
+                                        value="#{usersModelBean.distributorList.entrySet()}"
+                                        var="distributor" />
+                                </p:selectOneMenu>  
+                                <h:message for="distribuidor" />
+                            </alloy:field>
+                            
+                            <alloy:field id="codigoDelegacionField"  rendered="#{usersViewBean.delegacionVisible}"
+                                label="#{i18n['Delegación']}">
+                                <p:selectOneMenu id="codigoDelegacion" tabindex="8"
+                                    value="#{usersModelBean.selectedUser.delegCod}" 
+                                    required="#{!usersModelBean.editableDelegacion}"
+                                    requiredMessage="#{i18n['required']}"
+                                    disabled="#{!usersModelBean.editableDelegacion}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{delegacion.key}"
+                                        itemLabel="#{delegacion.value}"
+                                        value="#{usersModelBean.delegacionList.entrySet()}"
+                                        var="delegacion" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoDelegacion" />
+                            </alloy:field>
+                            
+                            <alloy:field id="cifField" label="#{i18n['CIF']}">
+                                <p:inputText id="cif" value="#{usersModelBean.selectedUser.cif}" tabindex="11"
+                                validatorMessage="#{i18n['invalid-cif']}">
+                                    <f:validateRegex pattern="(X(-|\.)?0?\d{7}(-|\.)?[A-Z]|[A-Z](-|\.)?\d{7}(-|\.)?[0-9A-Z]|\d{8}(-|\.)?[A-Z])" />
+                                </p:inputText>
+                                <h:message for="cif" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </div>
+                    <div id="thirdCol" class="span4">
+                        <alloy:fieldset>
+                            <alloy:field id="apellidosField" label="#{i18n['last-name']}">
+                                <p:inputText id="apellidos" required="true" tabindex="3"
+                                    requiredMessage="#{i18n['required']}"
+                                    value="#{usersModelBean.selectedUser.apellidos}" />
+                                <h:message for="apellidos" />
+                            </alloy:field>
+                            <alloy:field id="codigoClienteField" rendered="#{usersViewBean.clienteVisible}"
+                                label="#{i18n['Código Cliente']}">
+                                <p:selectOneMenu id="codigoCliente" p:tabindex="6"
+                                    required="#{!usersModelBean.editableCliente}"
+                                    requiredMessage="#{i18n['required']}"
+                                    disabled="#{!usersModelBean.editableCliente}"
+                                    value="#{usersModelBean.selectedUser.clienteCod}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{client.key}"
+                                        itemLabel="#{client.value}"
+                                        value="#{usersModelBean.clientListEdit.entrySet()}"
+                                        var="client" />
+                                </p:selectOneMenu>
+                                <h:message for="codigoCliente" />
+                            </alloy:field>
+                        
+                        <alloy:field id="codigoEmpleadoField"  rendered="#{usersViewBean.empleadoVisible}"
+                                label="#{i18n['Empleado']}">
+                                <p:selectOneMenu id="codigoEmpleado" p:tabindex="9"
+                                    value="#{usersModelBean.selectedUser.empleadoCod}" 
+                                    required="#{!usersModelBean.editableEmpleado}"
+                                    requiredMessage="#{i18n['required']}"
+                                    disabled="#{!usersModelBean.editableEmpleado}">
+                                    <f:selectItem itemLabel="Select" itemValue="#{null}" />
+                                    <f:selectItems itemValue="#{empleado.key}"
+                                        itemLabel="#{empleado.value}"
+                                        value="#{usersModelBean.empleadoList.entrySet()}"
+                                        var="empleado"
+                                         />
+                                </p:selectOneMenu>
+                                <h:message for="codigoEmpleado" />
+                            </alloy:field>
+                        <alloy:field id="fechaNacimientoField" required="true"
+                                label="#{i18n['Fecha Nacimiento']}">
+                                <p:calendar id="button"  required="true" locale="es" p:tabindex="12"
+                                    value="#{usersModelBean.selectedUser.fechaNacimiento}" 
+                                    requiredMessage="#{i18n['required']}"/>
+                            </alloy:field>
+                        </alloy:fieldset>   
+                    </div>
+                </alloy:fieldset>
+                <alloy:fieldset label="#{i18n['Contacto']}"  style="margin-left:30px">
+                <div class="span10">
+                    <alloy:field id="direccionField" label="#{i18n['Dirección']}">
+                        <p:inputText id="direccion" tabindex="13"
+                            value="#{usersModelBean.selectedUser.direccion1}"
+                            style="width:100%" 
+                            required="true"
+                            requiredMessage="#{i18n['required']}"/>
+                        <h:message for="direccion" />
+                    </alloy:field>
+                </div>
+                </alloy:fieldset>
+                <alloy:fieldset label="#{i18n['Contacto']}" style="margin-left:30px">
+                    <div class="span4">
+                        <alloy:fieldset>
+                            <div style="clear: both" />
+                            <alloy:field id="municipioField" label="#{i18n['Municipio']}">
+                                <p:inputText id="municipio" tabindex="14"
+                                    value="#{usersModelBean.selectedUser.municipio}"
+                                    required="true" 
+                                    requiredMessage="#{i18n['required']}"/>
+                                <h:message for="municipio" />
+                            </alloy:field>
+                            <alloy:field id="telefonoMovilField"
+                                label="#{i18n['Teléfono Móvil']}">
+                                <p:inputText id="telefonoMovil" tabindex="17"
+                                    value="#{usersModelBean.selectedUser.telefonoMovil}"
+                                    validatorMessage="#{i18n['invalid-mobile-phone']}">
+                                    <f:validateRegex pattern="([0-9])+" />
+                                </p:inputText>
+                                <h:message for="telefonoMovil" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </div>
+                    <div class="span4">
+                        <alloy:fieldset>
+                            <alloy:field id="codigoPostalField"
+                                label="#{i18n['Código Postal']}">
+                                <p:inputText id="codigoPostal" tabindex="15"
+                                    value="#{usersModelBean.selectedUser.codigoPostal}" 
+                                    required="true" 
+                                    requiredMessage="#{i18n['required']}"
+                                    validatorMessage="#{i18n['invalid-postal-code']}">
+                                    <f:validateRegex pattern="[0-9]{5}" />
+                                </p:inputText>
+                                <h:message for="codigoPostal" />
+                            </alloy:field>
+                            <alloy:field id="provinciaField" label="#{i18n['Provincia']}">
+                                <p:inputText id="provincia" tabindex="18"
+                                    value="#{usersModelBean.selectedUser.provincia}" 
+                                    required="true" 
+                                    requiredMessage="#{i18n['required']}"/>
+                                <h:message for="provincia" />
+                            </alloy:field>
+
+                        </alloy:fieldset>
+                    </div>
+                    <div class="span4">
+                        <alloy:fieldset>
+                            <alloy:field id="telefonoFijoField"
+                                label="#{i18n['Teléfono Fijo']}">
+                                <p:inputText id="telefonoFijo" tabindex="16"
+                                    value="#{usersModelBean.selectedUser.telefonoFijo}" 
+                                    validatorMessage="#{i18n['invalid-phone']}">
+                                    <f:validateRegex pattern="([0-9])+" />
+                                </p:inputText>
+                                <h:message for="telefonoFijo" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </div>
+                </alloy:fieldset>
+            </alloy:row>
+            <alloy:row width="100">
+                <alloy:fieldset label="#{i18n['personal']}" style="margin-left:30px" width="100">
+                        
+                    <alloy:column width="15">
+                            <h:outputText value="Puede canjear: " />
+                            <p:selectBooleanCheckbox id="canjearCheckbox" p:tabindex="19"
+                                value="#{usersModelBean.selectedUser.usuarioPuedeCanjear}" />
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Puede administrar: " />
+                            <p:selectBooleanCheckbox id="administrarCheckbox" p:tabindex="20"
+                                value="#{usersModelBean.selectedUser.usuarioPuedeAdministrarRol}" />
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Puede Suplantar: " />
+                            <p:selectBooleanCheckbox id="suplantarCheckbox" p:tabindex="21"
+                                value="#{usersModelBean.selectedUser.usuarioPuedeSuplantar}" disabled="#{!usersViewBean.canMakeImpersonatable}"/>
+                    </alloy:column>         
+                    <alloy:column width="15">
+                            <h:outputText value="Activo: " />
+                            <p:selectBooleanCheckbox id="activoCheckbox" p:tabindex="22"
+                                value="#{usersModelBean.selectedUser.usuarioActivo}" />
+
+
+                    </alloy:column>
+                </alloy:fieldset>
+                <br />
+                <alloy:fieldset label="#{i18n['Auditoría']}"
+                    style="margin-left:30px" rendered="#{usersViewBean.updateRendered}">
+                    <alloy:column width="15">
+                        <alloy:fieldset>
+                            <div style="clear: both" />
+                            <alloy:field id="activoFechaField" label="#{i18n['Fecha ult modificación']}">
+                                <p:calendar id="activoFecha" disabled="true" locale="es"
+                                    value="#{usersModelBean.selectedUser.fechaAlta}" />
+                                <h:message for="activoFecha" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                    <alloy:column width="50">
+                        <alloy:fieldset style="margin-left:130px">
+                            <div style="clear: both" />
+                            <alloy:field id="auditUsuarioAlta"
+                                label="#{i18n['Usuario ult modificación']}">
+                                <h:outputText
+                                    value="#{usersModelBean.selectedUser.auditUsuarioUltAccion}" />
+                                <h:message for="AuditUsuarioAlta" />
+                            </alloy:field>
+                        </alloy:fieldset>
+                    </alloy:column>
+                </alloy:fieldset>
+                <br/>
+                <alloy:fieldset label="#{i18n['Password']}"
+                    style="margin-left:30px" rendered="#{usersViewBean.formRendered}">
+                    <alloy:column width="15">
+                        <alloy:fieldset>
+                            <div style="clear: both" />
+                                <ui:fragment rendered="#{!usersViewBean.updateRendered}">
+                                <h:outputLabel for="pwd1" value="Contraseña : *" />
+                                <p:password id="pwd1" p:tabindex="23" value="#{usersModelBean.password}" match="pwd2" label="Contraseña" required="true" requiredMessage="#{i18n['required']}"/>
+                                <p:message for="pwd1" />
+                                <h:outputLabel for="pwd2" value="Repita: *" />
+                                <p:password id="pwd2" p:tabindex="24" value="#{usersModelBean.password}" label="repetición" required="true" requiredMessage="#{i18n['required']}"/>
+                                <p:message for="pwd2" />
+                                </ui:fragment>
+                                <ui:fragment rendered="#{usersViewBean.updateRendered}">
+                                <h:outputLabel for="pwd1mod" value="Contraseña : *" />
+                                <p:password id="pwd1mod" p:tabindex="25" value="#{usersModelBean.password}" match="pwd2mod" label="Contraseña"/>
+                                <p:message for="pwd1mod" />
+                                <h:outputLabel for="pwd2mod" value="Repita: *" />
+                                <p:password id="pwd2mod" p:tabindex="26" value="#{usersModelBean.password}" label="repetición"/>
+                                <p:message for="pwd2mod" />
+                                </ui:fragment>
+                        </alloy:fieldset>
+                    </alloy:column>
+                    
+                </alloy:fieldset>
+            </alloy:row>
+            <portal:buttonRow style="float:right">
+                <p:commandButton id="pushButtonSubmit" class="btn-primary" style="margin-right: 7px;"
+                    rendered="#{usersViewBean.updateRendered}"
+                    actionListener="#{usersBackingBean.save}"
+                    value="#{i18n['Guardar']}" update=":f1"/>
+                <p:commandButton id="pushButtonCreate" class="btn-primary" style="margin-right: 7px;"
+                    rendered="#{!usersViewBean.updateRendered}"
+                    actionListener="#{usersBackingBean.create}"
+                    value="#{i18n['Guardar']}" update="users, :f1" />
+                <p:commandButton id="pushButtonCancel" class="btn-primary"
+                    actionListener="#{usersBackingBean.cancel}" immediate="true"
+                    update=":f1" value="#{i18n['cancel']}" />
+            </portal:buttonRow>
+        </h:panelGroup>
+        
+        <!-- Busqueda -->
+        <h:panelGroup rendered="#{usersViewBean.findMode}">
+
+
+            <alloy:fieldset style="margin-top:60px">
+                <alloy:column width="15" style="margin-left:60px">
+                    <alloy:field id="userCodeSearch" label="Código">
+                        <p:inputText id="userCodeId" label="Código" maxlength="10" tabindex="27"
+                            value="#{usersModelBean.userCode}">
+                        </p:inputText>
+                    </alloy:field>
+
+                    <alloy:field id="nameSearch" label="Nombre">
+                        <p:inputText id="nameId" label="Nombre" maxlength="10" tabindex="30"
+                            value="#{usersModelBean.name}">
+                        </p:inputText>
+                    </alloy:field>
+
+                    <alloy:field id="surnameSearch" label="Apellidos">
+                        <p:inputText id="surnameId" label="Apellidos" maxlength="10" tabindex="33"
+                            value="#{usersModelBean.surname}">
+                        </p:inputText>
+                    </alloy:field>
+                </alloy:column>
+
+
+                <alloy:column width="15" style="margin-left:130px">
+                    <alloy:field id="roleSearch" label="Rol">
+                        <p:selectOneMenu id="roleId" value="#{usersModelBean.role}" p:tabindex="28">
+                            <f:selectItem itemLabel="Seleccione" itemValue="#{null}" />
+                            <f:selectItems itemValue="#{role.key}" itemLabel="#{role.value}"
+                                value="#{usersModelBean.roleList.entrySet()}" var="role" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                    <alloy:field id="activoSearch" label="Activo">
+                        <p:selectOneMenu id="activoId" value="#{usersModelBean.activo}" p:tabindex="31">
+                            <f:selectItem itemLabel="Ambos" itemValue="#{3}" />
+                            <f:selectItem itemLabel="Activo" itemValue="#{0}" />
+                            <f:selectItem itemLabel="Inactivo" itemValue="#{1}" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                    <alloy:field id="activoLogicoSearch" label="Usuarios de baja">
+                        <p:selectOneMenu id="activoLogicoId" value="#{usersModelBean.activoLogico}" p:tabindex="34">
+                            <f:selectItem itemLabel="No" itemValue="#{0}" />
+                            <f:selectItem itemLabel="Sí" itemValue="#{1}" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                </alloy:column>
+                
+                <alloy:column width="15" style="margin-left:200px">
+                    <alloy:field id="distributorSearch" label="Distribuidor">
+                        <p:selectOneMenu id="distributorId" p:tabindex="29"
+                            value="#{usersModelBean.distributor}" disabled="#{usersModelBean.isDisableDistribuidor}">
+                            <p:ajax listener="#{usersModelBean.onDistributorChange}"
+                                update="clientSearch" />
+                            <f:selectItem itemLabel="Seleccione" itemValue="#{null}" />
+                            <f:selectItems itemValue="#{distributor.key}"
+                                itemLabel="#{distributor.value}"
+                                value="#{usersModelBean.distributorList.entrySet()}"
+                                var="distributor" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                    
+                    <alloy:field id="clientSearch" label="Cliente">
+                        <p:selectOneMenu id="clientId" p:tabindex="32" value="#{usersModelBean.client}" disabled="#{usersModelBean.isDisableClient}">
+                            <p:ajax listener="#{usersModelBean.onClientChange}"
+                                update="centerSearch" />
+                            <f:selectItem itemLabel="Seleccione" itemValue="#{null}" />
+                            <f:selectItems itemValue="#{client.key}"
+                                itemLabel="#{client.value}"
+                                value="#{usersModelBean.clientList.entrySet()}" var="client" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                    
+                    <alloy:field id="centerSearch" label="Centro">
+                        <p:selectOneMenu id="centerId" p:tabindex="34" value="#{usersModelBean.center}" disabled="#{usersModelBean.isDisableCenter}">
+                            <f:selectItem itemLabel="Seleccione" itemValue="#{null}" />
+                            <f:selectItems itemValue="#{center.key}"
+                                itemLabel="#{center.value}"
+                                value="#{usersModelBean.centerList.entrySet()}" var="center" />
+                        </p:selectOneMenu>
+                    </alloy:field>
+                </alloy:column>
+            </alloy:fieldset>
+            <br />
+            <div style="float: right">
+                <p:commandButton value="Búsqueda" class="btn-primary"
+                    action="#{usersBackingBean.seekUsers()}" update=":f1" style="margin-right:7px;"/>
+                <p:commandButton value="Crear usuario" class="btn-primary"
+                    action="#{usersBackingBean.createUser()}" update=":f1" />
+            </div>
+            <br />
+
+        </h:panelGroup>
+
+        <h:panelGroup layout="block"
+            rendered="#{usersViewBean.resultRendered}">
+            <alloy:row>
+                <alloy:column styleClass="aui-w100 pfusers">
+                    <div class="separator" />
+                    <p:menubar  for="users" id="contextMenu">
+                        <p:menuitem value="Consulta" icon="ui-icon-search" update=":f1" disabled="#{!usersViewBean.selectable}"
+                            actionListener="#{usersBackingBean.selectUser}" />
+                        <p:menuitem value="Edición" icon="ui-icon-pencil" update=":f1" disabled="#{!usersViewBean.editable}"
+                            actionListener="#{usersBackingBean.editUser}" />
+                        <p:menuitem value="Suplantar" icon="ui-icon-person" disabled="#{!usersViewBean.impersonatable}"
+                            actionListener="#{usersBackingBean.doImpersonate}" />
+                        <p:menuitem value="Borrado" icon="ui-icon-close"  disabled="#{!usersViewBean.removable}"
+                            actionListener="#{usersBackingBean.removeUser}" update="users"/>
+                        <p:menuitem value="Activar" icon="ui-icon-check"  disabled="#{!usersViewBean.activable}"
+                            actionListener="#{usersBackingBean.activeUser}" update="users"/>
+                    </p:menubar>
+                    <p:dataTable id="users" paginator="true" rowKey="#{user.codigo}" scrollable="true" scrollHeight="400"
+                        draggableColumns="true" rows="20" selectionMode="single" 
+                        selection="#{usersModelBean.selectedUser}" 
+                        emptyMessage="#{i18n['No se han encontrado resultados']}"
+                        value="#{usersModelBean.userList}" var="user"
+                        paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+                        <p:ajax event="rowSelect"
+                            listener="#{usersBackingBean.loadPerms}" update=":f1:contextMenu"/>
+
+                        <f:facet name="header">
+        Usuarios
+                            <p:commandButton id="toggler" type="button" value="Columnas" style="float:right" icon="ui-icon-calculator" />
+                            <p:columnToggler datasource="users" trigger="toggler" />
+                        </f:facet>
+
+                        <p:column id="apellidos" headerText="#{i18n['Apellidos']}"
+                            sortBy="#{user.apellidos}">
+                            <h:outputText id="apellidosCell" value="#{user.apellidos}" />
+                        </p:column>
+                        <p:column id="nombre" headerText="#{i18n['first-name']}"
+                            sortBy="#{user.nombre}">
+                            <h:outputText id="nombreCell" value="#{user.nombre}" />
+                        </p:column>
+                        <p:column id="email" headerText="#{i18n['Email']}"
+                            sortBy="#{user.email}">
+                            <h:outputText id="emailCell" value="#{user.email}" />
+                        </p:column>
+                        <p:column id="codigo" headerText="#{i18n['Código']}"
+                            sortBy="#{user.codigo}">
+                            <h:outputText id="codigoCell" value="#{user.codigo}" />
+                        </p:column>
+                        <p:column id="rolDescrip" headerText="#{i18n['Rol']}"
+                            sortBy="#{user.rolDescrip}">
+                            <h:outputText id="rolDescripCell" value="#{user.rolDescrip}" />
+                        </p:column>
+                        <p:column id="codigoCliente" headerText="#{i18n['Código cliente']}">
+                            <h:outputText id="codigoClienteCell" value="#{user.clienteCod}" />
+                        </p:column>
+                        <p:column id="codigoEmpleado" headerText="#{i18n['Código empleado']}">
+                            <h:outputText id="codigoEmpleadoCell" value="#{user.empleadoCod}" />
+                        </p:column>
+                        <p:column id="direccion" headerText="#{i18n['Dirección']}">
+                            <h:outputText id="direccionCell" value="#{user.direccion1}" />
+                        </p:column>
+                        <p:column id="municipio" headerText="#{i18n['Municipio']}">
+                            <h:outputText id="municipioCell" value="#{user.municipio}" />
+                        </p:column>
+                        <p:column id="provincia" headerText="#{i18n['Provincia']}">
+                            <h:outputText id="provinciaCell" value="#{user.provincia}" />
+                        </p:column>
+                        <p:column id="cif" headerText="#{i18n['CIF']}">
+                            <h:outputText id="cifCell" value="#{user.cif}" />
+                        </p:column>
+                        <p:column id="telefonoFijo" headerText="#{i18n['Teléfono Fijo']}">
+                            <h:outputText id="telefonoFijoCell" value="#{user.telefonoFijo}" />
+                        </p:column>
+                        <p:column id="telefonoMovil" headerText="#{i18n['Teléfono Móvil']}" >
+                            <h:outputText id="telefonoMovilCell" value="#{user.telefonoMovil}" />
+                        </p:column>
+                    </p:dataTable>
+                    <liferay-ui:info message="No se han encontrado resultados"
+                        rendered="#{usersModelBean.userDataModel.rowCount == 0}" />
+                </alloy:column>
+            </alloy:row>
+        </h:panelGroup>
+    </h:form>
+<script type="text/javascript"> 
+PrimeFaces.locales['es'] = {
+        closeText: 'Cerrar',
+        prevText: 'Anterior',
+        nextText: 'Siguiente',
+        monthNames: ['Enero','Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
+        dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+        dayNamesShort: ['Dom','Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+        dayNamesMin: ['D','L','M','X','J','V','S'],
+        weekHeader: 'Semana',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: '',
+        timeOnlyTitle: 'Sólo hora',
+        timeText: 'Tiempo',
+        hourText: 'Hora',
+        minuteText: 'Minuto',
+        secondText: 'Segundo',
+        currentText: 'Fecha actual',
+        ampm: false,
+        month: 'Mes',
+        week: 'Semana',
+        day: 'Día',
+        allDayText : 'Todo el día'
+    };
+</script>
+</ui:composition>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/495/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base
+END
+PasoLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/471/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/PasoLocalServiceClpInvoker.java
+END
+PasoLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/PasoLocalServiceBaseImpl.java
+END
+InstitucionLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/InstitucionLocalServiceClpInvoker.java
+END
+Act_InstitucionalLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/471/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/Act_InstitucionalLocalServiceClpInvoker.java
+END
+InstitucionLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/InstitucionLocalServiceBaseImpl.java
+END
+Act_InstitucionalLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/Act_InstitucionalLocalServiceBaseImpl.java
+END
+CentroLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/471/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/CentroLocalServiceClpInvoker.java
+END
+CentroLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/CentroLocalServiceBaseImpl.java
+END
+RequisitoLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/RequisitoLocalServiceClpInvoker.java
+END
+RequisitoLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/RequisitoLocalServiceBaseImpl.java
+END
+IndicadorLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/471/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/IndicadorLocalServiceClpInvoker.java
+END
+IndicadorLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/IndicadorLocalServiceBaseImpl.java
+END
+CasoLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/485/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/CasoLocalServiceClpInvoker.java
+END
+CasoLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/CasoLocalServiceBaseImpl.java
+END
+ServicioLocalServiceClpInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/495/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/ServicioLocalServiceClpInvoker.java
+END
+ServicioLocalServiceBaseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/base/ServicioLocalServiceBaseImpl.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/397/trunk/SDK/hooks/vuv-asset-publisher-hook/docroot/WEB-INF/html/portlet/asset_publisher
+END
+view_dynamic_list.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/255/trunk/SDK/hooks/vuv-asset-publisher-hook/docroot/WEB-INF/html/portlet/asset_publisher/view_dynamic_list.jspf
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/397/trunk/SDK/hooks/vuv-asset-publisher-hook/docroot/WEB-INF/html/portlet/asset_publisher/init.jsp
+END
+display_settings.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/397/trunk/SDK/hooks/vuv-asset-publisher-hook/docroot/WEB-INF/html/portlet/asset_publisher/display_settings.jspf
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/317/trunk/SDK/hooks/vuv-asset-publisher-hook/docroot/WEB-INF/html/portlet/asset_publisher/view.jsp
+END

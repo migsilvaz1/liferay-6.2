@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/594/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib
+END
+reynasa-masiveUserLoad-portlet-service.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/reynasa-masiveUserLoad-portlet-service.jar
+END
+commons-beanutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/commons-beanutils.jar
+END
+jstl-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/jstl-impl.jar
+END
+jstl-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/jstl-api.jar
+END
+super-csv-2.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/super-csv-2.1.0.jar
+END
+spiffy-all-0.05.jar
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/lib/spiffy-all-0.05.jar
+END

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
+
+<hook>
+    <language-properties>content/language_es_ES.properties</language-properties>
+    <language-properties>content/language_en_US.properties</language-properties>
+</hook>

@@ -1,0 +1,456 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+/* ---------- Styles to contents responsive mode: ---------- */
+
+@import url(contents_responsive.css);
+
+.aui {
+
+	
+	/*------------------ Pagination JS ---------------------*/
+	.prev {
+		background: url(@theme_image_path@/flecha-ant.png);
+		background-repeat: no-repeat;
+		display: inline-block;
+		border: 0px none;
+		font-size: 0px;
+		min-width: 35px;
+		min-height: 35px;
+	}
+	
+	.next {
+		background: url(@theme_image_path@/flecha-sig.png);
+		background-repeat: no-repeat;
+		display: inline-block;
+		border: 0px none;
+		font-size: 0px;
+		min-width: 35px;
+		min-height: 35px;
+	}
+	
+	#pagination, .easyPaginateNav {
+		text-align: center;
+	}
+	
+	.easyPaginateNav > a:FOCUS {
+		border-color: transparent !important;
+		outline-color: transparent !important;
+		box-shadow: none !important;
+	}
+	
+	#wrapper {
+		#content {
+
+			.btn.green {
+				border-width: 0;
+				color: #FFF;
+			}
+
+			ul.green-list {
+				list-style-image: url(@theme_image_path@/contents/green-list-item.png);
+				padding-left: 20px;
+
+				li {
+					padding: 10px 0;
+					vertical-align: top;
+				}
+			}
+
+			/* ---------- Images bg-fixed ---------- */
+
+			.img-bg-fixed {
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				&.bg-right {
+					background-position: right;
+				}
+
+				&.bg-left {
+					background-position: left;
+				}
+			}
+
+			/* ---------- Inner black bg-shadow ---------- */
+
+			.shadow-inner-left {
+				@include box-shadow(inset 20px 20px 20px 10px #FFF);
+			}
+
+			.shadow-inner-right {
+				@include box-shadow(inset -20px 20px 20px 10px #FFF);
+			}
+
+			/* ---------- Services ---------- */
+
+			#services {
+				padding-bottom: 60px;
+
+				h2 {
+					font-size: 24px;
+				}
+			}
+
+			/* ---------- Team ---------- */
+
+			#team {
+				padding-bottom: 60px;
+
+				h2 {
+					font-size: 24px;
+					line-height: 1.4;
+					margin-bottom: 40px;
+					padding: 0 40px;
+				}
+
+				h3 {
+					font-size: 17px;
+					line-height: 1.3;
+				}
+
+				.effect {
+					overflow: hidden;
+					position: relative;
+
+					.info {
+						height: 100%
+					}
+
+					.more-info {
+						color: #FFF;
+						height: 90%;
+						left: 0;
+						overflow: hidden;
+						padding: 4% 5%;
+						position: absolute;
+						right: 0;
+						top: -100%;
+
+						@include transition(all 0.2s ease-in-out);
+
+						h3, p, span {
+							color: #FFF;
+							display: block;
+
+							@include opacity(0);
+							@include transition(all 0.4s ease-in-out);
+						}
+
+						.social {
+							bottom: 12px;
+							position: absolute;
+							text-align: center;
+							text-align: center;
+							width: 90%;
+
+							a {
+								padding: 6px;
+
+								&:hover {
+									@include opacity(0.4);
+								}
+							}
+						}
+					}
+
+					&:hover .more-info {
+						top: 0;
+
+						@include transition(all 0.4s ease-in-out);
+
+						h3 {
+							margin-bottom: 0;
+
+							@include opacity(1);
+							@include transition(all 0.3s ease-in-out);
+							@include transition-delay(0.5s);
+						}
+
+						p {
+							@include opacity(1);
+							@include transition(all 0.4s ease-in-out);
+							@include transition-delay(0.4s);
+						}
+
+						span {
+							padding-top: 10px;
+
+							@include opacity(1);
+							@include transition(all 0.4s ease-in-out);
+							@include transition-delay(0.7s);
+						}
+
+						&.rounded {
+							@include border-radius(10px);
+
+							@include transition(all 0.4s ease-in-out);
+							@include transition-delay(0.8s);
+						}
+					}
+				}
+			}
+
+			/* ---------- Clients ---------- */
+
+			#clients {
+				padding-bottom: 60px;
+			}
+
+			/* ---------- About us ---------- */
+
+			#aboutus {
+				margin-top: 80px;
+				padding-bottom: 100px;
+
+				h1 {
+					padding: 60px 0 20px;
+				}
+
+				.phrase {
+					margin-bottom: 60px;
+				}
+			}
+
+			/* ---------- Testimonials ---------- */
+
+			#testimonials {
+				padding-bottom: 60px;
+
+				h2 {
+					font-size: 26px;
+					padding: 0 8% 30px;
+				}
+
+				h3 {
+					font-size: 16px;
+				}
+			}
+
+			/* ---------- Clients ---------- */
+
+			#contactus {
+				padding-bottom: 60px;
+
+				h2 {
+					font-size: 24px;
+					line-height: 1.4;
+					padding: 40px 0 0;
+
+					&.text-center {
+						margin-bottom: 40px;
+						padding: 0 40px 20px;
+					}
+				}
+
+				.google-maps {
+					height: 0;
+					overflow: hidden;
+					padding-bottom: 350px;
+					position: relative;
+				}
+
+				.google-maps iframe {
+					border-width: 0;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+			}
+
+			.contactus {
+				h3 {
+					padding: 40px 0 0;
+				}
+
+				.social {
+					padding-top: 50px;
+
+					a {
+						padding: 5px;
+
+						&:hover {
+							@include opacity(0.4);
+						}
+					}
+				}
+			}
+
+			/* ---------- Images carousel ---------- */
+
+			.component {
+				&.carousel {
+					line-height: inherit;
+					overflow: hidden;
+
+					.carousel-item {
+						width: 100%;
+					}
+
+					menu {
+						background: transparent;
+						bottom: 0;
+						height: 10%;
+						left: 0;
+						padding: 0;
+						text-align: center;
+						width: 100%;
+
+						li {
+							display: inline-block;
+							float: none;
+
+							.carousel-menu-item {
+								bottom: 20px;
+							}
+
+							.carousel-menu-prev, .carousel-menu-next {
+								background: url(@theme_image_path@/carousel/prev.png) transparent no-repeat center;
+								border: 3px solid #FFF;
+								bottom: 450%;
+								height: 50px;
+								left: 20px;
+								position: absolute;
+								width: 50px;
+
+								@include border-radius(50%);
+
+								&:hover {
+									@include opacity(0.4);
+									@include transition(all 0.2s ease-in-out);
+								}
+							}
+
+							.carousel-menu-next {
+								background-image: url(@theme_image_path@/carousel/next.png);
+								left: inherit;
+								right: 20px;
+							}
+
+							.carousel-menu-index {
+								background: #FFF;
+								margin: 3px;
+								padding: 1px;
+
+								&.carousel-menu-active {
+									background: transparent;
+									border: 2px solid #FFF;
+									margin: 1px;
+								}
+							}
+
+							.carousel-menu-pause {
+								background-size: cover;
+								border: 2px solid #FFF;
+								display: none;
+								height: 12px;
+								margin: 0 7px;
+								width: 12px;
+							}
+						}
+					}
+				}
+			}
+
+			/* ---------- .myCarousel_a carousel ---------- */
+			
+			
+			.myCarousel_a.carousel-content {
+				.carousel-item {
+					/* no use @import opacity in carousel to keep compatibility with olds IE */
+					opacity: 0;
+					max-height: 380px;
+				}
+
+				a, p, h1, h2, h3, h4 {
+					color: #FFF;
+				}
+
+				h1 {
+					padding: 20px 0 0;
+					text-transform: none;
+				}
+
+				.container {
+					left: 0;
+					position: absolute;
+					right: 0;
+				}
+
+				.margins {
+					position: absolute;
+					color: white;
+					background-color: rgba(64,64,64,0.7);
+					border-radius: 10px;
+					box-shadow: 0 0 25px rgb(64,64,64);
+					width: 70%;
+					margin: 0px;
+					top: 16%;
+					
+				}
+
+				.btn-large {
+					margin-top: 50px;
+					padding: 15px 40px;
+
+					@include box-shadow(none);
+				}
+
+				img {
+					max-width: inherit;
+					width: 100%;
+					max-height: 35em !important;
+				}
+			}
+
+			/* ---------- .myCarousel_b carousel ---------- */
+
+			.myCarousel_b {
+				padding-bottom: 100px;
+
+				.carousel-item {
+					padding-bottom: 150px;
+				}
+
+				.photo {
+					width: 10%;
+				}
+			}
+
+			/* ---------- Carousel green ---------- */
+
+			.component.carousel .carousel-green.carousel-content {
+				.carousel-item {
+					background: #FFF;
+					max-height: 380px !important;
+				}
+
+				menu li {
+					.carousel-menu-prev, .carousel-menu-next {
+						background: url(@theme_image_path@/carousel/prev-green.png) white no-repeat center;
+						left: 10px;
+					}
+
+					.carousel-menu-next {
+						background-image: url(@theme_image_path@/carousel/next-green.png);
+						left: inherit;
+						right: 10px;
+					}
+
+					.carousel-menu-index {
+						background: #323232;
+
+						&.carousel-menu-active {
+							background: #FFF;
+						}
+					}
+				}
+			}
+		}
+	}
+}

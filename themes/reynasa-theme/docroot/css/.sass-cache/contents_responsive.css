@@ -1,0 +1,121 @@
+@media (max-width: 979px) {
+  .aui body {
+    font-size: 80%; }
+  .aui h1 {
+    font-size: 150% !important; }
+  .aui .head, .aui #banner, .aui .cabecera {
+    background-color: transparent !important; }
+  .aui .enlaces {
+    margin-right: 0 !important; }
+  .aui #openModal {
+    display: none; }
+  .aui #navigation.open .navbar-inner {
+    padding: 0; }
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li {
+    margin-bottom: 3px !important;
+    width: 100%;
+    text-align: left; }
+  .aui #menubar {
+    width: 100% !important;
+    background-color: transparent; }
+  .aui .nav-collapse.collapse {
+    position: absolute;
+    z-index: 400;
+    width: 100%;
+    background-color: transparent !important; }
+  .aui .carousel {
+    line-height: 120% !important;
+    min-height: 320px; }
+  .aui .carousel-item {
+    min-height: 280px; }
+  .aui .carousel-item img {
+    min-height: 320px; }
+  .aui #menubar li:first-child {
+    margin-left: 0 !important; }
+  .aui .modalDialog > div {
+    margin: 0 auto !important; }
+  .aui #wrapper #content .shadow-inner-left, .aui #wrapper #content .shadow-inner-right {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .aui #wrapper #content #team .span3 {
+    padding-bottom: 80px;
+    text-align: center; }
+    .aui #wrapper #content #team .span3 img {
+      width: 50%; }
+    .aui #wrapper #content #team .span3 .effect .more-info {
+      padding: 0;
+      position: relative;
+      top: 0; }
+      .aui #wrapper #content #team .span3 .effect .more-info h3, .aui #wrapper #content #team .span3 .effect .more-info p {
+        display: none; }
+      .aui #wrapper #content #team .span3 .effect .more-info span {
+        background-color: #FFF;
+        padding: 10px;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1; }
+      .aui #wrapper #content #team .span3 .effect .more-info .social {
+        bottom: inherit;
+        margin: 2%;
+        padding: 2%;
+        position: relative;
+        width: auto; }
+        .aui #wrapper #content #team .span3 .effect .more-info .social img {
+          width: 15px; }
+        .aui #wrapper #content #team .span3 .effect .more-info .social a {
+          padding: 3px; }
+  .aui #wrapper #content #aboutus {
+    background-position: left;
+    padding: 0 20px 100px 20px; }
+  .aui #wrapper #content .component.carousel menu li .carousel-menu-prev {
+    left: 10px; }
+  .aui #wrapper #content .component.carousel menu li .carousel-menu-next {
+    right: 10px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content p {
+    font-size: 90%; }
+  .aui #wrapper #content .myCarousel_a.carousel-content h1 {
+    font-size: 25px;
+    line-height: 28px;
+    padding: 20px 0; }
+  .aui #wrapper #content .myCarousel_a.carousel-content h2 {
+    font-size: 20px;
+    line-height: 22px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container {
+    top: 0; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .container .margins {
+      margin: 0 25% 0 8%; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .container .btn-large {
+      margin-top: 20px; }
+  .aui #wrapper #content .myCarousel_b .photo {
+    width: 10%; } }
+@media (max-width: 767px) {
+  .aui #alertCookies {
+    width: auto !important; }
+  .aui #btnCarrousel {
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 75% !important;
+    margin-bottom: 20% !important;
+    margin-top: 0px !important;
+    font-size: 100% !important;
+    padding: 2% !important; }
+  .aui #wrapper #content #team .span3 .effect .more-info {
+    margin: 0 auto;
+    width: 80%; }
+    .aui #wrapper #content #team .span3 .effect .more-info .social img {
+      padding: 0 5px;
+      width: 30px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container .margins {
+    margin: 0 5%;
+    width: 90%; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container h1 {
+    font-size: 19px;
+    line-height: 20px;
+    padding: 5px 0 0; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container p, .aui #wrapper #content .myCarousel_a.carousel-content .container h2 {
+    display: none; }
+  .aui #wrapper #content .myCarousel_a.carousel-content menu li .carousel-menu-prev, .aui #wrapper #content .myCarousel_a.carousel-content menu li .carousel-menu-next {
+    display: none; }
+  .aui #wrapper #content .myCarousel_b .photo {
+    width: 20%; } }
+

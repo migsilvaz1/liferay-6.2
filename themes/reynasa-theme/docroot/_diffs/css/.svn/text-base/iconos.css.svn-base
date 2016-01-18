@@ -1,0 +1,22 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+.aui {
+	.icon-estadisticas {
+		background-image: url("../images/iconos/bar-chart-5-16.png") !important;
+		width: 14px;
+		height: 14px;
+	}
+	.icon-mailing {
+		background-image: url("../images/iconos/mail-16.png") !important;
+		width: 14px;
+		height: 14px;
+	}
+	.icon-misEstadisticas {
+		background-image: url("../images/iconos/pie-chart-16.png") !important;
+		width: 14px;
+		height: 14px;
+	}
+
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/src/com/near/notificaciones/service/http
+END
+RNotificationService_undeploy.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/src/com/near/notificaciones/service/http/RNotificationService_undeploy.wsdd
+END
+RNotificationService_deploy.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/src/com/near/notificaciones/service/http/RNotificationService_deploy.wsdd
+END
+RNotificationServiceSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/src/com/near/notificaciones/service/http/RNotificationServiceSoap.java
+END

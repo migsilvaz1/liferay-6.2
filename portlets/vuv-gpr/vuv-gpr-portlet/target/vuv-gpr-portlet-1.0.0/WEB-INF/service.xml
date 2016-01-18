@@ -1,0 +1,60 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="ec.gob.snap.vuv">
+	<namespace>vuv_gpr_service_builder</namespace>
+    <entity name="Servicio" local-service="true" remote-service="false" uuid="false" cache-enabled="false">
+        <column name="id_GPR_servicio" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_servicio" type="long" primary="true"></column>
+        <column name="id_institucion" type="long"></column>
+    </entity>
+    <entity name="Indicador" local-service="true" remote-service="false" uuid="false" cache-enabled="false">
+        <column name="id_indicador" type="long" primary="true"></column>
+        <column name="id_GPR_indicador" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_servicio" type="long"></column>
+    </entity>
+    <entity name="Act_Institucional" local-service="true" remote-service="false" uuid="false" cache-enabled="false">
+        <column name="id_act_institucional" type="long" primary="true"></column>
+        <column name="id_GPR_act_institucional" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_servicio" type="long"></column>
+    </entity>
+    <entity name="Caso" local-service="true" remote-service="false" uuid="false" cache-enabled="false">
+        <column name="id_caso" type="long" primary="true"></column>
+        <column name="id_GPR_caso" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_servicio" type="long"></column>
+    </entity>
+    <entity name="Centro" local-service="true" remote-service="false" cache-enabled="false">
+        <column name="id_centro" type="long" primary="true"></column>
+        <column name="id_GPR_centro" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_caso" type="long"></column>
+    </entity>
+    <entity name="Paso" local-service="true" remote-service="false" cache-enabled="false">
+        <column name="id_paso" type="long" primary="true"></column>
+        <column name="id_GPR_paso" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_caso" type="long"></column>
+    </entity>
+    <entity name="Requisito" local-service="true" remote-service="false" cache-enabled="false">
+        <column name="id_requisito" type="long" primary="true"></column>
+        <column name="id_GPR_requisito" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+        <column name="id_paso" type="long"></column>
+    </entity>
+    <entity name="Institucion" local-service="true" remote-service="false" cache-enabled="false">
+        <column name="id_institucion" type="long" primary="true"></column>
+        <column name="id_GPR_institucion" type="long"></column>
+        <column name="content" type="long"></column>
+        <column name="timeStamp" type="Date"></column>
+    </entity>
+</service-builder>

@@ -1,0 +1,157 @@
+/* google font */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(@base_url@/css/../fonts/Lato400.woff2) format("woff2"), url(@base_url@/css/../fonts/Lato400.woff) format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(@base_url@/css/../fonts/Lato700.woff2) format("woff2"), url(@base_url@/css/../fonts/Lato700.woff) format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: medium;
+  font-weight: 300;
+  src: url(@base_url@/css/../fonts/Raleway-Medium.woff) format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+body {
+  color: #555;
+  font-weight: 200 !important;
+  font-family: 'Raleway' !important;
+  font-weight: medium !important;
+  font-size: 14px !important;
+  line-height: 20px !important; }
+
+.plotspan, .dojoxGrid-master-header span {
+  color: black !important;
+  font-weight: bold !important; }
+
+.plot {
+  border: 2px solid #ff9237 !important; }
+
+h1, h2, h3, h4, h5, .portlet-title-text, input, button, select, textarea {
+  font-family: "Raleway" !important;
+  font-weight: medium; }
+
+.tundra .dojoxGridRowSelected .dojoxGridRowTable tr, .tundra .dojoxGrid-row-selected .dojoxGrid-row-table tr {
+  background-color: rgba(255, 146, 55, 0.33); }
+
+.tundra .dojoxGridRowOdd .dojoxGridRowTable tr, .tundra .dojoxGrid-row-odd .dojoxGrid-row-table tr {
+  background-color: rgba(204, 95, 0, 0.33); }
+
+.tundra .dojoxGrid-cell.dojoxGrid-cell-over {
+  background: rgba(255, 146, 55, 0.33);
+  border: 1px dotted #cc5f00; }
+
+a {
+  color: #009AE5;
+  font-weight: 200; }
+  a [class^="icon-"], a [class*=" icon-"] {
+    display: inline-block; }
+
+a:HOVER {
+  color: #009AE5; }
+
+.alert, .portlet-msg-alert, .portlet-msg-error, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .portlet-msg-success {
+  word-wrap: break-word; }
+
+.table {
+  font-size: 15px;
+  overflow: hidden; }
+  .table td {
+    background-color: #F9F9F9; }
+  .table thead th {
+    background-color: #F0EFEF;
+    font-size: 15px;
+    font-weight: normal; }
+  .table .table-sort-liner a {
+    color: #555;
+    font-weight: normal;
+    text-decoration: underline; }
+
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #FFF; }
+
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+  background-color: #EDF8FD; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea, .uneditable-input {
+  border: 1px solid #DDD;
+  color: #8D8D8D;
+  font-weight: 200;
+  margin-bottom: 7px; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea, .uneditable-input:FOCUS {
+  border-color: #ff9237; }
+
+.tundra .dijitTabChecked, .tundra .dijitTabCloseButtonChecked {
+  border-color: #ff9237; }
+
+.tundra .dijitButtonFocused, .tundra .dijitNumericTextBoxFocused, .tundra .dijitTextBoxFocused, .tundra .dijitComboBoxFocused, .tundra .dijitSpinnerFocused {
+  border-color: #ff9237; }
+
+.tundra .dijitButtonNode.dijitButtonHover, .claro .dijitButtonNode.dijitToggleButtonHover, .tundra .dijitButtonNode.dijitDropDownButtonHover, .tundra .dijitButtonContents.dijitComboButtonHover, .tundra .dijitDownArrowButton.dijitComboButtonDownArrowHover, .tundra .dijitDownArrowButton.dijitComboBoxHover {
+  border-color: #ff9237; }
+
+input[type="submit"] {
+  margin-bottom: 11px;
+  margin-top: 6px; }
+
+input[type="text"].search-query {
+  margin-top: 0; }
+
+label {
+  color: #555;
+  font-size: 15px;
+  font-weight: 200; }
+
+li {
+  line-height: 27px; }
+
+select:focus {
+  border: 1px solid #ff9237;
+  outline: 5px auto #cc5f00;
+  outline-offset: -2px; }
+
+.form-search .control-group-inline, .lfr-translation-manager-selector .control-group-inline {
+  margin: 0; }
+
+.field-wrapper .btn {
+  margin-top: 0; }
+
+.btn.disabled, .btn[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4; }
+
+.btn-link {
+  color: #555;
+  text-decoration: none; }
+  .btn-link > i {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto; }
+
+.btn-link:FOCUS, .btn-link:HOVER {
+  color: #009AE5;
+  text-decoration: none; }
+
+.control-group {
+  margin-bottom: 30px; }
+
+.lfr-ddm-container .control-group, .portlet-staging-bar .control-group {
+  margin-bottom: 15px; }
+
+@media (max-width: 767px) {
+  .form-search .input-append .btn {
+    font-size: 0;
+    padding: 4px 19px 0; } }
+.lfr-tree .tree-node .tree-node-selected .tree-label {
+  background: #E4F5FC; }
+

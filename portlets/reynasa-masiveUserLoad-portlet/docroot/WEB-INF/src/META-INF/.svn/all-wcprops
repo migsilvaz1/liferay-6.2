@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF
+END
+infrastructure-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/infrastructure-spring.xml
+END
+portlet-orm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/portlet-orm.xml
+END
+hibernate-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/hibernate-spring.xml
+END
+base-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/base-spring.xml
+END
+shard-data-source-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/shard-data-source-spring.xml
+END
+cluster-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/cluster-spring.xml
+END
+portlet-hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/portlet-hbm.xml
+END
+portlet-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/portlet-spring.xml
+END
+portlet-model-hints.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/META-INF/portlet-model-hints.xml
+END

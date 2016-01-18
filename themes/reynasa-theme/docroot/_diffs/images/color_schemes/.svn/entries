@@ -1,0 +1,70 @@
+10
+
+dir
+584
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos/trunk/SDK/themes/reynasa-theme/docroot/_diffs/images/color_schemes
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos
+
+
+
+2015-05-15T10:33:48.526000Z
+342
+v.montes
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ce187b71-4a01-0010-a865-0147f71eb258
+
+blue
+dir
+
+blue_scheme
+dir
+
+configurable_scheme
+dir
+
+darksalmon_scheme
+dir
+
+goldenrod_scheme
+dir
+
+green
+dir
+
+green_scheme
+dir
+
+lightseagreen_scheme
+dir
+
+mediumslateblue_scheme
+dir
+
+olive_scheme
+dir
+
+orange_scheme
+dir
+
+purple_scheme
+dir
+
+red
+dir
+
+red_scheme
+dir
+

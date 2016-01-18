@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices
+END
+Indicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/Indicator.java
+END
+WsGPRServices_PortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/WsGPRServices_PortType.java
+END
+ServiceInOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceInOperation.java
+END
+WsGPRServicesPortBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/WsGPRServicesPortBindingStub.java
+END
+ServiceCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceCase.java
+END
+ServiceRequisite.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceRequisite.java
+END
+ServiceCenterExtended.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceCenterExtended.java
+END
+WsGPRServicesProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/WsGPRServicesProxy.java
+END
+WsGPRServices_Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/WsGPRServices_Service.java
+END
+ServiceOfficeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceOfficeInfo.java
+END
+ServiceCharterPublished.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceCharterPublished.java
+END
+ServiceCharter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceCharter.java
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/Service.java
+END
+WsGPRServices_ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/WsGPRServices_ServiceLocator.java
+END
+InstitutionalActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/InstitutionalActivity.java
+END
+ServiceCaseStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/127/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/administracionpublica/wsGPRServices/ServiceCaseStep.java
+END

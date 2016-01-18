@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/551/trunk/SDK/themes/reynasa-theme/docroot/_diffs/templates
+END
+navigation.vm
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/462/trunk/SDK/themes/reynasa-theme/docroot/_diffs/templates/navigation.vm
+END
+init_custom.vm
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/342/trunk/SDK/themes/reynasa-theme/docroot/_diffs/templates/init_custom.vm
+END
+portal_normal.vm
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/551/trunk/SDK/themes/reynasa-theme/docroot/_diffs/templates/portal_normal.vm
+END
+portlet.vm
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/29/trunk/SDK/themes/reynasa-theme/docroot/_diffs/templates/portlet.vm
+END

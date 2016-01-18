@@ -1,0 +1,14 @@
+init.htmlCodeFromEditorPlacedHere=Introducción
+
+tag.categoria= Todas
+tag.search= Buscar
+tabla.contenidos= Contenidos
+info.datos= No se han encontrado resultados para los criterios de búsqueda ingresados.
+
+config.descripcion=Este texto se mostrará como introducción
+config.pageElements=Elementos por página
+config.viewContentTable= ¿Ver tabla de contenidos?
+config.yes= Sí
+config.no= No
+pagination.next=Sig
+pagination.prev=Ant

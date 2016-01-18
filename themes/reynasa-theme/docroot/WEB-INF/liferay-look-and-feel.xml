@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>6.2.0+</version>
+	</compatibility>
+	<theme id="reynasa" name="Reynasa" >
+	<settings>
+			<setting configurable="true" key="show-breadcrumbs" type="checkbox" value="true" />
+			<setting configurable="true" key="data" type="textarea" value=" " />
+			<setting configurable="true" key="bullet-style" options="dots,arrows" type="select" value="dots" />
+			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false" />
+			<setting configurable="true" key="show-site-name-default" type="checkbox" value="true"/>
+			<setting configurable="true" key="include-jquery" value="true" type="checkbox" />
+			<setting configurable="true" key="max-page-width" type="select" value="80%" options="960px,990px,1024px,1140px,1280px,1440px,80%,100%" />
+			<setting configurable="true" key="font-size" type="select" value="12" options="10,11,12,13,14,15,16,18,20" />
+			<setting configurable="true" key="font-family" type="select" value="Raleway" options="Ubuntu,Arial,Helvetica Neue,Helvetica,Raleway" />
+			<setting configurable="true" key="heading-font-family" type="select" value="Raleway" options="Ubuntu,Arial,Helvetica Neue,Helvetica,Raleway" />
+			<setting configurable="true" key="header-height" type="text" value="40" />
+			<setting configurable="true" key="header-font-size" type="select" value="12" options="10,11,12,13,14,15,16,18,20" />
+			<setting
+				configurable="true"
+			    key="data-color"
+			    type="text"
+			    value="#CC5F00">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]datacolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]data-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]data-color').val()}).render();
+		                [@NAMESPACE@]datacolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]data-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="header-main-color"
+			    type="text"
+			    value="#FFFFFF">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]headermaincolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]header-main-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]header-main-color').val()}).render();
+		                [@NAMESPACE@]headermaincolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]header-main-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="header-font-color"
+			    type="text"
+			    value="rgba(255, 146, 51, 0.10)">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]headerfontcolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]header-font-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]header-font-color').val()}).render();
+		                [@NAMESPACE@]headerfontcolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]header-font-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="menu-background-color"
+			    type="text"
+			    value="#CC5F00">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]menubackgroundcolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]menu-background-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]menu-background-color').val()}).render();
+		                [@NAMESPACE@]menubackgroundcolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]menu-background-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="menu-font-color"
+			    type="text"
+			    value="#FFFFFF">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]menufontcolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]menu-font-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]menu-font-color').val()}).render();
+		                [@NAMESPACE@]menufontcolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]menu-font-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="accent-menu-font-color"
+			    type="text"
+			    value="#000000">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]accentmenufontcolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]accent-menu-font-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]accent-menu-font-color').val()}).render();
+		                [@NAMESPACE@]accentmenufontcolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]accent-menu-font-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="accent-main-color"
+			    type="text"
+			    value="#ff9237">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]accentmaincolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]accent-main-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]accent-main-color').val()}).render();
+		                [@NAMESPACE@]accentmaincolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]accent-main-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting
+			configurable="true"
+			    key="font-color"
+			    type="text"
+			    value="#000000">
+				<![CDATA[
+			    AUI().ready('aui-color-picker-base','aui-color-palette','aui-color-picker-popover','aui-color-picker', function(A) {
+		                var [@NAMESPACE@]fontcolor = new A.ColorPickerPopover({trigger: '#[@NAMESPACE@]font-color', zIndex: 2, hex: A.one('#[@NAMESPACE@]font-color').val()}).render();
+		                [@NAMESPACE@]fontcolor.on('select', function(event) {
+							A.one('#[@NAMESPACE@]font-color').val(event.color);
+						});
+			        });
+				]]> 
+			</setting>
+			<setting configurable="true" key="show-languages" value="true" type="checkbox" />
+			<setting configurable="true" key="show-footer" value="true" type="checkbox" />
+			<setting configurable="true" key="footer-text" type="textarea" value="© 2014 Near Technologies - Todos los derechos reservados" />			
+			
+		</settings>
+		<color-scheme id="01" name="Blue">
+        	<css-class>blue_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="02" name="Red">
+        	<css-class>red_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="03" name="Orange">
+        	<css-class>orange_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="04" name="Green">
+        	<css-class>green_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="05" name="Purple">
+        	<css-class>purple_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="06" name="Lightseagreen">
+        	<css-class>lightseagreen_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="07" name="Darksalmon">
+        	<css-class>darksalmon_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="08" name="Goldenrod">
+        	<css-class>goldenrod_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="09" name="Mediumslateblue">
+        	<css-class>mediumslateblue_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="10" name="Olive">
+        	<css-class>olive_scheme</css-class>
+    	</color-scheme>
+    	<color-scheme id="11" name="Configurable">
+        	<css-class>configurable_scheme</css-class>
+    	</color-scheme>
+    	
+	</theme>
+</look-and-feel>

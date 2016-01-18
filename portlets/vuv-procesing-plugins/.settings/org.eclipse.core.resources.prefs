@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/ec/gob/snap/request/service/RequestBindingStub.java=UTF-8
+encoding//src/main/java/ec/gob/snap/request/service/RequestEndpoint.java=UTF-8
+encoding//src/main/java/ec/gob/snap/request/service/RequestEndpointService.java=UTF-8
+encoding//src/main/java/ec/gob/snap/request/service/RequestEndpointServiceLocator.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/process/InputTaskData.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/process/TaskData.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/services/WebServiceInterface.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/services/WebServiceInterfaceLocator.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/services/WebServiceInterfacePortType.java=UTF-8
+encoding//src/main/java/ec/gob/snap/tasks/services/WebServiceInterfaceSoapBindingStub.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8

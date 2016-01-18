@@ -1,0 +1,427 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+/* If you want to use the classic theme controls, keep this @import: url(dockbar_classic.css) */
+@import url(dockbar_classic.css);
+
+/* Lato google font */
+@import url(fonts.css);
+
+/* color_schemes */
+@import url(color_schemes/red.css);
+@import url(color_schemes/blue.css);
+
+.aui {
+	
+	.breadcrumb li.last .divider{
+		display: none;
+	}
+	
+	#main-content {
+	    margin: 0 auto;
+	    max-width: 80%;
+	}
+	
+	.language {
+		display:inherit;
+	}
+	
+	body {
+		background-color: #f2f2f2;
+		
+	}
+	
+	b {
+		color: black !important;
+		font-weight: 600 !important;
+	}
+	
+	a {
+		font-weight: normal;
+	}
+	
+	#_145_dockbar {
+		position: absolute;
+		z-index: 1000;
+	}
+	
+	.navbar .nav{
+		margin: 0px !important;
+		}
+		
+	#_145_navAddControls {
+		float: right !important;
+	}
+	
+	.signed-in.controls-visible .portlet-layout .portlet-boundary_118_ {
+		border: none !important;
+	}
+	
+	.no-margin-left{
+		margin-left: 0px !important;
+	}
+	
+	h2, h3{
+		font-weight: inherit;
+	}
+	
+	#lastConection {
+		position: absolute;
+		margin-left: 2% !important;
+		max-width: 20%;
+		line-height: 13px;
+		margin-top: 10px !important;
+		color: #555;
+		border-top: none !important;
+	}
+	.taglib-header {
+		margin: 0 auto;
+		margin-top: 2%;
+	}
+	
+	.breadcrumb li.last .divider {
+	  display: none;
+	}
+	
+	.user-notifications-header {
+		text-align: center;
+		margin-top: 2%;
+		.title {
+			float: none !important; 
+		}
+	}
+	.head {
+		background-color: white;
+	}
+	#data {
+		padding-top: 3em;
+		margin: 0 auto;
+	}
+	
+	.enlaces {
+		color:#ffffff; 
+		float: right;
+		text-align: right;
+	}
+	
+	#footer {
+		display: table;
+		width: 100%;
+		text-align: justify;
+	}
+	
+	#footer .container {
+		text-align: justify;
+	}
+	
+	
+	.listadoNoticias {
+		max-width: 50%;
+	}
+
+	.content{
+		text-align: justify;
+		text-indent: 5%;
+		margin-right: 8%;
+	}
+	
+	.navbar{
+		overflow: visible;
+		margin-bottom: 20px;
+	}
+	
+	.child-menu {
+		width: auto !important;
+	}
+	.child-menu li {
+		border: none;
+	}
+	.white a{
+		color: white !important;
+	}
+	.imgEst {
+		width: 100%;
+	}
+	.super-global-container { 
+		max-width: 100%; 
+	}
+	.container {
+		width: 80%;
+	}
+	.asset-content{
+		margin: 0px !important;
+	}
+	.portlet-borderless-container {
+    	min-height: 0px !important;
+	}
+	
+	.navbar .nav > li > a {
+		text-shadow: none;
+	}
+	
+	#wrapper #content .component.carousel {
+		max-height: 380px !important;
+	}	
+	
+	.dockbar-split .dockbar .navbar-inner{
+		background-color: transparent;
+		border-width: 0px;
+		padding: 0px;
+		width: 0px;
+	}
+	
+	.carousel {
+		max-height: 380px !important;
+	}
+	
+	.arrow-top {
+		background: url(@theme_image_path@/arrow-up.png) white no-repeat center;
+		border-width: 0;
+		bottom: 20px;
+		height: 1px;
+		position: fixed;
+		right: 20px;
+		width: 1px;
+		z-index: 300;
+
+		@include border-radius(50%);
+		@include opacity(0);
+		@include transition(all 0.4s ease-in-out);
+	}
+
+	.arrow-top-visible .arrow-top {
+		height: 40px;
+		width: 40px;
+
+		@include opacity(0.8);
+		@include transition(all 0.4s ease-in-out);
+	}
+
+	#wrapper {
+		font-family: 'Raleway';
+		font-weight: medium;
+		padding: 0;
+
+		h1, h2, h3, h4, h5, .portlet-title-text, input, button, select, textarea {
+			font-family: 'Raleway';
+			font-weight: medium;
+		}
+		
+		#banner {
+			height: 165px;
+			position: relative;
+
+			.preheading {
+				#heading {
+					padding-top: 80px;
+					margin-left: 0 !important;
+				}
+
+				#navigation {
+					float: right;
+					.navbar-inner {
+						background: inherit;
+						border-width: 0;
+						margin-top: 15px;
+						padding-top: 80px;
+						float: right;
+
+						@include box-shadow(none);
+
+						ul {
+							> li {
+								> a {
+									margin: 0 15px;
+									padding: 10px 0;
+									text-transform: uppercase;
+									
+								}
+								
+								
+
+								&:hover a, &.active a, &.active a:hover, &.active a:focus, a.aactive {
+									outline: none;
+									padding: 10px 0 7px;
+									background-color: transparent;
+
+									@include box-shadow(none);
+									@include transition(all 0.2s ease-in-out);
+								}
+								
+								img {
+										margin-bottom: 7%;
+									}
+							}
+							
+							&:hover .dropdown-menu {
+								margin-top: -8px;
+
+								li > a {
+									border-bottom: 0;
+
+									&:hover {
+										background: transparent;
+										border-bottom: 0;
+									}
+								}
+							}
+						}
+					}
+
+					.site-extras-top {
+						.language {
+							float: right;
+							margin-top: 10px;
+
+							select {
+								border-width: 0;
+								margin-right: 20px;
+								width: 80px;
+							}
+						}
+
+						.sign-in {
+							float: right;
+							margin-top: 10px;
+
+							a {
+								border-left: 1px solid #CCC;
+								color: #555;
+								display: block;
+								font-size: 13px;
+								margin-top: 5px;
+								padding-left: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#content {
+			.columns-max {
+				margin: 0 auto;
+			}
+
+			h1 {
+				padding: 60px 0 20px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.signed-in .site-extras-top {
+		position: relative;
+		top: 50px;
+	}
+
+	.signed-out {
+		.portlet-dockbar {
+			display: none;
+		}
+	}
+
+	.lfr-meta-actions {
+		margin-bottom: 4em;
+		padding: 1em;
+	}
+
+	#footer {
+		background: #323232;
+		margin-bottom: 0;
+		margin-top: 100px;
+		padding: 15px 0;
+
+		p, a {
+			color: #FFF;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		.powered-by {
+			margin-top: 10px;
+			margin-left: 0;
+		}
+	}
+
+	/* ---------- Nested portlet ---------- */
+
+	.signed-in.controls-visible {
+		.portlet-layout {
+			.portlet-boundary_118_ {
+				border: 1px dashed #CCC;
+				margin: 5px;
+
+				&.portlet-borderless {
+					padding: 30px 0 10px;
+				}
+			}
+
+			.portlet-boundary_118_>.portlet-borderless-container>.portlet-borderless-bar {
+				margin-top: -30px;
+			}
+		}
+	}
+
+	.portlet-borderless.web-form-portlet form fieldset {
+		legend {
+			border-width: 0;
+			float: left;
+			font-size: 31px;
+			font-weight: normal;
+			line-height: 40px;
+			margin: 10px 0;
+		}
+
+		.field {
+			padding: 1%;
+			width: 98%;
+
+			&.lfr-textarea-container {
+				min-height: 100px;
+				resize: none;
+			}
+		}
+		
+		.btn.btn-primary {
+			border-width: 0;
+			color: #FFF;
+			min-width: 30%;
+			padding: 15px;
+			text-transform: uppercase;
+
+			@include border-radius(5px);
+		}
+
+		.alert {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+	}
+	
+}
+
+/* ---------- Styles to theme responsive mode: ---------- */
+@import url(custom_responsive.css);
+
+/* ---------- Styles to contents, If you don't want to use the sample contents, you can delete the next import: ---------- */
+@import url(contents.css);
+
+.aui .dockbar .nav li.dropdown.user-avatar .dropdown-menu {
+
+    right: 0; }
+    
+.aui .portlet-borderless.web-form-portlet form fieldset .btn.btn-primary {
+    border-width: 0;
+    color: #FFF;
+    min-width: 0%;
+    padding: 15px;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    
+    

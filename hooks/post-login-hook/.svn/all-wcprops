@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/525/trunk/SDK/hooks/post-login-hook
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/.classpath
+END

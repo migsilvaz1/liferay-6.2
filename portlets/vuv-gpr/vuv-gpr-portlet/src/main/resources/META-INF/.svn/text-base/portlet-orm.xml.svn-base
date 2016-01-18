@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.Act_InstitucionalModelImpl">
+		<attributes>
+			<id name="id_act_institucional" />
+			<basic name="id_GPR_act_institucional" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_servicio" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.CasoModelImpl">
+		<attributes>
+			<id name="id_caso" />
+			<basic name="id_GPR_caso" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_servicio" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.CentroModelImpl">
+		<attributes>
+			<id name="id_centro" />
+			<basic name="id_GPR_centro" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_caso" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.IndicadorModelImpl">
+		<attributes>
+			<id name="id_indicador" />
+			<basic name="id_GPR_indicador" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_servicio" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.InstitucionModelImpl">
+		<attributes>
+			<id name="id_institucion" />
+			<basic name="id_GPR_institucion" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.PasoModelImpl">
+		<attributes>
+			<id name="id_paso" />
+			<basic name="id_GPR_paso" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_caso" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.RequisitoModelImpl">
+		<attributes>
+			<id name="id_requisito" />
+			<basic name="id_GPR_requisito" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_paso" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="ec.gob.snap.vuv.model.impl.ServicioModelImpl">
+		<attributes>
+			<id name="id_servicio" />
+			<basic name="id_GPR_servicio" />
+			<basic name="content" />
+			<basic name="timeStamp">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="id_institucion" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="ec.gob.snap.vuv.model.impl.Act_InstitucionalImpl" name="Act_Institucional">
+		<table name="vuv_gpr_service_builder_Act_Institucional" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.CasoImpl" name="Caso">
+		<table name="vuv_gpr_service_builder_Caso" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.CentroImpl" name="Centro">
+		<table name="vuv_gpr_service_builder_Centro" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.IndicadorImpl" name="Indicador">
+		<table name="vuv_gpr_service_builder_Indicador" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.InstitucionImpl" name="Institucion">
+		<table name="vuv_gpr_service_builder_Institucion" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.PasoImpl" name="Paso">
+		<table name="vuv_gpr_service_builder_Paso" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.RequisitoImpl" name="Requisito">
+		<table name="vuv_gpr_service_builder_Requisito" />
+		<attributes />
+	</entity>
+	<entity class="ec.gob.snap.vuv.model.impl.ServicioImpl" name="Servicio">
+		<table name="vuv_gpr_service_builder_Servicio" />
+		<attributes />
+	</entity>
+</entity-mappings>

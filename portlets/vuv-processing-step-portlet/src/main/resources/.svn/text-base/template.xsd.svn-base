@@ -1,0 +1,383 @@
+<!-- editado con XMLSpy v2015 rel. 3 sp1 (x64) (http://www.altova.com) por 
+	House (House) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="tipo" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="java.lang.String" />
+			<xs:enumeration value="java.lang.Integer" />
+			<xs:enumeration value="java.lang.Double" />
+			<xs:enumeration value="java.math.BigDecimal" />
+			<xs:enumeration value="java.lang.Long" />
+			<xs:enumeration value="java.lang.Boolean" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tipoDate" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="java.util.Date" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tipoBoolean" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="true" />
+			<xs:enumeration value="false" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="properties">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="label" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="es" />
+						<xs:element name="en" />
+						<xs:element name="qu" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="accion" type="xs:string" maxOccurs="1" />
+			<xs:element name="value" type="xs:string" maxOccurs="1" />
+			<xs:element name="type" type="tipo" maxOccurs="1" />
+			<xs:element name="fieldRequired" type="tipoBoolean"
+				maxOccurs="1" />
+			<xs:element name="readOnly" type="tipoBoolean" maxOccurs="1" />
+			<xs:element name="groupWithPrevious" type="tipoBoolean"
+				maxOccurs="1" />
+			<xs:element name="size" type="xs:int" maxOccurs="1" />
+			<xs:element name="height" type="xs:int" maxOccurs="1" />
+			<xs:element name="maxLength" type="xs:int" maxOccurs="1" />
+			<xs:element name="onChangeScript" type="xs:string"
+				maxOccurs="1" />
+
+			<xs:element name="title" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="es" />
+						<xs:element name="en" />
+						<xs:element name="qu" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="propertiesDate">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="label" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="es" />
+						<xs:element name="en" />
+						<xs:element name="qu" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="value" maxOccurs="1" />
+			<xs:element name="type" type="tipoDate" maxOccurs="1" />
+			<xs:element name="fieldRequired" type="tipoBoolean"
+				maxOccurs="1" />
+			<xs:element name="readOnly" type="tipoBoolean" maxOccurs="1" />
+			<xs:element name="groupWithPrevious" type="tipoBoolean"
+				maxOccurs="1" />
+			<xs:element name="onChangeScript" type="xs:string"
+				maxOccurs="1" />
+			<xs:element name="title" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="es" />
+						<xs:element name="en" />
+						<xs:element name="qu" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="input">
+		<xs:sequence maxOccurs="1">
+			<xs:element name="properties" type="properties" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+		<xs:attribute name="parent" type="xs:string" use="required" />
+		<xs:attribute name="property" type="xs:string" use="optional" />
+		<xs:attribute name="order" type="xs:int" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="inputLabel">
+		<xs:sequence maxOccurs="1">
+			<xs:element name="properties" type="properties" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+		<xs:attribute name="order" type="xs:int" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="inputD">
+		<xs:sequence maxOccurs="1">
+			<xs:element name="properties" type="propertiesDate" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+		<xs:attribute name="parent" type="xs:string" use="required" />
+		<xs:attribute name="property" type="xs:string" use="optional" />
+		<xs:attribute name="order" type="xs:int" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="var">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="type" type="xs:string" use="required" />
+		<xs:attribute name="value" type="xs:string" use="optional" />
+	</xs:complexType>
+	<xs:element name="template">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="variables">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="proceso" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence maxOccurs="1">
+										<xs:element name="bpm" type="xs:string" />
+										<xs:element name="idProcesoBPM" type="xs:string" />
+										<xs:element name="deploymentId" type="xs:string" />
+										<xs:element name="processId" type="xs:string" />
+										<xs:element name="version" type="xs:string" />
+										<xs:element name="userId" type="xs:string" />
+										<xs:element name="processInstanceId" type="xs:string" />
+										<xs:element name="taskId" type="xs:string" />
+										<xs:element name="codOperation" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="local" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="var" type="var" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="output" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="var">
+											<xs:complexType>
+												<xs:attribute name="name" type="xs:string" use="required" />
+												<xs:attribute name="value" type="xs:string"
+													use="optional" />
+												<xs:attribute name="type" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="formulario">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<!-- ACCIONES -->
+							<xs:element name="acciones" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="button" type="input" minOccurs="0">
+
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<!-- LABEL -->
+							<xs:element name="outputText" type="inputLabel"
+								minOccurs="0">
+							</xs:element>
+							<!-- Componentes simples de input -->
+							<xs:element name="inputText" type="input" minOccurs="0" />
+							<xs:element name="inputDate" type="inputD" minOccurs="0" />
+							<xs:element name="radioButton" type="input" minOccurs="0" />
+							<xs:element name="selectBox" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="input">
+											<xs:sequence>
+												<xs:element name="options" maxOccurs="1">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="option" maxOccurs="unbounded">
+																<xs:complexType>
+																	<xs:sequence>
+																		<xs:element name="label" maxOccurs="1">
+																			<xs:complexType>
+																				<xs:sequence>
+																					<xs:element name="es" />
+																					<xs:element name="en" />
+																					<xs:element name="qu" />
+																				</xs:sequence>
+																			</xs:complexType>
+																		</xs:element>
+																		<xs:element name="value" type="xs:string" />
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="checkedBox" type="input" minOccurs="0" />
+							<xs:element name="textArea" type="input" minOccurs="0" />
+							<!--Componentes de seleccion unica -->
+							<xs:element name="subForm" minOccurs="0">
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded">
+										<xs:element name="outputText" type="inputLabel"
+											minOccurs="0" />
+										<!-- Componentes simples de input -->
+										<xs:element name="inputText" type="input"
+											minOccurs="0" />
+										<xs:element name="inputDate" type="inputD"
+											minOccurs="0" />
+										<xs:element name="radioButton" type="input"
+											minOccurs="0" />
+										<xs:element name="checkedBox" type="input"
+											minOccurs="0" />
+										<xs:element name="textArea" type="input" minOccurs="0" />
+										<!--Componentes de seleccion unica -->
+										<xs:element name="selectBox" minOccurs="0">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="input">
+														<xs:sequence>
+															<xs:element name="options">
+																<xs:complexType>
+																	<xs:sequence>
+																		<xs:element name="option" maxOccurs="unbounded">
+																			<xs:complexType>
+																				<xs:sequence>
+																					<xs:element name="label" maxOccurs="1">
+																						<xs:complexType>
+																							<xs:sequence>
+																								<xs:element name="es" />
+																								<xs:element name="en" />
+																								<xs:element name="qu" />
+																							</xs:sequence>
+																						</xs:complexType>
+																					</xs:element>
+																					<xs:element name="value" type="xs:string" />
+																				</xs:sequence>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+									<xs:attribute name="id" use="required" />
+									<xs:attribute name="parent" use="optional" />
+									<xs:attribute name="property" />
+									<xs:attribute name="order" type="xs:int" use="optional" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="multipleSubForm" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence maxOccurs="unbounded">
+										<xs:element name="addItemText" maxOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:sequence>
+													<xs:element name="es" />
+													<xs:element name="en" />
+													<xs:element name="qu" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="cancelItemText" maxOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:sequence>
+													<xs:element name="es" />
+													<xs:element name="en" />
+													<xs:element name="qu" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="newItemText" maxOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:sequence>
+													<xs:element name="es" />
+													<xs:element name="en" />
+													<xs:element name="qu" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="subForm" minOccurs="0">
+											<xs:complexType>
+												<xs:choice maxOccurs="unbounded">
+													<xs:element name="outputText" type="inputLabel"
+														minOccurs="0" />
+													<!-- Componentes simples de input -->
+													<xs:element name="inputText" type="input"
+														minOccurs="0" />
+													<xs:element name="inputDate" type="inputD"
+														minOccurs="0" />
+													<xs:element name="radioButton" type="input"
+														minOccurs="0" />
+													<xs:element name="checkedBox" type="input"
+														minOccurs="0" />
+													<xs:element name="textArea" type="input"
+														minOccurs="0" />
+													<!--Componentes de seleccion unica -->
+													<xs:element name="selectBox" minOccurs="0">
+														<xs:complexType>
+															<xs:complexContent>
+																<xs:extension base="input">
+																	<xs:sequence>
+																		<xs:element name="options">
+																			<xs:complexType>
+																				<xs:sequence>
+																					<xs:element name="option" maxOccurs="unbounded">
+																						<xs:complexType>
+																							<xs:sequence>
+																								<xs:element name="label" maxOccurs="1">
+																									<xs:complexType mixed="true">
+																										<xs:sequence>
+																											<xs:element name="es" />
+																											<xs:element name="en" />
+																											<xs:element name="qu" />
+																										</xs:sequence>
+																									</xs:complexType>
+																								</xs:element>
+																								<xs:element name="value" type="xs:string" />
+																							</xs:sequence>
+																						</xs:complexType>
+																					</xs:element>
+																				</xs:sequence>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:extension>
+															</xs:complexContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:choice>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="id" use="required" />
+									<xs:attribute name="parent" />
+									<xs:attribute name="property" />
+									<xs:attribute name="isErasable" type="xs:boolean"
+										use="optional" />
+									<xs:attribute name="isEnableTableEnterData" type="xs:boolean"
+										use="optional" />
+									<xs:attribute name="isEditable" type="xs:boolean"
+										use="optional" />
+									<xs:attribute name="isCreatable" type="xs:boolean"
+										use="optional" />
+									<xs:attribute name="order" type="xs:int" use="optional" />
+
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

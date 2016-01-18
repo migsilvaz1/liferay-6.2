@@ -1,0 +1,34 @@
+10
+
+dir
+640
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY
+
+
+
+2015-07-29T12:08:32.007000Z
+575
+p.falcon
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3297bac1-4b01-0010-9211-5f47b49ada27
+
+cases
+dir
+
+vuv
+dir
+

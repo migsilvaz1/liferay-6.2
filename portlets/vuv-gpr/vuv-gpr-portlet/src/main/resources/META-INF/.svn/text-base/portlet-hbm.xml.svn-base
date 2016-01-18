@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="ec.gob.snap.vuv.model.Act_Institucional" />
+	<import class="ec.gob.snap.vuv.model.Caso" />
+	<import class="ec.gob.snap.vuv.model.Centro" />
+	<import class="ec.gob.snap.vuv.model.Indicador" />
+	<import class="ec.gob.snap.vuv.model.Institucion" />
+	<import class="ec.gob.snap.vuv.model.Paso" />
+	<import class="ec.gob.snap.vuv.model.Requisito" />
+	<import class="ec.gob.snap.vuv.model.Servicio" />
+	<class name="ec.gob.snap.vuv.model.impl.Act_InstitucionalImpl" table="vuv_gpr_service_builder_Act_Institucional">
+		<id name="id_act_institucional" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_act_institucional" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_servicio" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.CasoImpl" table="vuv_gpr_service_builder_Caso">
+		<id name="id_caso" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_caso" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_servicio" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.CentroImpl" table="vuv_gpr_service_builder_Centro">
+		<id name="id_centro" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_centro" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_caso" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.IndicadorImpl" table="vuv_gpr_service_builder_Indicador">
+		<id name="id_indicador" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_indicador" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_servicio" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.InstitucionImpl" table="vuv_gpr_service_builder_Institucion">
+		<id name="id_institucion" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_institucion" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.PasoImpl" table="vuv_gpr_service_builder_Paso">
+		<id name="id_paso" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_paso" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_caso" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.RequisitoImpl" table="vuv_gpr_service_builder_Requisito">
+		<id name="id_requisito" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_requisito" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_paso" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="ec.gob.snap.vuv.model.impl.ServicioImpl" table="vuv_gpr_service_builder_Servicio">
+		<id name="id_servicio" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="id_GPR_servicio" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="timeStamp" type="org.hibernate.type.TimestampType" />
+		<property name="id_institucion" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+</hibernate-mapping>

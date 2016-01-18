@@ -1,0 +1,7 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="classgen">
+      <attribute name="package" value="ec.gob.snap.vuv.dynamic.form.entities"/>
+    </node>
+  </facet>
+</root>

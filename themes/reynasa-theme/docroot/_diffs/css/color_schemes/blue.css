@@ -1,0 +1,37 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+.aui {
+	.blue {
+		a:focus, textarea:focus, select:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .btn:focus {
+			border-color: #4585A6;
+			outline-color: #4585A6;
+
+			@include box-shadow (inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #4585A6);
+		}
+
+		&.arrow-top-visible .arrow-top {
+			background: url(@theme_image_path@/color_schemes/blue/arrow-up.png) white no-repeat center;
+			border: 3px solid #4585A6;
+		}
+
+		#wrapper {
+			#banner .preheading #navigation .navbar-inner ul li {
+				&:hover a, &.active a, &.active a:hover, &.active a:focus, a.aactive {
+					border-bottom: 3px solid #4585A6;
+					color: #4585A6;
+				}
+			}
+
+			.portlet-borderless.web-form-portlet form fieldset {
+				.btn.btn-primary {
+					background: #4585A6;
+				}
+			}
+		}
+	}
+}
+
+/* ---------- Styles to contents, If you don't want to use the sample contents, you can delete the next import: ---------- */
+@import url(blue_contents.css);

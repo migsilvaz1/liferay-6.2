@@ -1,0 +1,43 @@
+10
+
+dir
+584
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos/trunk/SDK/themes/reynasa-theme/docroot/_diffs
+https://clinker.neartechnologies.com/scm/svn/REYNASA_LIFERAY_catalogodeproductos
+
+
+
+2015-06-16T11:54:15.759000Z
+551
+n.helices
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ce187b71-4a01-0010-a865-0147f71eb258
+
+css
+dir
+
+fonts
+dir
+
+images
+dir
+
+js
+dir
+
+templates
+dir
+

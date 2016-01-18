@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/vuv/dynamic/form/tags
+END
+FormActionSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/vuv/dynamic/form/tags/FormActionSection.java
+END
+FormField.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/vuv/dynamic/form/tags/FormField.java
+END
+MultipleSubForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/vuv/dynamic/form/tags/MultipleSubForm.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF
+END
+infrastructure-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/infrastructure-spring.xml
+END
+portlet-orm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/portlet-orm.xml
+END
+hibernate-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/hibernate-spring.xml
+END
+base-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/base-spring.xml
+END
+shard-data-source-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/shard-data-source-spring.xml
+END
+cluster-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/cluster-spring.xml
+END
+portlet-hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/portlet-hbm.xml
+END
+portlet-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/portlet-spring.xml
+END
+portlet-model-hints.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/465/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/resources/META-INF/portlet-model-hints.xml
+END

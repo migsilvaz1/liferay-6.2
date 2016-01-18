@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/395/trunk/SDK/themes/vuv-public-theme/docroot/templates
+END
+navigation.vm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/368/trunk/SDK/themes/vuv-public-theme/docroot/templates/navigation.vm
+END
+init_custom.vm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/templates/init_custom.vm
+END
+portal_pop_up.vm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/templates/portal_pop_up.vm
+END
+portal_normal.vm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/395/trunk/SDK/themes/vuv-public-theme/docroot/templates/portal_normal.vm
+END
+portlet.vm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/93/trunk/SDK/themes/vuv-public-theme/docroot/templates/portlet.vm
+END

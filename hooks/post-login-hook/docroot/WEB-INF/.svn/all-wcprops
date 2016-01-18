@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/525/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF/liferay-plugin-package.properties
+END
+liferay-hook.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF/liferay-hook.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/180/trunk/SDK/hooks/post-login-hook/docroot/WEB-INF/web.xml
+END

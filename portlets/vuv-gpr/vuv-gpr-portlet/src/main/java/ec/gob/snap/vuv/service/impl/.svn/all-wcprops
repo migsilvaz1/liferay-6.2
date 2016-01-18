@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/495/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl
+END
+ServicioLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/495/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/ServicioLocalServiceImpl.java
+END
+CentroLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/CentroLocalServiceImpl.java
+END
+RequisitoLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/RequisitoLocalServiceImpl.java
+END
+IndicadorLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/IndicadorLocalServiceImpl.java
+END
+PasoLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/PasoLocalServiceImpl.java
+END
+CasoLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/485/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/CasoLocalServiceImpl.java
+END
+InstitucionLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/InstitucionLocalServiceImpl.java
+END
+Act_InstitucionalLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/476/trunk/SDK/portlets/vuv-gpr/vuv-gpr-portlet/src/main/java/ec/gob/snap/vuv/service/impl/Act_InstitucionalLocalServiceImpl.java
+END

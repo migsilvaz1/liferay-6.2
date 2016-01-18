@@ -1,0 +1,18 @@
+.aui .blue #wrapper #content .green {
+  color: #4585A6; }
+.aui .blue #wrapper #content .btn.green {
+  background: #4585A6; }
+.aui .blue #wrapper #content ul.green-list {
+  list-style-image: url(@theme_image_path@/color_schemes/blue/contents/green-list-item.png); }
+.aui .blue #wrapper #content #team h3 {
+  color: #4585A6; }
+.aui .blue #wrapper #content #team .effect .more-info {
+  background: #4585A6; }
+.aui .blue #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-prev, .aui .blue #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-next {
+  background: url(@theme_image_path@/color_schemes/blue/carousel/prev-green.png) white no-repeat center;
+  border: 3px solid #4585A6; }
+.aui .blue #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-next {
+  background-image: url(@theme_image_path@/color_schemes/blue/carousel/next-green.png); }
+.aui .blue #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-index.carousel-menu-active {
+  border: 2px solid #4585A6; }
+

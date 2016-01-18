@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/images/calendar
+END
+event_indicator.png
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/images/calendar/event_indicator.png
+END
+calendar_day_drop_shadow.png
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/images/calendar/calendar_day_drop_shadow.png
+END
+event_indicator_current.png
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/89/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/images/calendar/event_indicator_current.png
+END

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Liferay, Inc.
+Implementation-Title: PrimeFaces5 Users Portlet
+Implementation-Version: 4.2.0-beta (Philippi / Apr 28, 2015 AD)
+Implementation-Vendor-Id: com.liferay
+Build-Jdk: 1.6.0_65
+Built-By: Release Manager
+Created-By: Apache Maven 3.2.5
+Archiver-Version: Plexus Archiver
+

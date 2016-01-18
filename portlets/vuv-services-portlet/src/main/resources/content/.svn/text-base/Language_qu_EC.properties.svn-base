@@ -1,0 +1,22 @@
+not.available.services=Actualmente no hay servicios operativos
+read.more=Leer más
+search=Buscar
+search.results=Resultados de la búsqueda
+options.advanced=Opciones Avanzadas de Filtro para empresas
+options.properties=Propiedad
+options.public=Pública
+options.private=Privado
+options.size=Tamaño
+options.micro=Micro
+options.small=Pequeña
+options.midium=Mediana
+options.big=Grande
+options.sector=Sector
+options.primary=Primario
+options.industrial=Industrial
+options.services=Servicios
+
+pagination.next=Siguiente
+pagination.prev=Anterior
+services.set.pages=Introduzca el numero de lineas a mostrar por página
+num-per-page=Lineas

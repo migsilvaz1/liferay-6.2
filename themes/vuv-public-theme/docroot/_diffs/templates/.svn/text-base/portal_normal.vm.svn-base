@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+	$theme.include($top_head_include)
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="$javascript_folder/modernizr.custom.17582.js"></script> 
+	
+	#if ($layout.getName($locale)  == "Home")
+		<link rel="stylesheet" href="$css_folder/supersized.css">
+		<script src="$javascript_folder/supersized.3.2.7.js"></script> 
+		
+	#end
+</head>
+
+<body class="$css_class">
+
+<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+
+$theme.include($body_top_include)
+
+#set ($Image_path = $request.get("theme-display").get("path-theme-images"))
+
+#dockbar()
+<div class="language-wrapper container">
+	<div class="language">
+		$velocityPortletPreferences.setValue('portletSetupShowBorders', 'false')
+		$velocityPortletPreferences.setValue('displayStyle', '0')
+		$theme.runtime("82", "", $velocityPortletPreferences.toString())
+	</div>
+</div>
+
+#if ($layout.getName($locale)  == "Home")
+
+<!-- ==================================================================================== 
+			STARTS Home TEMPLATE
+			==================================================================================== -->
+			
+			<div id="wrapper" class="home">
+				<header id="banner" role="banner">
+					<div class="container">
+						
+						<div class="row">
+							<div class="span12">
+								<div id="heading">
+									<h1 class="site-title">
+										<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+											<!-- <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" /> -->
+											<img src="${themeDisplay.pathThemeImages}/vuv/vuv_logo_sn.svg" alt="Secretaria Nacional de la Administración Pública del Ecuador">
+								
+											#if ($show_site_name)
+												<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+													$site_name
+												</span>
+											#end
+										</a><!-- logo -->
+								
+									</h1>
+									<div id="menu-btn" class="toggle">	
+										<img src="${themeDisplay.pathThemeImages}/vuv/vuv_ico_burger.svg" alt="Menu icon">
+									</div>
+														
+								</div><!-- heading -->
+
+							</div><!-- span12 -->
+						</div><!-- row -->
+						
+						<div class="row">
+							<div class="span9"> 
+								<div class="page-header">
+								<h2 class="page-title"> 
+									<span>#language ("portal.intro")</span> 
+								</h2> 
+								<p>#language ("portal.description")</p>
+								<a href="/web/guest/servicios" class="btn btn-large btn-primary">#language ("portal.button.find") <span class="fa fa-caret-right"></span></a>
+			</div><!-- page-h -->
+							</div> <!-- span9 -->
+							<div class="span3">
+								<div class="socialmedia">
+									<span>#language ("portal.followus")</span>
+									<ul>
+										<li><a href="#" class="fa fa-facebook-official"></a></li>
+										<li><a href="#" class="fa fa-twitter-square"></a></li>
+										<li><a href="#" class="fa fa-linkedin-square"></a></li>
+										<li><a href="#" class="fa fa-youtube-play"></a></li>
+									</ul>
+								</div>
+							</div><!-- span3 -->
+						</div><!-- row -->
+
+						
+				
+
+					#if ($has_navigation || $is_signed_in)
+						#parse ("$full_templates_path/navigation.vm")
+					#end
+
+					
+
+					</div><!-- ends container -->
+
+						
+
+				</header>
+
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="span12">
+								<nav id="breadcrumbs">#breadcrumbs()</nav>
+							</div><!-- span12 -->
+						</div><!-- row  -->
+								
+								#if ($selectable)
+									$theme.include($content_include)
+								#else
+									$portletDisplay.recycle()
+								
+									$portletDisplay.setTitle($the_title)
+								
+									$theme.wrapPortlet("portlet.vm", $content_include)
+								#end
+
+					</div><!-- container -->		
+				</div><!-- #content -->
+				
+				<div class="prefooter">
+					<div class="inner">
+						<div class="link-wrap first"><i class="fa fa-support"></i><a href="/web/guest/ayuda">#language ("portal.link.help")<i class="fa fa-chevron-right"></i></a></div>
+						<div class="link-wrap"><i class="fa fa-question-circle"></i><a href="/web/guest/faq">#language ("portal.link.faq") <i class="fa fa-chevron-right"></i></a></div>
+						<div class="link-wrap"><i class="fa fa-external-link-square"></i><a href="/web/guest/enlaces">#language ("portal.link.highlight") <i class="fa fa-chevron-right"></i></a></div>
+					</div><!-- inner -->
+				</div>
+
+			
+
+			<!-- ==================================================================================== 
+			ENDS Home TEMPLATE
+			==================================================================================== -->
+	
+#else
+
+<div id="wrapper">
+	<header id="banner" role="banner">
+		<div class="container">
+			
+			<div class="row">
+				<div class="span12">
+					<div id="heading">
+						<h1 class="site-title">
+							<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+								<!-- <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" /> -->
+								<img src="${themeDisplay.pathThemeImages}/vuv/vuv_logo_sn.svg" alt="Secretaria Nacional de la Administración Pública del Ecuador">
+					
+								#if ($show_site_name)
+									<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+										$site_name
+									</span>
+								#end
+							</a><!-- logo -->
+					
+						</h1>
+		
+						<div id="menu-btn" class="toggle">	
+							<img src="${themeDisplay.pathThemeImages}/vuv/vuv_ico_burger.svg" alt="">
+						</div>
+					
+						
+					</div><!-- heading -->
+					<div class="socialmedia">
+						<span>#language ("portal.followus")</span>
+						<ul>
+							<li><a href="#" class="fa fa-facebook-official"></a></li>
+							<li><a href="#" class="fa fa-twitter-square"></a></li>
+							<li><a href="#" class="fa fa-linkedin-square"></a></li>
+							<li><a href="#" class="fa fa-youtube-play"></a></li>
+						</ul>
+					</div>
+
+				</div><!-- span12 -->
+			</div><!-- row -->
+			
+		
+	
+		
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+
+
+		</div><!-- ends container -->
+	</header>
+		
+		
+
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<nav id="breadcrumbs">#breadcrumbs()</nav>				
+				</div><!-- span12 -->
+			</div><!-- row -->
+			
+			<!-- <div class="page-header">
+				<h2 class="page-title">
+					<span>$the_title</span>
+				</h2>
+			</div> page-header --> 
+			
+					
+					#if ($selectable)
+						$theme.include($content_include)
+					#else
+						$portletDisplay.recycle()
+					
+						$portletDisplay.setTitle($the_title)
+					
+						$theme.wrapPortlet("portlet.vm", $content_include)
+					#end
+
+		</div><!-- container -->		
+	</div><!-- #content -->
+
+#end
+
+	<footer id="footer" role="contentinfo">
+		
+		<div class="other-links">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<ul>
+							<li><a href="#">#language ("portal.footer.one")</a></li>
+							<li><a href="#">#language ("portal.footer.two")</a></li>
+							<li><a href="#">#language ("portal.footer.three")</a></li>
+							<li><a href="#">#language ("portal.footer.four")</a></li>
+							<li><a href="#">#language ("portal.footer.five")</a></li>
+							<li><a href="#">#language ("portal.footer.six")</a></li>
+							<li><a href="#">#language ("portal.footer.seven")</a></li>
+						</ul>
+					</div><!-- span12 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- other links -->
+
+		<div class="container">
+			<div class="row">
+					<div class="span12">
+						<div class="credits">
+							<span>García Moreno N10-43 entre Chile y Espejo Código Postal: 170401 / Quito - Ecuador Teléfono: 593-2 382-7000</span>
+							<a href="#" class="logo"><img src="${themeDisplay.pathThemeImages}/vuv/vuv_logo_gov1.png" alt=""></a><a href="#" class="logo"><img src="${themeDisplay.pathThemeImages}/vuv/vuv_logo_gov2.png" alt=""></a>
+						</div><!-- credits -->
+					</div><!-- span12 -->
+				<!-- 	<p class="powered-by">
+						#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+					</p> -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</footer>
+	<!-- chat -->
+        <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) -->
+        <!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) -->
+        <div id="livezilla_tracking" style="display:none"></div>
+        <script type="text/javascript">
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        var src = "${propsUtil.get("livezilla.url")}/livezilla/server.php?a=95cc2&rqst=track&output=jcrpt&nse=" + Math.random();
+        setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)", 1);
+        </script>
+        <noscript><img src="${propsUtil.get("livezilla.url")}/livezilla/server.php?a=95cc2&amp;rqst=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript>
+        <!-- http://www.LiveZilla.net Tracking Code -->
+        <a href="javascript:void(window.open('${propsUtil.get("livezilla.url")}/livezilla/chat.php?a=fc8fe','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="${propsUtil.get("livezilla.url")}/livezilla/image.php?a=65efd&amp;id=1&amp;type=inlay" width="46" height="50" style="border:0px;" alt="Chat"></a>
+        <!-- http://www.LiveZilla.net Chat Button Link Code -->
+        <div style="margin-top:2px;">
+            <a href="http://www.livezilla.net" target="_blank" title="Chat " style="font-size:11px;color:#b7b7b7;text-decoration:none;font-family:verdana,arial,tahoma;"></a>
+        </div>
+<!-- chat -->
+</div>
+
+ 
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+
+
+
+<script type='text/javascript'>
+
+$(function() {
+
+	
+	if (!Modernizr.svg) {
+	  $('img[src$=".svg"]').each(function() {
+	    $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
+	  });
+	}
+
+	$('#menu-btn').click(function() {
+		$('#navigation').addClass('open');
+	 
+	  $('.language-wrapper').css({'z-index':'1'});
+	});
+	$(document).click(function() {
+	 	$('#navigation').removeClass('open');
+	  $('.language-wrapper').css({'z-index': '13'});
+	});
+	$("#navigation .collapse, #menu-btn, #_145_navSiteNavigationNavbarBtn").click(function(e) {
+	    e.stopPropagation(); 
+	    return true;                                 
+	});
+	$('#_145_navSiteNavigationNavbarBtn').click(function(){
+		var bh = $(document).height();
+		$('#navigation').height(bh) - 62;
+	});
+
+});
+	
+
+</script>
+</body>
+
+</html>

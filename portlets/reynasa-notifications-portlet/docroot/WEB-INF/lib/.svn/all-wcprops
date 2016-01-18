@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/util-taglib.jar
+END
+reynasa-notifications-portlet-service.jar
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/reynasa-notifications-portlet-service.jar
+END
+commons-logging.jar
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/commons-logging.jar
+END
+log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/log4j.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/util-java.jar
+END
+util-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/lib/util-bridges.jar
+END

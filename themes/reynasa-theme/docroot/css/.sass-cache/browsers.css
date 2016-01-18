@@ -1,0 +1,21 @@
+.aui.chrome, .aui.safari, .aui.ie8 {
+  /*-------------------------------------- dockbar ------------------------*/ }
+  .aui.chrome .navbar .nav, .aui.chrome .dropdown-menu, .aui.safari .navbar .nav, .aui.safari .dropdown-menu, .aui.ie8 .navbar .nav, .aui.ie8 .dropdown-menu {
+    background-color: transparent; }
+  .aui.chrome .carousel-item .container, .aui.safari .carousel-item .container, .aui.ie8 .carousel-item .container {
+    top: 0; }
+
+@media (max-width: 767px) {
+  .aui.chrome .cabecera, .aui.safari .cabecera, .aui.ie8 .cabecera {
+    max-height: 130px !important; }
+  .aui.chrome #heading, .aui.safari #heading, .aui.ie8 #heading {
+    position: relative !important;
+    margin-top: 80px !important; }
+  .aui.chrome .margins, .aui.safari .margins, .aui.ie8 .margins {
+    top: 0 !important;
+    font-size: 80% !important;
+    line-height: 110% !important; }
+  .aui.chrome .aui #btnCarrousel, .aui.safari .aui #btnCarrousel, .aui.ie8 .aui #btnCarrousel {
+    top: 75% !important;
+    margin-top: 20% !important; } }
+

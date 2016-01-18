@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/547/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/portlet.xml
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-portlet.xml
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-plugin-package.properties
+END
+liferay-releng.changelog
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-releng.changelog
+END
+liferay-releng.changelog.md5
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-releng.changelog.md5
+END
+liferay-hook.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-hook.xml
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-display.xml
+END
+liferay-releng.properties
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/liferay-releng.properties
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/web.xml
+END
+service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/545/trunk/SDK/portlets/notifications-portlet/docroot/WEB-INF/service.xml
+END

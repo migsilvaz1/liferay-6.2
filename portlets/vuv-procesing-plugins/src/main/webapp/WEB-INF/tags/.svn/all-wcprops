@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/623/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/WEB-INF/tags
+END
+form-actions-section.tag
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/573/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/WEB-INF/tags/form-actions-section.tag
+END
+multiple-sub-form.tag
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/617/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/WEB-INF/tags/multiple-sub-form.tag
+END
+attachmentFile.tag
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/602/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/WEB-INF/tags/attachmentFile.tag
+END
+form-field.tag
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/623/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/WEB-INF/tags/form-field.tag
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/530/trunk/SDK/hooks/reynasa-dockbar-hook/docroot/WEB-INF
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/58/trunk/SDK/hooks/reynasa-dockbar-hook/docroot/WEB-INF/liferay-plugin-package.properties
+END
+liferay-hook.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/58/trunk/SDK/hooks/reynasa-dockbar-hook/docroot/WEB-INF/liferay-hook.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/58/trunk/SDK/hooks/reynasa-dockbar-hook/docroot/WEB-INF/web.xml
+END

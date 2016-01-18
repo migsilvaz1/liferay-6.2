@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/398/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv
+END
+GPRInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/488/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/GPRInterface.java
+END
+GPRExecute.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/630/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/GPRExecute.java
+END
+GPRScheduleControlPanelEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/398/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/GPRScheduleControlPanelEntry.java
+END
+GPRPlanning.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/630/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/GPRPlanning.java
+END
+SincroLogic.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/630/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/SincroLogic.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/398/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/package-info.java
+END
+GPRScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/398/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/GPRScheduler.java
+END
+LiferayPersistence.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/632/trunk/SDK/portlets/vuv_gpr_planning/src/main/java/ec/gob/snap/vuv/LiferayPersistence.java
+END

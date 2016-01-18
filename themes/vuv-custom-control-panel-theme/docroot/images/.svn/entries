@@ -1,0 +1,275 @@
+10
+
+dir
+426
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY/trunk/SDK/themes/vuv-custom-control-panel-theme/docroot/images
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY
+
+
+
+2015-05-06T09:11:00.113000Z
+99
+m.silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3297bac1-4b01-0010-9211-5f47b49ada27
+
+add_content
+dir
+
+api
+dir
+
+application
+dir
+
+arrows
+dir
+
+aui
+dir
+
+blogs
+dir
+
+bookmarks
+dir
+
+calendar
+dir
+
+common
+dir
+
+control_panel
+dir
+
+custom
+dir
+
+device_preview
+dir
+
+diff
+dir
+
+dockbar
+dir
+
+document_library
+dir
+
+emoticons
+dir
+
+favicon.ico
+file
+
+
+
+
+2015-07-02T08:36:14.000000Z
+6d2adf39ca320265830403dfc030033a
+2015-04-29T12:14:45.337000Z
+89
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1150
+
+file_system
+dir
+
+forms
+dir
+
+image_gallery_display
+dir
+
+journal
+dir
+
+language
+dir
+
+login
+dir
+
+mail
+dir
+
+message_boards
+dir
+
+messages
+dir
+
+navigation
+dir
+
+portlet
+dir
+
+progress_bar
+dir
+
+ratings
+dir
+
+screenshot.png
+file
+
+
+
+
+2015-07-02T08:36:14.000000Z
+3683f4882dec628d933dd1b794f8f231
+2015-04-29T12:14:45.337000Z
+89
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+43619
+
+shadow
+dir
+
+shopping
+dir
+
+social
+dir
+
+social_bookmarks
+dir
+
+spacer.png
+file
+
+
+
+
+2015-07-02T08:36:14.000000Z
+4adca40d3867dcf12c2f0512f65bbf25
+2015-04-29T12:14:45.337000Z
+89
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95
+
+staging_bar
+dir
+
+thumbnail.png
+file
+
+
+
+
+2015-07-02T08:36:14.000000Z
+63e1e481bb40e53330f90823b62405cf
+2015-04-29T12:14:45.337000Z
+89
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3682
+
+trees
+dir
+
+users_admin
+dir
+
+wiki
+dir
+

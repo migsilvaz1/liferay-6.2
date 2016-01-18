@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/641/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/html/tasklist
+END
+transactForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/641/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/html/tasklist/transactForm.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/html/tasklist/init.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/621/trunk/SDK/portlets/vuv-procesing-plugins/src/main/webapp/html/tasklist/view.jsp
+END

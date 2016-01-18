@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/609/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet
+END
+UserCSVReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/585/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/UserCSVReader.java
+END
+ConfigurationActionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/362/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/ConfigurationActionImpl.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/609/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/UserServiceImpl.java
+END
+UserCacheEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/585/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/UserCacheEngine.java
+END
+MasiveUsersTaskExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/609/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/MasiveUsersTaskExecutor.java
+END
+ImportPortlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/609/trunk/SDK/portlets/reynasa-masiveUserLoad-portlet/docroot/WEB-INF/src/com/near/reynasa/masiveLoadUser/portlet/ImportPortlet.java
+END

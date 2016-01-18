@@ -1,0 +1,16 @@
+#
+#Mon Jul 06 13:01:50 CEST 2015
+ec.gob.snap.vuv.tasklist.max.results=100
+ec.gob.snap.vuv.tasklist.task.status.reserved=RESERVED
+ec.gob.snap.vuv.tasklist.task.status.ready=READY
+ec.gob.snap.vuv.tasklist.task.status.inprogress=INPROGRESS
+ec.gob.snap.vuv.tasklist.demo.user=bpmsAdmin
+ec.gob.snap.vuv.procesing.operation.prepare.form=PREPARE_FORM
+ec.gob.snap.vuv.procesing.operation.start.case=START_CASE
+ec.gob.snap.vuv.procesing.operation.start.task=START_TASK
+ec.gob.snap.vuv.procesing.operation.complete.task=COMPLETE_TASK
+ec.gob.snap.vuv.procesing.operation.claim.task=CLAIM_TASK
+ec.gob.snap.vuv.procesing.operation.release.task=RELEASE_TASK
+
+ec.gob.snap.vuv.tasklist.role.ciudadano=Ciudadano
+ec.gob.snap.vuv.tasklist.role.tramitador=Tramitador

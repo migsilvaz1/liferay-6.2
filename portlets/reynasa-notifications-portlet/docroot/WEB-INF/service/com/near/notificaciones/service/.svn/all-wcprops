@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service
+END
+RNotificationServiceClp.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service/RNotificationServiceClp.java
+END
+RNotificationServiceWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service/RNotificationServiceWrapper.java
+END
+RNotificationServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service/RNotificationServiceUtil.java
+END
+ClpSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/448/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service/ClpSerializer.java
+END
+RNotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/472/trunk/SDK/portlets/reynasa-notifications-portlet/docroot/WEB-INF/service/com/near/notificaciones/service/RNotificationService.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/635/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/596/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF/portlet.xml
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/163/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF/liferay-portlet.xml
+END
+liferay-plugin-package.properties
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/579/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF/liferay-plugin-package.properties
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/579/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF/liferay-display.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/163/trunk/SDK/portlets/reynasa-mailing-portlet/docroot/WEB-INF/web.xml
+END

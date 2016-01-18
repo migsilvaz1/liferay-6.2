@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service
+END
+RequestEndpointProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service/RequestEndpointProxy.java
+END
+RequestEndpointServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service/RequestEndpointServiceLocator.java
+END
+RequestBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service/RequestBindingStub.java
+END
+RequestEndpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service/RequestEndpoint.java
+END
+RequestEndpointService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/550/trunk/SDK/portlets/vuv-procesing-plugins/src/main/java/ec/gob/snap/request/service/RequestEndpointService.java
+END

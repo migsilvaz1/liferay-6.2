@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services
+END
+WebServiceInterfaceSoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfaceSoapBindingStub.java
+END
+WebServiceInterfaceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfaceLocator.java
+END
+WebServiceInterfacePortTypeProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfacePortTypeProxy.java
+END
+WebServiceInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterface.java
+END
+WebServiceInterfacePortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/546/trunk/SDK/portlets/vuv-processList-portlet/src/main/java/ec/gob/snap/cases/services/WebServiceInterfacePortType.java
+END

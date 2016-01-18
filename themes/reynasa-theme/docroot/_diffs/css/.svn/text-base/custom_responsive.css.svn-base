@@ -1,0 +1,153 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+/* ---------- Dockbar to tablet and mobile ---------- */
+
+@include respond-to(phone, tablet) {
+	.aui {
+	
+		
+		#data, #heading {
+			padding: 0;
+		}
+		
+		#wrapper #banner .preheading #navigation .navbar-inner ul > li.active a, 
+		#wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:focus,
+		#wrapper #banner .preheading #navigation .navbar-inner ul > li:hover a,
+		#wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:hover{
+			border-bottom: none;
+		}
+		
+		#menubar > li {
+			width: auto;
+			border-left: none !important;
+			border-right: none;
+		}
+		
+		#heading {
+			text-align: left;
+		}
+		
+		#heading img {
+			width: 80% !important;
+		}
+		
+		.cabecera {
+			display: inline-block;
+			width: 100%;
+		}
+		.portlet-dockbar {
+			position: relative;
+
+			.dockbar {
+				.navbar-inner {
+					background: none;
+
+					@include box-shadow(none);
+
+					.container {
+						margin: 10px 20px 0 0;
+
+						.btn-navbar {
+							background: #555;
+							float: right;
+							.user-avatar-image {
+								max-height: 28px;
+							}
+						}
+					}
+
+					ul li a.aactive {
+						border-width: 0;
+						padding: 10px 2%;
+						border-bottom: none;
+					}
+
+					.nav-collapse > .nav {
+						right: 25px;
+					}
+				}
+			}
+		}
+
+		.span2, .span3, .span6 {
+			margin-bottom: 30px;
+		}
+
+		.signed-out {
+			.portlet-dockbar {
+				display: block;
+			}
+		}
+
+		.site-extras-top .sign-in {
+			display: none;
+		}
+
+		#wrapper {
+			#banner {
+				height: auto;
+				margin-bottom: 20px;
+
+				.preheading {
+					#heading {
+						margin: 0;
+						padding-top: 0;
+
+						.site-title img {
+							width: 100%;
+						}
+					}
+
+					#navigation {
+						margin: 0;
+						width: 100%;
+
+						.site-extras-top {
+							top: 10px;
+
+							.language select {
+								width: 100%;
+							}
+						}
+
+						.navbar-inner {
+							padding-top: 0;
+							float:none;
+							ul li a {
+								font-size: 130%;
+								padding: 10px 2%;
+								width: 96%;
+
+								&:hover {
+									border-bottom-width: 0;
+									padding: 10px 2%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#footer {
+			margin-left: -20px;
+			padding: 15px 10px;
+			width: 100%;
+		}
+	}
+}
+
+@include respond-to(phone) {
+	.aui {
+		
+		.portlet-dockbar {
+			left: -20px;
+		}
+
+		#footer {
+			padding: 15px 20px;
+		}
+	}
+}

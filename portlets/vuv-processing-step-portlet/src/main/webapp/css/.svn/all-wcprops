@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css
+END
+bootstrap.css
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/bootstrap.css
+END
+dataTables.bootstrap.css
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/dataTables.bootstrap.css
+END
+jquery.dataTables.css
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/jquery.dataTables.css
+END
+dataTables.responsive.css
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/dataTables.responsive.css
+END
+jquery.dataTables.min.css
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/jquery.dataTables.min.css
+END
+jquery.dataTables_themeroller.css
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/jquery.dataTables_themeroller.css
+END
+main.css
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/main.css
+END
+bootstrap-theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/scm/svn/Aromega_VUV_LIFERAY/!svn/ver/547/trunk/SDK/portlets/vuv-processing-step-portlet/src/main/webapp/css/bootstrap-theme.css
+END

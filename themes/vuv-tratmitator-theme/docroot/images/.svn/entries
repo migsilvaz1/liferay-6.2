@@ -1,0 +1,312 @@
+10
+
+dir
+651
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY/trunk/SDK/themes/vuv-tratmitator-theme/docroot/images
+https://clinker.neartechnologies.com/scm/svn/Aromega_VUV_LIFERAY
+
+
+
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3297bac1-4b01-0010-9211-5f47b49ada27
+
+add_content
+dir
+
+api
+dir
+
+application
+dir
+
+arrows
+dir
+
+aui
+dir
+
+blogs
+dir
+
+bookmarks
+dir
+
+calendar
+dir
+
+color_schemes
+dir
+
+common
+dir
+
+control_panel
+dir
+
+device_preview
+dir
+
+diff
+dir
+
+dockbar
+dir
+
+document_library
+dir
+
+emoticons
+dir
+
+favicon.ico
+file
+
+
+
+
+2015-04-07T15:38:36.000000Z
+6d2adf39ca320265830403dfc030033a
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1150
+
+file_system
+dir
+
+forms
+dir
+
+image_gallery_display
+dir
+
+journal
+dir
+
+language
+dir
+
+login
+dir
+
+mail
+dir
+
+message_boards
+dir
+
+messages
+dir
+
+navigation
+dir
+
+portlet
+dir
+
+progress.gif
+file
+
+
+
+
+2015-07-02T08:36:44.000000Z
+fca0a2e1f43834f022893fecae30b856
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6987
+
+progress_bar
+dir
+
+ratings
+dir
+
+screenshot.png
+file
+
+
+
+
+2015-04-07T15:38:36.000000Z
+9044950b09572d8cb8ce9b10f99181e2
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93246
+
+shadow
+dir
+
+shopping
+dir
+
+social
+dir
+
+social_bookmarks
+dir
+
+spacer.png
+file
+
+
+
+
+2015-04-07T15:38:36.000000Z
+4adca40d3867dcf12c2f0512f65bbf25
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95
+
+staging_bar
+dir
+
+thumbnail.png
+file
+
+
+
+
+2015-04-07T15:38:36.000000Z
+57e95e372d87dba35b1b2fd40beebeef
+2015-09-03T13:31:02.135000Z
+651
+m.silva
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7647
+
+trees
+dir
+
+users_admin
+dir
+
+vuv
+dir
+
+wiki
+dir
+

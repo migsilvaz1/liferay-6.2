@@ -1,0 +1,81 @@
+/* ---------- Dockbar to tablet and mobile ---------- */
+@media (max-width: 979px) {
+  .aui #data, .aui #heading {
+    padding: 0; }
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a,
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:focus,
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li:hover a,
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li.active a:hover {
+    border-bottom: none; }
+  .aui #menubar > li {
+    width: auto;
+    border-left: none !important;
+    border-right: none; }
+  .aui #heading {
+    text-align: left; }
+  .aui #heading img {
+    width: 80% !important; }
+  .aui .cabecera {
+    display: inline-block;
+    width: 100%; }
+  .aui .portlet-dockbar {
+    position: relative; }
+    .aui .portlet-dockbar .dockbar .navbar-inner {
+      background: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+      .aui .portlet-dockbar .dockbar .navbar-inner .container {
+        margin: 10px 20px 0 0; }
+        .aui .portlet-dockbar .dockbar .navbar-inner .container .btn-navbar {
+          background: #555;
+          float: right; }
+          .aui .portlet-dockbar .dockbar .navbar-inner .container .btn-navbar .user-avatar-image {
+            max-height: 28px; }
+      .aui .portlet-dockbar .dockbar .navbar-inner ul li a.aactive {
+        border-width: 0;
+        padding: 10px 2%;
+        border-bottom: none; }
+      .aui .portlet-dockbar .dockbar .navbar-inner .nav-collapse > .nav {
+        right: 25px; }
+  .aui .span2, .aui .span3, .aui .span6 {
+    margin-bottom: 30px; }
+  .aui .signed-out .portlet-dockbar {
+    display: block; }
+  .aui .site-extras-top .sign-in {
+    display: none; }
+  .aui #wrapper #banner {
+    height: auto;
+    margin-bottom: 20px; }
+    .aui #wrapper #banner .preheading #heading {
+      margin: 0;
+      padding-top: 0; }
+      .aui #wrapper #banner .preheading #heading .site-title img {
+        width: 100%; }
+    .aui #wrapper #banner .preheading #navigation {
+      margin: 0;
+      width: 100%; }
+      .aui #wrapper #banner .preheading #navigation .site-extras-top {
+        top: 10px; }
+        .aui #wrapper #banner .preheading #navigation .site-extras-top .language select {
+          width: 100%; }
+      .aui #wrapper #banner .preheading #navigation .navbar-inner {
+        padding-top: 0;
+        float: none; }
+        .aui #wrapper #banner .preheading #navigation .navbar-inner ul li a {
+          font-size: 130%;
+          padding: 10px 2%;
+          width: 96%; }
+          .aui #wrapper #banner .preheading #navigation .navbar-inner ul li a:hover {
+            border-bottom-width: 0;
+            padding: 10px 2%; }
+  .aui #footer {
+    margin-left: -20px;
+    padding: 15px 10px;
+    width: 100%; } }
+@media (max-width: 767px) {
+  .aui .portlet-dockbar {
+    left: -20px; }
+  .aui #footer {
+    padding: 15px 20px; } }
+

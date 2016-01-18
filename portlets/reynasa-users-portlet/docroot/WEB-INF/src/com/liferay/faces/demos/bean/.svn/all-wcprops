@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/651/trunk/SDK/portlets/reynasa-users-portlet/docroot/WEB-INF/src/com/liferay/faces/demos/bean
+END
+UsersViewBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/629/trunk/SDK/portlets/reynasa-users-portlet/docroot/WEB-INF/src/com/liferay/faces/demos/bean/UsersViewBean.java
+END
+UsersBackingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/651/trunk/SDK/portlets/reynasa-users-portlet/docroot/WEB-INF/src/com/liferay/faces/demos/bean/UsersBackingBean.java
+END
+UsersModelBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/scm/svn/REYNASA_LIFERAY_catalogodeproductos/!svn/ver/651/trunk/SDK/portlets/reynasa-users-portlet/docroot/WEB-INF/src/com/liferay/faces/demos/bean/UsersModelBean.java
+END

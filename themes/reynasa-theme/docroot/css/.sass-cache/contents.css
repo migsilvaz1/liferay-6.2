@@ -1,0 +1,447 @@
+/* ---------- Styles to contents responsive mode: ---------- */
+@media (max-width: 979px) {
+  .aui body {
+    font-size: 80%; }
+  .aui h1 {
+    font-size: 150% !important; }
+  .aui .head, .aui #banner, .aui .cabecera {
+    background-color: transparent !important; }
+  .aui .enlaces {
+    margin-right: 0 !important; }
+  .aui #openModal {
+    display: none; }
+  .aui #navigation.open .navbar-inner {
+    padding: 0; }
+  .aui #wrapper #banner .preheading #navigation .navbar-inner ul > li {
+    margin-bottom: 3px !important;
+    width: 100%;
+    text-align: left; }
+  .aui #menubar {
+    width: 100% !important;
+    background-color: transparent; }
+  .aui .nav-collapse.collapse {
+    position: absolute;
+    z-index: 400;
+    width: 100%;
+    background-color: transparent !important; }
+  .aui .carousel {
+    line-height: 120% !important;
+    min-height: 320px; }
+  .aui .carousel-item {
+    min-height: 280px; }
+  .aui .carousel-item img {
+    min-height: 320px; }
+  .aui #menubar li:first-child {
+    margin-left: 0 !important; }
+  .aui .modalDialog > div {
+    margin: 0 auto !important; }
+  .aui #wrapper #content .shadow-inner-left, .aui #wrapper #content .shadow-inner-right {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .aui #wrapper #content #team .span3 {
+    padding-bottom: 80px;
+    text-align: center; }
+    .aui #wrapper #content #team .span3 img {
+      width: 50%; }
+    .aui #wrapper #content #team .span3 .effect .more-info {
+      padding: 0;
+      position: relative;
+      top: 0; }
+      .aui #wrapper #content #team .span3 .effect .more-info h3, .aui #wrapper #content #team .span3 .effect .more-info p {
+        display: none; }
+      .aui #wrapper #content #team .span3 .effect .more-info span {
+        background-color: #FFF;
+        padding: 10px;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1; }
+      .aui #wrapper #content #team .span3 .effect .more-info .social {
+        bottom: inherit;
+        margin: 2%;
+        padding: 2%;
+        position: relative;
+        width: auto; }
+        .aui #wrapper #content #team .span3 .effect .more-info .social img {
+          width: 15px; }
+        .aui #wrapper #content #team .span3 .effect .more-info .social a {
+          padding: 3px; }
+  .aui #wrapper #content #aboutus {
+    background-position: left;
+    padding: 0 20px 100px 20px; }
+  .aui #wrapper #content .component.carousel menu li .carousel-menu-prev {
+    left: 10px; }
+  .aui #wrapper #content .component.carousel menu li .carousel-menu-next {
+    right: 10px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content p {
+    font-size: 90%; }
+  .aui #wrapper #content .myCarousel_a.carousel-content h1 {
+    font-size: 25px;
+    line-height: 28px;
+    padding: 20px 0; }
+  .aui #wrapper #content .myCarousel_a.carousel-content h2 {
+    font-size: 20px;
+    line-height: 22px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container {
+    top: 0; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .container .margins {
+      margin: 0 25% 0 8%; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .container .btn-large {
+      margin-top: 20px; }
+  .aui #wrapper #content .myCarousel_b .photo {
+    width: 10%; } }
+@media (max-width: 767px) {
+  .aui #alertCookies {
+    width: auto !important; }
+  .aui #btnCarrousel {
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 75% !important;
+    margin-bottom: 20% !important;
+    margin-top: 0px !important;
+    font-size: 100% !important;
+    padding: 2% !important; }
+  .aui #wrapper #content #team .span3 .effect .more-info {
+    margin: 0 auto;
+    width: 80%; }
+    .aui #wrapper #content #team .span3 .effect .more-info .social img {
+      padding: 0 5px;
+      width: 30px; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container .margins {
+    margin: 0 5%;
+    width: 90%; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container h1 {
+    font-size: 19px;
+    line-height: 20px;
+    padding: 5px 0 0; }
+  .aui #wrapper #content .myCarousel_a.carousel-content .container p, .aui #wrapper #content .myCarousel_a.carousel-content .container h2 {
+    display: none; }
+  .aui #wrapper #content .myCarousel_a.carousel-content menu li .carousel-menu-prev, .aui #wrapper #content .myCarousel_a.carousel-content menu li .carousel-menu-next {
+    display: none; }
+  .aui #wrapper #content .myCarousel_b .photo {
+    width: 20%; } }
+.aui {
+  /*------------------ Pagination JS ---------------------*/ }
+  .aui .prev {
+    background: url(@theme_image_path@/flecha-ant.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: 0px none;
+    font-size: 0px;
+    min-width: 35px;
+    min-height: 35px; }
+  .aui .next {
+    background: url(@theme_image_path@/flecha-sig.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: 0px none;
+    font-size: 0px;
+    min-width: 35px;
+    min-height: 35px; }
+  .aui #pagination, .aui .easyPaginateNav {
+    text-align: center; }
+  .aui .easyPaginateNav > a:FOCUS {
+    border-color: transparent !important;
+    outline-color: transparent !important;
+    box-shadow: none !important; }
+  .aui #wrapper #content {
+    /* ---------- Images bg-fixed ---------- */
+    /* ---------- Inner black bg-shadow ---------- */
+    /* ---------- Services ---------- */
+    /* ---------- Team ---------- */
+    /* ---------- Clients ---------- */
+    /* ---------- About us ---------- */
+    /* ---------- Testimonials ---------- */
+    /* ---------- Clients ---------- */
+    /* ---------- Images carousel ---------- */
+    /* ---------- .myCarousel_a carousel ---------- */
+    /* ---------- .myCarousel_b carousel ---------- */
+    /* ---------- Carousel green ---------- */ }
+    .aui #wrapper #content .btn.green {
+      border-width: 0;
+      color: #FFF; }
+    .aui #wrapper #content ul.green-list {
+      list-style-image: url(@theme_image_path@/contents/green-list-item.png);
+      padding-left: 20px; }
+      .aui #wrapper #content ul.green-list li {
+        padding: 10px 0;
+        vertical-align: top; }
+    .aui #wrapper #content .img-bg-fixed {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .aui #wrapper #content .img-bg-fixed.bg-right {
+        background-position: right; }
+      .aui #wrapper #content .img-bg-fixed.bg-left {
+        background-position: left; }
+    .aui #wrapper #content .shadow-inner-left {
+      -webkit-box-shadow: inset 20px 20px 20px 10px white;
+      -moz-box-shadow: inset 20px 20px 20px 10px white;
+      box-shadow: inset 20px 20px 20px 10px white; }
+    .aui #wrapper #content .shadow-inner-right {
+      -webkit-box-shadow: inset -20px 20px 20px 10px white;
+      -moz-box-shadow: inset -20px 20px 20px 10px white;
+      box-shadow: inset -20px 20px 20px 10px white; }
+    .aui #wrapper #content #services {
+      padding-bottom: 60px; }
+      .aui #wrapper #content #services h2 {
+        font-size: 24px; }
+    .aui #wrapper #content #team {
+      padding-bottom: 60px; }
+      .aui #wrapper #content #team h2 {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 40px;
+        padding: 0 40px; }
+      .aui #wrapper #content #team h3 {
+        font-size: 17px;
+        line-height: 1.3; }
+      .aui #wrapper #content #team .effect {
+        overflow: hidden;
+        position: relative; }
+        .aui #wrapper #content #team .effect .info {
+          height: 100%; }
+        .aui #wrapper #content #team .effect .more-info {
+          color: #FFF;
+          height: 90%;
+          left: 0;
+          overflow: hidden;
+          padding: 4% 5%;
+          position: absolute;
+          right: 0;
+          top: -100%;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+          .aui #wrapper #content #team .effect .more-info h3, .aui #wrapper #content #team .effect .more-info p, .aui #wrapper #content #team .effect .more-info span {
+            color: #FFF;
+            display: block;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out; }
+          .aui #wrapper #content #team .effect .more-info .social {
+            bottom: 12px;
+            position: absolute;
+            text-align: center;
+            text-align: center;
+            width: 90%; }
+            .aui #wrapper #content #team .effect .more-info .social a {
+              padding: 6px; }
+              .aui #wrapper #content #team .effect .more-info .social a:hover {
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+                opacity: 0.4; }
+        .aui #wrapper #content #team .effect:hover .more-info {
+          top: 0;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
+          .aui #wrapper #content #team .effect:hover .more-info h3 {
+            margin-bottom: 0;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition-delay: 0.5s;
+            -moz-transition-delay: 0.5s;
+            -o-transition-delay: 0.5s;
+            transition-delay: 0.5s; }
+          .aui #wrapper #content #team .effect:hover .more-info p {
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            opacity: 1;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition-delay: 0.4s;
+            -moz-transition-delay: 0.4s;
+            -o-transition-delay: 0.4s;
+            transition-delay: 0.4s; }
+          .aui #wrapper #content #team .effect:hover .more-info span {
+            padding-top: 10px;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            opacity: 1;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition-delay: 0.7s;
+            -moz-transition-delay: 0.7s;
+            -o-transition-delay: 0.7s;
+            transition-delay: 0.7s; }
+          .aui #wrapper #content #team .effect:hover .more-info.rounded {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition-delay: 0.8s;
+            -moz-transition-delay: 0.8s;
+            -o-transition-delay: 0.8s;
+            transition-delay: 0.8s; }
+    .aui #wrapper #content #clients {
+      padding-bottom: 60px; }
+    .aui #wrapper #content #aboutus {
+      margin-top: 80px;
+      padding-bottom: 100px; }
+      .aui #wrapper #content #aboutus h1 {
+        padding: 60px 0 20px; }
+      .aui #wrapper #content #aboutus .phrase {
+        margin-bottom: 60px; }
+    .aui #wrapper #content #testimonials {
+      padding-bottom: 60px; }
+      .aui #wrapper #content #testimonials h2 {
+        font-size: 26px;
+        padding: 0 8% 30px; }
+      .aui #wrapper #content #testimonials h3 {
+        font-size: 16px; }
+    .aui #wrapper #content #contactus {
+      padding-bottom: 60px; }
+      .aui #wrapper #content #contactus h2 {
+        font-size: 24px;
+        line-height: 1.4;
+        padding: 40px 0 0; }
+        .aui #wrapper #content #contactus h2.text-center {
+          margin-bottom: 40px;
+          padding: 0 40px 20px; }
+      .aui #wrapper #content #contactus .google-maps {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 350px;
+        position: relative; }
+      .aui #wrapper #content #contactus .google-maps iframe {
+        border-width: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; }
+    .aui #wrapper #content .contactus h3 {
+      padding: 40px 0 0; }
+    .aui #wrapper #content .contactus .social {
+      padding-top: 50px; }
+      .aui #wrapper #content .contactus .social a {
+        padding: 5px; }
+        .aui #wrapper #content .contactus .social a:hover {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+          opacity: 0.4; }
+    .aui #wrapper #content .component.carousel {
+      line-height: inherit;
+      overflow: hidden; }
+      .aui #wrapper #content .component.carousel .carousel-item {
+        width: 100%; }
+      .aui #wrapper #content .component.carousel menu {
+        background: transparent;
+        bottom: 0;
+        height: 10%;
+        left: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%; }
+        .aui #wrapper #content .component.carousel menu li {
+          display: inline-block;
+          float: none; }
+          .aui #wrapper #content .component.carousel menu li .carousel-menu-item {
+            bottom: 20px; }
+          .aui #wrapper #content .component.carousel menu li .carousel-menu-prev, .aui #wrapper #content .component.carousel menu li .carousel-menu-next {
+            background: url(@theme_image_path@/carousel/prev.png) transparent no-repeat center;
+            border: 3px solid #FFF;
+            bottom: 450%;
+            height: 50px;
+            left: 20px;
+            position: absolute;
+            width: 50px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%; }
+            .aui #wrapper #content .component.carousel menu li .carousel-menu-prev:hover, .aui #wrapper #content .component.carousel menu li .carousel-menu-next:hover {
+              filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+              opacity: 0.4;
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out; }
+          .aui #wrapper #content .component.carousel menu li .carousel-menu-next {
+            background-image: url(@theme_image_path@/carousel/next.png);
+            left: inherit;
+            right: 20px; }
+          .aui #wrapper #content .component.carousel menu li .carousel-menu-index {
+            background: #FFF;
+            margin: 3px;
+            padding: 1px; }
+            .aui #wrapper #content .component.carousel menu li .carousel-menu-index.carousel-menu-active {
+              background: transparent;
+              border: 2px solid #FFF;
+              margin: 1px; }
+          .aui #wrapper #content .component.carousel menu li .carousel-menu-pause {
+            background-size: cover;
+            border: 2px solid #FFF;
+            display: none;
+            height: 12px;
+            margin: 0 7px;
+            width: 12px; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .carousel-item {
+      /* no use @import opacity in carousel to keep compatibility with olds IE */
+      opacity: 0;
+      max-height: 380px; }
+    .aui #wrapper #content .myCarousel_a.carousel-content a, .aui #wrapper #content .myCarousel_a.carousel-content p, .aui #wrapper #content .myCarousel_a.carousel-content h1, .aui #wrapper #content .myCarousel_a.carousel-content h2, .aui #wrapper #content .myCarousel_a.carousel-content h3, .aui #wrapper #content .myCarousel_a.carousel-content h4 {
+      color: #FFF; }
+    .aui #wrapper #content .myCarousel_a.carousel-content h1 {
+      padding: 20px 0 0;
+      text-transform: none; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .container {
+      left: 0;
+      position: absolute;
+      right: 0; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .margins {
+      position: absolute;
+      color: white;
+      background-color: rgba(64, 64, 64, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 25px #404040;
+      width: 70%;
+      margin: 0px;
+      top: 16%; }
+    .aui #wrapper #content .myCarousel_a.carousel-content .btn-large {
+      margin-top: 50px;
+      padding: 15px 40px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+    .aui #wrapper #content .myCarousel_a.carousel-content img {
+      max-width: inherit;
+      width: 100%;
+      max-height: 35em !important; }
+    .aui #wrapper #content .myCarousel_b {
+      padding-bottom: 100px; }
+      .aui #wrapper #content .myCarousel_b .carousel-item {
+        padding-bottom: 150px; }
+      .aui #wrapper #content .myCarousel_b .photo {
+        width: 10%; }
+    .aui #wrapper #content .component.carousel .carousel-green.carousel-content .carousel-item {
+      background: #FFF;
+      max-height: 380px !important; }
+    .aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-prev, .aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-next {
+      background: url(@theme_image_path@/carousel/prev-green.png) white no-repeat center;
+      left: 10px; }
+    .aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-next {
+      background-image: url(@theme_image_path@/carousel/next-green.png);
+      left: inherit;
+      right: 10px; }
+    .aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-index {
+      background: #323232; }
+      .aui #wrapper #content .component.carousel .carousel-green.carousel-content menu li .carousel-menu-index.carousel-menu-active {
+        background: #FFF; }
+

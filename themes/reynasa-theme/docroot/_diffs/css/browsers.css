@@ -1,0 +1,44 @@
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+.aui {
+&.chrome, &.safari, &.ie8{
+	.navbar .nav, .dropdown-menu {background-color: transparent;}
+/*-------------------------------------- dockbar ------------------------*/
+	.carousel-item .container {
+		top: 0;	
+	}
+	
+}
+}
+
+
+@include respond-to(phone) {
+	.aui {
+		&.chrome, &.safari, &.ie8{
+			.cabecera {
+				max-height: 130px !important;	
+			}
+			
+			#heading {
+				position: relative !important;
+				margin-top: 80px !important;
+			}
+			.margins {
+				top:0 !important;
+				font-size: 80% !important;
+				line-height: 110% !important;
+
+			}
+
+			.aui #btnCarrousel {
+				top: 75% !important;
+				margin-top: 20% !important;
+			}
+			
+			
+	
+		}
+	}
+}
