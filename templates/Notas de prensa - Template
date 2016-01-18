@@ -1,0 +1,70 @@
+<head>
+	<style>
+		.title {
+			font-size: 200%;
+			font-weight: 300;
+			margin-bottom: 10px;
+		}
+		.subtitle{
+			font-size: 130%;
+			margin-bottom: 10px;
+		}
+		.text{
+			font-size: 100%;
+		}
+		.footnote{
+			background-color: #555559;
+  			color: #fff;
+  			font-size: 90%;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="span12"></div>
+		<div class="span10"><h3>$languageUtil.format($locale, "news")</h3></div>
+		<div id="header" class="span12">
+			<div class="title">$header.getData()</div>
+		</div>
+		<div class="span12">
+			<div id="left-text" class="span6">
+				<div id="fecha" class="subtitle">
+					$dateTool.format( 'full_date', $dateTool.toDate( "EEE, dd MMM yyyy hh:mm:ss Z" , $reserved-article-display-date.getData(), $localeUtil.getDefault()) , $locale)
+				</div>
+				<div id="intro" class="subtitle">
+					$intro.getData()
+				</div>
+				<div id="text" class="text">
+					$text.getData()
+				</div>
+				<div id="listButton">
+					<button class="btn"><a href="#">$languageUtil.format($locale, "back.list")</a></button>
+				</div>
+			</div>
+			<div id="right-text" class="span6 text-center">
+				#if (!$photo.getSiblings().isEmpty())
+					<ul class="thumbnails">
+					<li class="span12"></li>
+						#foreach ($cur_photo in $photo.getSiblings())
+							<li class="span12">
+								<img alt="image" src="$cur_photo.getData()"/>
+								<div class="footnote">$cur_photo.footer.getData()</div>
+							</li>
+						#end
+
+					</ul>
+				#end
+				#if (!$video.getSiblings().isEmpty())
+					<ul class="thumbnails">
+					<li class="span12"></li>
+					#foreach ($cur_video in $video.getSiblings())
+						<li class="span12 embed-responsive">
+							$cur_video.getData()
+						</li>
+					#end
+					</ul>
+				#end
+			</div>
+		</div>
+	</div>
+</body>

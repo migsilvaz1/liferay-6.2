@@ -1,0 +1,69 @@
+<div class="news-list">
+	<div class="highlights">
+<#assign liferay_ui = taglibLiferayHash["/WEB-INF/tld/liferay-ui.tld"] />
+    <#assign aui = taglibLiferayHash["/WEB-INF/tld/aui.tld"] />
+    
+    <#list entries as entry>
+        <#assign entry = entry />
+    	<#assign assetRenderer = entry.getAssetRenderer() />
+    	<#assign assetRendererb = entry.getCategories()/>
+    	<#assign assetRendererc = entry.getCategoryIds()/>
+    	<#assign assetTagNames = entry.getTagNames()/>
+    	<#assign docXml = saxReaderUtil.read(entry.getAssetRenderer().getArticle().getContent()) />
+    	<#assign assetRenderere = entry.getDescriptionMap()/>
+    	<#assign viewURL = assetPublisherHelper.getAssetViewURL(renderRequest, renderResponse, entry) />
+    	<#if assetLinkBehavior != "showFullContent">
+    		<#assign viewURL = assetRenderer.getURLViewInContext(renderRequest, renderResponse, viewURL) />
+    	</#if>
+    	<#if (entry_index == 0)>
+    	<#assign fieldVal = docXml.valueOf("//dynamic-element[@name='Imagen']/dynamic-content/text()") />    
+    	<div class="span8">
+			<div class="main-news"><!-- <img src="images/fotos/01.jpg" alt=""> --><img alt="" src="${fieldVal}" />
+				<div class="content">
+					<div class="header">
+					<#assign fieldValb = docXml.valueOf("//dynamic-element[@name='Fecha_Noticia']/dynamic-content/text()") />
+    	<#assign Fecha_Noticia_DateObj = dateUtil.newDate(getterUtil.getLong("${fieldValb}"))>
+    	<#assign Fecha_Noticiab = dateUtil.getDate(Fecha_Noticia_DateObj, "dd/MM/yyyy", locale)>
+						<div class="meta"><span class="date">${Fecha_Noticiab}</span> <span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<#assign Desc = docXml.valueOf("//dynamic-element[@name='Desc']/dynamic-content/text()") /> 
+						<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+					</div><!-- header -->
+
+					<div class="txt-box">
+					<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if><a class="read-more" href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+					</div>
+				</div><!-- content -->
+			</div><!-- main-news -->
+		</div><!-- span8 -->
+    	</#if>
+    	<#if (entry_index == 1)>
+    	<#assign fieldVal = docXml.valueOf("//dynamic-element[@name='Imagen']/dynamic-content/text()") />    
+    	<div class="span4"><!-- <img src="images/fotos/02.jpg" alt=""> --><img alt="" src="${fieldVal}" />
+    	<div class="news-item">
+<div class="header">
+<#assign fieldValb = docXml.valueOf("//dynamic-element[@name='Fecha_Noticia']/dynamic-content/text()") />
+    	<#assign Fecha_Noticia_DateObj = dateUtil.newDate(getterUtil.getLong("${fieldValb}"))>
+    	<#assign Fecha_Noticiab = dateUtil.getDate(Fecha_Noticia_DateObj, "dd/MM/yyyy", locale)>
+<div class="meta"><span class="date">${Fecha_Noticiab}</span><span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<!-- meta -->
+
+<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+</div>
+<!-- header -->
+<#assign Desc = docXml.valueOf("//dynamic-element[@name='Desc']/dynamic-content/text()") />
+<div class="txt-box">
+<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if><a class="read-more" href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+</div><!-- txt-box --></div>
+<!-- txt-box --></div>
+<!-- span4 -->
+    	</#if>
+    	
+    	  </#list>
+    	  
+
+</div><!-- highlights -->
+</div><!-- .news-list -->

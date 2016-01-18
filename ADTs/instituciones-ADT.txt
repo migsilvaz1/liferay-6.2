@@ -1,0 +1,144 @@
+#set ($AssetCategoryLocalService = $serviceLocator.findService("com.liferay.portlet.asset.service.AssetCategoryLocalService"))
+#set ($AssetVocabularyLocalService = $serviceLocator.findService("com.liferay.portlet.asset.service.AssetVocabularyLocalService"))
+#set ($journalArticles = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+<head>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="offset1 span11"></div>
+		<div id="introText" class="offset1 span11">
+		#set($articles = $journalArticles.getStructureArticles($groupId, "VUVINSTITUTIONSPRESENTATION"))
+		#set($jarticle= $articles.get(0))
+		#set($document = $saxReaderUtil.read($jarticle.getContentByLocale($locale.toString())))
+		#set($rootElement = $document.getRootElement())
+		#set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='title']"))
+		#set($title = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+		#set($xPathSelector_intro = $saxReaderUtil.createXPath("dynamic-element[@name='intro']"))
+		#set($intro = $xPathSelector_intro.selectSingleNode($rootElement).getStringValue())
+			<h3>$title</h3>
+			<p>$intro</p>
+		</div>
+
+		<div id="listado" class="offset1 span11">
+			<div class="span11">
+				<h3>Listado de Instituciones</h3>
+			</div>
+			<div class="span11 hero-unit">
+			#if (!$entries.isEmpty())
+			#set ($vocabulary = $AssetVocabularyLocalService.getGroupVocabulary($groupId, "Instituciones"))
+			#set ($allCategories = $vocabulary.getCategories())
+			#set($divid = 0 )
+				#foreach($category in $allCategories)
+					<h4 id="$divid" class="toggleHeader" onclick="toggleMenu(this.id)">$category.getName(): [-]</h4>
+					<div id="menu-$divid" class="content">
+						<ul class="inline">
+					#foreach ($entry in $entries)
+						#set ($entryCategories = $AssetCategoryLocalService.getAssetEntryAssetCategories($entry.getEntryId()))
+						#if ($entryCategories.contains($category))
+							#set($renderer = $entry.getAssetRenderer())
+							#set($journalArticle = $renderer.getArticle())
+							#set($document = $saxReaderUtil.read($journalArticle.getContentByLocale($locale.toString())))
+							#set($rootElement = $document.getRootElement())
+							#set($id = $entry.getEntryId())
+							#set($xPathSelector_name = $saxReaderUtil.createXPath("dynamic-element[@name='name']"))
+							#set($name = $xPathSelector_name.selectSingleNode($rootElement).getStringValue())
+							<li><a id="$id" onclick="animate(this.id)">$name</a></li>
+						#end
+					#end
+						</ul>
+					</div>
+					#set($divid = $divid+1)
+				#end
+			#end
+			</div>
+		</div>
+		<div id="instituciones" class="offset1 span11">
+		<div class = "span11" style="display: none;"></div>
+			#if (!$entries.isEmpty())
+			#set($nid = 0)
+			#foreach ($entry in $entries)
+				#set($renderer = $entry.getAssetRenderer())
+				#set($className = $renderer.getClassName() )
+				#if( $className == "com.liferay.portlet.journal.model.JournalArticle" )
+					#set($journalArticle = $renderer.getArticle())
+					#set($document = $saxReaderUtil.read($journalArticle.getContentByLocale($locale.toString())))
+					#set($rootElement = $document.getRootElement())
+					#set($id = $entry.getEntryId())
+					#set($xPathSelector_logo = $saxReaderUtil.createXPath("dynamic-element[@name='logo']"))
+					#set($logo = $xPathSelector_logo.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_name = $saxReaderUtil.createXPath("dynamic-element[@name='name']"))
+					#set($name = $xPathSelector_name.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_description = $saxReaderUtil.createXPath("dynamic-element[@name='description']"))
+					#set($description = $xPathSelector_description.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_totalServices = $saxReaderUtil.createXPath("dynamic-element[@name='totalServices']"))
+					#set($totalServices = $xPathSelector_totalServices.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_servicesInOperation = $saxReaderUtil.createXPath("dynamic-element[@name='servicesInOperation']"))
+					#set($servicesInOperation = $xPathSelector_servicesInOperation.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_webSite = $saxReaderUtil.createXPath("dynamic-element[@name='webSite']"))
+					#set($webSite = $xPathSelector_webSite.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_contact = $saxReaderUtil.createXPath("dynamic-element[@name='contact']"))
+					#set($contact = $xPathSelector_contact.selectSingleNode($rootElement).getStringValue())
+					#set($alt = "alt")
+					##id, logo, name, description, totalServices, servicesInOperation, webSite, contact
+					<div id="id-$id" class = "span11 container-fluid content" style="display: none;">
+						<div class="row-fluid">
+							<div class="span3">
+								<img src="$logo" alt="institution_logo"/>
+							</div>
+							<div class="span8">
+								<h3>$name</h3>
+								<p>$description</p>
+								<h4>Datos de contacto</h4>
+								<div class="offset1">
+									<h5>Direccion: </h5>
+									<h5>Telefonos de contacto: </h5>
+									<h5>Sitio web:<a href="$webSite">$webSite</a></h5>
+								</div>							
+								<p>$contact</p>
+								<h4>Ver Listado de Oficinas</h4>
+								<h4>Servicios Asociados</h4>
+							</div>
+							<div class="span1">
+								<button onclick="retract()"><i class="icon-chevron-up"></i></button>
+							</div>
+						</div>
+					</div>
+				#end
+			#end
+		#end
+		</div>
+	</div>
+<script>
+	var actual = "";
+	function animate(id){
+		id = "#id-"+id;
+		if(actual != ""){
+			$(actual).slideToggle(400);
+			setTimeout(function(){ $(id).slideToggle(400); }, 500);
+		}else{
+			$(id).slideToggle(400);
+		}
+		actual = id;
+	}
+	function retract(){
+		$(actual).slideToggle(400);
+		actual = "";
+	}
+	function toggle(id){
+		$("#"+id).slideToggle(400);
+	}
+	function toggleMenu(id){
+		$("#menu-"+id).slideToggle(200);
+		var txt = document.getElementById(id).innerHTML;
+		var ntxt = "";
+		if(txt.contains("+")){
+			var ntxt = txt.replace("+", "-");
+		}else{
+			var ntxt = txt.replace("-", "+");
+		}
+		document.getElementById(id).innerHTML = ntxt;
+	}
+</script>
+</body>

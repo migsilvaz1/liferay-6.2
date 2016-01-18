@@ -1,0 +1,42 @@
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="name" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="large">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Nombre presentación]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="keyword" localizable="true" name="presentation" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-documentlibrary" width="">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Presentación]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="number" fieldNamespace="ddm" indexType="keyword" localizable="true" name="size" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-number" width="large">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Peso]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

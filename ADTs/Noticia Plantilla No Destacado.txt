@@ -1,0 +1,108 @@
+<div class="news-list">
+<div class="other-news">
+<#assign liferay_ui = taglibLiferayHash["/WEB-INF/tld/liferay-ui.tld"] />
+    <#assign aui = taglibLiferayHash["/WEB-INF/tld/aui.tld"] />
+    
+    <#list entries as entry>
+        <#assign entry = entry />
+    	<#assign assetRenderer = entry.getAssetRenderer() />
+    	<#assign assetRendererb = entry.getCategories()/>
+    	<#assign assetRendererc = entry.getCategoryIds()/>
+    	<#assign assetTagNames = entry.getTagNames()/>
+    	<#assign docXml = saxReaderUtil.read(entry.getAssetRenderer().getArticle().getContent()) />
+    	<#assign assetRenderere = entry.getDescriptionMap()/>
+    	<#assign viewURL = assetPublisherHelper.getAssetViewURL(renderRequest, renderResponse, entry) />
+    	<#if assetLinkBehavior != "showFullContent">
+    		<#assign viewURL = assetRenderer.getURLViewInContext(renderRequest, renderResponse, viewURL) />
+    	</#if>
+    	<#assign fieldVal = docXml.valueOf("//dynamic-element[@name='Imagen']/dynamic-content/text()") />
+    	<#assign fieldValb = docXml.valueOf("//dynamic-element[@name='Fecha_Noticia']/dynamic-content/text()") />
+    	<#assign Fecha_Noticia_DateObj = dateUtil.newDate(getterUtil.getLong("${fieldValb}"))>
+    	<#assign Fecha_Noticiab = dateUtil.getDate(Fecha_Noticia_DateObj, "dd/MM/yyyy", locale)>
+    	<#assign Desc = docXml.valueOf("//dynamic-element[@name='Desc']/dynamic-content/text()") /> 
+    	<#if (entry_index == 0)>
+<div class="span4 col1">
+<div class="news-item"><!-- <img src="images/fotos/03.jpg" alt=""> --><img alt="" src="${fieldVal}" />
+<div class="header">
+<div class="meta"><span class="date">${Fecha_Noticiab}</span><span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<!-- meta -->
+
+<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+</div>
+<!-- header -->
+
+<div class="txt-box">
+<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if> <a class="read-more" href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+</div>
+<!-- txt-box --></div>
+<!-- news-item --></div>
+<!-- col1 -->
+
+<div class="span4 col2">
+</#if>
+<#if (entry_index == 1)>
+<div class="news-item"><!-- <img src="images/fotos/01.jpg" alt=""> -->
+<div class="header">
+<div class="meta"><span class="date">${Fecha_Noticiab}</span><span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<!-- meta -->
+
+<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+</div>
+<!-- header -->
+
+<div class="txt-box">
+<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if><a class="read-more" href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+</div>
+</div>
+<!-- news-item -->
+</#if>
+<#if (entry_index == 2)>
+<div class="news-item"><!-- <img src="images/fotos/03.jpg" alt=""> -->
+<div class="header">
+<div class="meta"><span class="date">${Fecha_Noticiab}</span><span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<!-- meta -->
+
+<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+</div>
+<!-- header -->
+
+<div class="txt-box">
+<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if><a class="read-more" href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+</div>
+</div>
+<!-- news-item --></div>
+<!-- col2 -->
+</#if>
+<#if (entry_index == 3)>
+<div class="span4 col3">
+<div class="news-item"><!-- <img src="images/fotos/04.jpg" alt=""> --><img alt="" src="${fieldVal}" />
+<div class="header">
+<div class="meta"><span class="date">${Fecha_Noticiab}</span><span class="cat-label"><a><#list assetRendererb as cat>
+        		       ${cat.getName()}
+        		    </#list></a></span></div>
+<!-- meta -->
+
+<h2><a href="${viewURL}">${entry.getTitle(locale)}</a></h2>
+</div>
+<!-- header -->
+
+<div class="txt-box">
+<p><#if Desc?length &lt; 220 > ${Desc} <#else> ${Desc[0..220]}... </#if><a href="${viewURL}">[${languageUtil.get(locale, "content.more")}]</a></p>
+</div>
+</div>
+<!-- news-item --></div>
+<!-- col3 --></div>
+</#if>
+</#list>
+<!-- other-news --></div>
+</div><!-- .newslist -->
+
+<div class="link-more-wrapper">
+<a href="/web/guest/noticias" class="btn btn-large">${languageUtil.get(locale, "ver.mas.noticias")}</a>
+</div>

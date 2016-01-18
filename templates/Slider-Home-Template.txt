@@ -1,0 +1,273 @@
+##Obtain Settings
+
+#set($portletId = $request.portlet-namespace)
+#set($timerImage = $delayImage.getData())
+#set($timerAnimation = $delayAnimation.getData())
+#set($transition = $display_mode.getData())
+#set($widthValue = $width.getData())
+#set($heightValue = $height.getData())
+
+#if($width.getData() == "0")
+    #set($widthValue = 1)
+#else
+    #set($widthValue = $width.getData())
+#end
+#if($height.getData() == "0")
+    #set($heightValue = 1)
+#else
+    #set($heightValue = $height.getData())
+#end
+
+#set($widthPx = $widthValue + "px")
+#set($heightPx = $heightValue + "px")
+
+#set($bullets = false)
+#set($arrows = false)
+
+#foreach($nav in $navigation.getChildren())
+    #if($nav.data == true)
+        #if($nav.name == "bullets")
+            #set($bullets = true)
+        #elseif($nav.name == "arrows")
+            #set($arrows = true)
+        #end
+    #end
+#end
+
+<div style="margin-top: -12px; margin-left: -11px;">
+        <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- ================================================== -->
+        <div id="slider1_container$portletId" style="display: none; position: relative; margin: 0 auto; top: 0px; left: 0px; width: $widthValue; height: $heightValue; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute; display: block; background: url($request.theme-display.path-theme-images/slider/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+            </div>
+            <!-- Slides Container -->
+            <div id="slides$portletId" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: $widthValue; height: $heightValue; overflow: hidden;">
+                #if (!$image.getSiblings().isEmpty())
+                    #foreach ($cur_image in $image.getSiblings())
+                <div>
+                    <img u="image" src2="$cur_image.getData()" />
+                    <div u="caption" t="*" style="position: absolute; top: 10%; left: 10%; width: 50%;">
+                        <!-- Headline HTML Content Here -->
+                        $cur_image.headline.getData()
+                    </div>
+                    <div u="caption" t="*" style="position: absolute; top: 40%; left: 10%; width: 60%;">
+                        <!-- Caption HTML Content Here -->
+                        $cur_image.caption.getData()
+                    </div>
+                </div>
+                    #end
+                #end
+            </div>
+            #if($bullets)
+            <!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+            <style>
+                /* jssor slider bullet navigator skin 21 css */
+                /*
+                .jssorb21 div           (normal)
+                .jssorb21 div:hover     (normal mouseover)
+                .jssorb21 .av           (active)
+                .jssorb21 .av:hover     (active mouseover)
+                .jssorb21 .dn           (mousedown)
+                */
+                .jssorb21 {
+                    position: absolute;
+                }
+                .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                    position: absolute;
+                    /* size of bullet elment */
+                    width: 19px;
+                    height: 19px;
+                    text-align: center;
+                    line-height: 19px;
+                    color: white;
+                    font-size: 12px;
+                    background: url($request.theme-display.path-theme-images/slider/b21.png) no-repeat;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .jssorb21 div { background-position: -5px -5px; }
+                .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+                .jssorb21 .av { background-position: -65px -5px; }
+                .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+            </style>
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+            #end
+            #if($arrows)
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+            <style>
+                /* jssor slider arrow navigator skin 21 css */
+                /*
+                .jssora21l                  (normal)
+                .jssora21r                  (normal)
+                .jssora21l:hover            (normal mouseover)
+                .jssora21r:hover            (normal mouseover)
+                .jssora21l.jssora21ldn      (mousedown)
+                .jssora21r.jssora21rdn      (mousedown)
+                */
+                .jssora21l, .jssora21r {
+                    display: block;
+                    position: absolute;
+                    /* size of arrow element */
+                    width: 55px;
+                    height: 55px;
+                    cursor: pointer;
+                    background: url($request.theme-display.path-theme-images/slider/a21.png) center center no-repeat;
+                    overflow: hidden;
+                }
+                .jssora21l { background-position: -3px -33px; }
+                .jssora21r { background-position: -63px -33px; }
+                .jssora21l:hover { background-position: -123px -33px; }
+                .jssora21r:hover { background-position: -183px -33px; }
+                .jssora21l.jssora21ldn { background-position: -243px -33px; }
+                .jssora21r.jssora21rdn { background-position: -303px -33px; }
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+            </span>
+            #end
+        </div>
+        <!-- Jssor Slider End -->
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script>
+        jQuery(document).ready(function ($) {
+            //size calculation
+            var fullPortletId = "portlet" + "$portletId";
+            var portletId = fullPortletId.substring(0, fullPortletId.length-1);
+            var calculatedWidth = $("#"+portletId).width();
+            if(calculatedWidth == null){
+                portletId = "p_p_id" + "$portletId";
+                calculatedWidth = $("#"+portletId).width();
+            }
+            var calculatedHeight = calculatedWidth/$width.getData() * $height.getData();
+            $("#slider1_container$portletId").width(calculatedWidth);
+            $("#slider1_container$portletId").height(calculatedHeight);
+            $("#slides$portletId").width(calculatedWidth);
+            $("#slides$portletId").height(calculatedHeight);
+
+            var _SlideshowTransitions = [
+                #if($transition == "Fade")
+                {$Duration:$timerAnimation,$Opacity:2}
+                #elseif($transition == "Swing")
+                {$Duration:$timerAnimation,x:0.2,y:-0.1,$Delay:20,$Cols:8,$Rows:4,$Clip:15}
+                #elseif($transition == "Flutter")
+                {$Duration:$timerAnimation,x:1,$Delay:30,$Cols:10,$Rows:5,$Clip:15}
+                #elseif($transition == "Rotate")
+                {$Duration:$timerAnimation,$Zoom:11,$Rotate:1,$Easing:{$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad,$Rotate:$JssorEasing$.$EaseInCubic},$Opacity:2,$Round:{$Rotate:0.7}}
+                #elseif($transition == "Zoom")
+                {$Duration:$timerAnimation,$Zoom:11,$Easing:{$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2}
+                #elseif($transition == "Collapse")
+                {$Duration:$timerAnimation,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$JssorEasing$.$EaseOutQuad}
+                #elseif($transition == "Expand")
+                {$Duration:$timerAnimation,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$Easing:$JssorEasing$.$EaseInQuad}
+                #elseif($transition == "Stripe")
+                {$Duration:$timerAnimation,$Delay:100,$Cols:10,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Opacity:2}
+                #elseif($transition == "Parabola")
+                {$Duration:$timerAnimation,x:-1,y:1,$Delay:100,$Cols:8,$Rows:4,$Formation:$JssorSlideshowFormations$.$FormationSwirl,$Easing:{$Top:$JssorEasing$.$EaseInQuart,$Opacity:$JssorEasing$.$EaseLinear},$Assembly:264,$Opacity:2}
+                #elseif($transition == "Float")
+                {$Duration:$timerAnimation,y:1,$Delay:50,$Cols:8,$Rows:4,$SlideOut:true,$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2}
+                #elseif($transition == "Fly")
+                {$Duration:$timerAnimation,y:-1,$Delay:50,$Cols:8,$Rows:4,$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2}
+                #else
+                {$Duration:$timerAnimation,x:-1,$Easing:$JssorEasing$.$EaseInQuad}
+                #end
+            ];            
+
+            var options = {
+                $FillMode: 0,
+                $AutoPlay: true,
+                $AutoPlayInterval: $timerImage,
+                $PauseOnHover: 1,
+                $ArrowKeyNavigation: false,
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,
+                $SlideDuration: $timerAnimation,
+                $MinDragOffsetToSlide: 20,
+                $SlideSpacing: 0,
+                $DisplayPieces: 1,
+                $ParkingPosition: 0,
+                $UISearchMode: 1,
+                $PlayOrientation: 1,
+                $DragOrientation: 1,
+                $SlideWidth: calculatedWidth,
+                $SlideHeight: calculatedHeight,
+                $SlideSpacing: 0,
+                
+                #if($bullets)
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$,
+                    $ChanceToShow: 2,
+                    $AutoCenter: 1,
+                    $Steps: 1,
+                    $Lanes: 1,
+                    $SpacingX: 8,
+                    $SpacingY: 8,
+                    $Orientation: 1,
+                    $Scale: false
+                },
+                #end
+                
+                #if($arrows)
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $ChanceToShow: 2,
+                    $AutoCenter: 2,
+                    $Steps: 1
+                },
+                #end
+
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlider$,
+                    $CaptionTransitions: [{$Duration:500,$Opacity:2}],
+                    $PlayInMode: 1,
+                    $PlayOutMode: 3
+                },
+
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: _SlideshowTransitions,
+                    $TransitionsOrder: 1,
+                    $ShowLink: false
+                }
+            };
+            //Make the element 'slider1_container' visible before initialize jssor slider.
+            $("#slider1_container$portletId").css("display", "block");
+            var jssor_slider1 = new $JssorSlider$("slider1_container$portletId", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var compPortletId = "portlet" + "$portletId";
+                var myPortletId = compPortletId.substring(0, compPortletId.length-1);
+                var portletWidth = $("#"+myPortletId).width();
+                if (portletWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(portletWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>

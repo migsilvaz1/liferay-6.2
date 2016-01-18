@@ -1,0 +1,58 @@
+#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date.getData())))
+#set ($image_path = $request.get("theme-display").get("path-theme-images"))
+#set ($counter = 0)
+<div class="row-fluid">
+	<div class="span12"></div>
+	<div id="section_title" class="span10">
+		<h3>$languageUtil.format($locale, "gallery.multimedia")</h3>
+	</div>
+	<div id="section_subtitle" class="span10">
+		<h3>$languageUtil.format($locale, "gallery.intro.video")</h3>
+	</div>
+	<div id="galery_title" class="span10" style="margin-bottom: 10px;">
+		<div style="border: solid; border-top: 0; border-right: 0; border-left: 0; border-width: 1px;">$title.getData() - $dateUtil.getDate($date_DateObj, "dd/MM/yyyy", $locale)</div>
+		<div class="pull-right"><a href=""><button class="btn">$languageUtil.format($locale, "back.list")</button></a></div>
+	</div>
+	<div id="gallery" class="span10">
+		#if (!$videos.getSiblings().isEmpty())
+			#foreach ($cur_videos in $videos.getSiblings())
+				#if($counter == 0)
+					<div id="id$counter">$cur_videos.getData()</div>
+				#else
+					<div id="id$counter" style="display: none;">$cur_videos.getData()</div>
+				#end
+				#set($counter = $counter + 1)
+			#end
+		#end
+	</div>
+	<div class="span10" style="position: relative; top: -35px;">
+		<button id="back" class="btn" #if($counter == 1) disabled="true" #end><i class="icon-arrow-left"></i></button><button id="forward" class="btn" #if($counter == 1) disabled="true" #end><i class="icon-arrow-right icon-white"></i></button>
+	</div>
+</div>
+<script type="text/javascript">
+	var actual = 0;
+	var next = 0;
+	var max = $counter - 1;
+	$('#back').click(function(){
+		if(actual-1<0){
+			next = max;
+		}else{
+			next = actual-1;
+		}
+		var fadeIn = "#id" + next;
+		var fadeOut = "#id" + actual;
+		$(fadeOut).toggle();
+		$(fadeIn).toggle();
+	});
+	$('#forward').click(function(){
+		if(actual+1> max){
+			next = 0;
+		}else{
+			next = actual+1;
+		}
+		var fadeIn = "#id" + next;
+		var fadeOut = "#id" + actual;
+		$(fadeOut).toggle();
+		$(fadeIn).toggle();
+	});
+</script>

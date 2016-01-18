@@ -1,0 +1,127 @@
+##Definitions
+
+#set($groupId = $themeDisplay.getLayout().getGroupId())
+#set($AssetTagLocalService = $serviceLocator.findService("com.liferay.portlet.asset.service.AssetTagLocalService"))
+#set($tagDestacado = $AssetTagLocalService.getTag($groupId, $propsUtil.get("destacado.tag")))
+#set($tagSubhome = $AssetTagLocalService.getTag($groupId, $propsUtil.get("subhome.tag")))
+
+##HTML
+<div class="span12">
+	<div class="spna12"></div>
+	<div class="span10"><a href="#"><h2>$languageUtil.format($locale, "news")</h2></a></div>
+#if (!$entries.isEmpty())
+	#set($list=[])
+	#foreach ($curEntry in $entries)
+		#set($tagList = $AssetTagLocalService.getAssetEntryAssetTags($curEntry.entryId))
+	    #if(($tagList.contains($tagDestacado)) && ($tagList.contains($tagSubhome)))
+	    	#set ($success = $list.add($curEntry))
+	    #end
+	#end
+	#if (!$list.isEmpty())
+		#set($counter = 0)
+		#foreach ($curEntry in $list)
+			#set($document = $saxReaderUtil.read($curEntry.getAssetRenderer().getArticle().getContent()))
+	    	#set($rootElement = $document.getRootElement())
+
+			#set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='header']"))
+			#set($header = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+
+			#set($xPathSelector_intro = $saxReaderUtil.createXPath("dynamic-element[@name='intro']"))
+			#set($intro = $xPathSelector_intro.selectSingleNode($rootElement).getStringValue())
+
+			#set($xPathSelector_photo = $saxReaderUtil.createXPath("dynamic-element[@name='photo']"))
+			#set($photo = $xPathSelector_photo.selectSingleNode($rootElement).getStringValue())
+			
+			#if($list.size() == 1)
+				#if($header.length()>100)
+					#set($header = $header.substring(0,97) + "...")
+				#end
+				#if($intro.length()>300)
+					#set($intro = $intro.substring(0,297) + "...")
+				#end
+				#if($photo == "")
+			        <div class="span10" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px;">
+			        	<h4><a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">$header *</a></h4>
+			        	<small>$dateTool.format( 'full_date', $dateTool.toDate( "EEE, dd MMM yyyy hh:mm:ss Z" , $curEntry.publishDate, $localeUtil.getDefault()) , $locale)</small>
+			        	<div class="">$intro</div>
+			        </div>
+		        #else
+		        	#set($partialPhotoUrl = "/image/journal/")
+					#set($photoUrl = $partialPhotoUrl + $photo.split("/").get(3))
+			        <div class="span10" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px;">
+			        	<div class="span9">
+			        		<h4><a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">$header *</a></h4>
+			        		<small>$dateTool.format( 'full_date', $dateTool.toDate( "EEE, dd MMM yyyy hh:mm:ss Z" , $curEntry.publishDate, $localeUtil.getDefault()) , $locale)</small>
+			        		<div class="">$intro</div>
+			        	</div>
+			        	<div class="span3" style="padding-top: 10px;">
+			        		<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">
+			        			<img src="$photoUrl" style="height: 145px ! important;">
+			        		</a>
+			        	</div>
+			        </div>
+		        #end
+			#else
+				#if($header.length()>65)
+					#set($header = $header.substring(0,65) + "...")
+				#end
+				#if($intro.length()>130)
+					#set($intro = $intro.substring(0,127) + "...")
+				#end
+				#if($photo == "")
+			        <div class="span5" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px;">
+			        	<h4><a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">$header *</a></h4>
+			        	<small>$dateTool.format( 'full_date', $dateTool.toDate( "EEE, dd MMM yyyy hh:mm:ss Z" , $curEntry.publishDate, $localeUtil.getDefault()) , $locale)</small>
+			        	<div class="">$intro</div>
+			        </div>
+		        #else
+		        	#set($partialPhotoUrl = "/image/journal/")
+					#set($photoUrl = $partialPhotoUrl + $photo.split("/").get(3))
+			        <div class="span5" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px;">
+			        	<div class="span6">
+			        		<h4><a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">$header *</a></h4>
+			        		<small>$dateTool.format( 'full_date', $dateTool.toDate( "EEE, dd MMM yyyy hh:mm:ss Z" , $curEntry.publishDate, $localeUtil.getDefault()) , $locale)</small>
+			        		<div class="">$intro</div>
+			        	</div>
+			        	<div class="span6" style="padding-top: 10px;">
+			        		<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">
+			        			<img src="$photoUrl" style="height: 145px ! important;">
+			        		</a>
+			        	</div>
+			        </div>
+		        #end
+		    #end
+		    #set($counter = $counter + 1)
+	        #if($counter>1)
+		        #break
+		    #end
+		#end
+	#end
+#end
+
+#if (!$entries.isEmpty())
+	#foreach ($curEntry in $entries)
+	    #set($tagList = $AssetTagLocalService.getAssetEntryAssetTags($curEntry.entryId))
+	    #if(!(($tagList.contains($tagDestacado)) && ($tagList.contains($tagSubhome))))
+	    	#set($document = $saxReaderUtil.read($curEntry.getAssetRenderer().getArticle().getContent()))
+	    	#set($rootElement = $document.getRootElement())
+			#set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='header']"))
+			#set($header = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+
+			#if($header.length()>43)
+				#set($header = $header.substring(0,40) + "...")
+			#end
+
+	        <div class="span5" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px;">
+	        	<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">
+	        		<h5 style="margin-bottom: 0px;">$header</h5>
+	        	</a>
+	        	<small>$dateTool.format("dd/MM/yyyy - HH:mm" ,$curEntry.publishDate)</small>
+	        </div>
+	    #end
+	#end
+#end
+	<div class="span12" style="margin-top: 15px;">
+		<button class="btn"><a href="#">+ Info</a></button>
+	</div>
+</div>

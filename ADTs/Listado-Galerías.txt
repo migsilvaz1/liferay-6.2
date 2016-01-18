@@ -1,0 +1,176 @@
+##Definitions
+
+#set($groupId = $themeDisplay.getLayout().groupId)
+#set($JournalArticleLocalService = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+#set($AssetEntryLocalService = $serviceLocator.findService("com.liferay.portlet.asset.service.AssetEntryLocalService"))
+#set($image_galery = $JournalArticleLocalService.getStructureArticles($groupId, $propsUtil.get("galeria.images.structure")))
+#set($video_galery = $JournalArticleLocalService.getStructureArticles($groupId, $propsUtil.get("galeria.video.structure")))
+#set($className = "com.liferay.portlet.journal.model.JournalArticle" )
+
+<div class="span12 row-fluid">
+	<div class="span12"></div>
+	<div class="span12">
+		<h4>$languageUtil.format($locale, "gallery.multimedia")</h4>
+	</div>
+	<div class="span12" style="border: solid; border-top: 0; border-right: 0; border-left: 0; border-width: 1px;">
+		<h5>$languageUtil.format($locale, "gallery.intro")</h5>
+	</div>
+	<div class="span11 row-fluid">
+		#if (!$image_galery.isEmpty())
+			#set($image_counter = 0)
+			#set($pages_counter = 1)
+			<div class="span11"></div>
+			<div class="span11 content" style="display: block;">
+			#foreach ($image in $image_galery)
+				#set($entry = $AssetEntryLocalService.getEntry($className, $image.resourcePrimKey))
+				<div class="span6">
+					#set($document = $saxReaderUtil.read($image.getContent()))
+				    #set($rootElement = $document.getRootElement())
+					
+					#set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='title']"))
+					#set($title = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_date = $saxReaderUtil.createXPath("dynamic-element[@name='date']"))
+					#set($date = $xPathSelector_date.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_listImage = $saxReaderUtil.createXPath("dynamic-element[@name='listImage']"))
+					#set($listImage = $xPathSelector_listImage.selectSingleNode($rootElement).getStringValue())
+					
+					#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date)))
+
+					<div>
+						<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $entry)">
+							<img class="img-responsive" src="$listImage">
+						</a>
+					</div>
+					<div>
+						<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $entry)">
+							$title
+						</a>
+					</div>
+					<div>$dateUtil.getDate($date_DateObj, "dd/MM/yyyy", $locale)</div>
+				</div>
+			#set($image_counter = $image_counter +1)
+				#if($image_counter % 2 == 0 && $image_counter<$image_galery.size())
+			</div>
+			<div class="span11 content" style="display: none;">
+					#set($pages_counter = $pages_counter +1)
+				#end
+			#end
+			</div>
+			<div id="pagination" class="text-center">
+				<ul class="pagination pagination-content">
+					<li><a href="#">Prev</a></li>
+					#foreach($i in [1..$pages_counter])
+					<li><a href="#">$i</a></li>
+					#end
+					<li><a href="#">Next</a></li>
+				</ul>
+			</div>
+		#end
+	</div>
+	<div class="span12" style="border: solid; border-top: 0; border-right: 0; border-left: 0; border-width: 1px;">
+		<h5>$languageUtil.format($locale, "gallery.intro.video")</h5>
+	</div>
+	<div class="span12 row-fluid">
+		#if (!$video_galery.isEmpty())
+			#set($video_counter = 0)
+			#set($pages2_counter = 1)
+			<div class="span11"></div>
+			<div class="span11 content2" style="display: block;">
+			#foreach ($video in $video_galery)
+				<div class="span6">
+					#set($document = $saxReaderUtil.read($video.getContent()))
+				    #set($rootElement = $document.getRootElement())
+
+				    #set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='title']"))
+					#set($title = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_date = $saxReaderUtil.createXPath("dynamic-element[@name='date']"))
+					#set($date = $xPathSelector_date.selectSingleNode($rootElement).getStringValue())
+					#set($xPathSelector_listVideo = $saxReaderUtil.createXPath("dynamic-element[@name='listVideo']"))
+					#set($listVideo = $xPathSelector_listVideo.selectSingleNode($rootElement).getStringValue())
+					
+					#set ($date_DateObj = $dateUtil.newDate($getterUtil.getLong($date)))
+
+					<div>$title</div>
+					<div>$dateUtil.getDate($date_DateObj, "dd/MM/yyyy", $locale)</div>
+					<div>$listVideo</div>
+				</div>
+			#set($video_counter = $video_counter +1)
+				#if($video_counter % 2 == 0 && $video_counter<$video_galery.size())
+			</div>
+			<div class="span11 content2" style="display: none;">
+					#set($pages2_counter = $pages2_counter +1)
+				#end
+			#end
+			</div>
+			<div id="pagination2" class="text-center">
+				<ul class="pagination pagination-content2">
+					<li><a href="#">Prev</a></li>
+					#foreach($i in [1..$pages2_counter])
+					<li><a href="#">$i</a></li>
+					#end
+					<li><a href="#">Next</a></li>
+				</ul>
+			</div>
+		#end
+	</div>
+</div>
+
+<script type="text/javascript">
+	YUI().use(
+  'aui-pagination',
+  function(Y) {
+    var pages = Y.all('.content');
+
+    new Y.Pagination(
+      {
+        boundingBox: '#pagination',
+        circular: false,
+        contentBox: '#pagination .pagination-content',
+        on: {
+          changeRequest: function(event) {
+            var instance = this,
+                state = event.state,
+                lastState = event.lastState;
+
+            if (lastState) {
+                pages.item(lastState.page - 1).setStyle('display', 'none');
+            }
+
+            pages.item(state.page - 1).setStyle('display', 'block');
+          }
+        },
+        page: 1
+      }
+    ).render();
+  }
+);
+
+	YUI().use(
+  'aui-pagination',
+  function(Y) {
+    var pages = Y.all('.content2');
+
+    new Y.Pagination(
+      {
+        boundingBox: '#pagination2',
+        circular: false,
+        contentBox: '#pagination2 .pagination-content2',
+        on: {
+          changeRequest: function(event) {
+            var instance = this,
+                state = event.state,
+                lastState = event.lastState;
+
+            if (lastState) {
+                pages.item(lastState.page - 1).setStyle('display', 'none');
+            }
+
+            pages.item(state.page - 1).setStyle('display', 'block');
+          }
+        },
+        page: 1
+      }
+    ).render();
+  }
+);
+</script>

@@ -1,0 +1,47 @@
+##Definitions
+#set($groupId = $themeDisplay.getLayout().getGroupId())
+#set($AssetTagLocalService = $serviceLocator.findService("com.liferay.portlet.asset.service.AssetTagLocalService"))
+
+<head>
+	<style>
+		.contenedor {
+			color: #fff;
+  			background: #555559;
+		}
+		a{
+			color: #fff;
+		}
+		.small{
+			font-size: 80%;
+		}
+	</style>
+</head>
+<body>
+	<div class="span12 contenedor">
+		<div class="span12"></div>
+		<div class="span10"><a href="#"><h2>$languageUtil.format($locale, "press.releases")</h1></a></div>
+	#if (!$entries.isEmpty())
+		#foreach ($curEntry in $entries)
+			#set($categoriesList = $curEntry.getCategories())
+			#set($categoriesNames = "")
+			#if (!$categoriesList.isEmpty())
+				#foreach ($category in $categoriesList)
+					#set($categoriesNames = $categoriesNames + " - " + $category.name)
+				#end
+			#end
+			#set($document = $saxReaderUtil.read($curEntry.getAssetRenderer().getArticle().getContent()))
+		    #set($rootElement = $document.getRootElement())
+			#set($xPathSelector_title = $saxReaderUtil.createXPath("dynamic-element[@name='header']"))
+			#set($header = $xPathSelector_title.selectSingleNode($rootElement).getStringValue())
+
+		    <div class="span10" style="border-style: solid; border-right: 0px; border-left: 0px; border-top: 0px; border-width: 1px; padding-bottom: 10px;">
+		    	<div class="small">$dateTool.format("dd/MM/yyyy" ,$curEntry.publishDate) $categoriesNames</div>
+		      	<a href="$assetPublisherHelper.getAssetViewURL($renderRequest, $renderResponse, $curEntry)">$header</a>
+		    </div>
+		#end
+	#end
+		<div class="span12" style="margin-top: 15px; padding-bottom: 10px;">
+			<button class="btn"><a href="#">+ Info</a></button>
+		</div>
+	</div>
+</body>

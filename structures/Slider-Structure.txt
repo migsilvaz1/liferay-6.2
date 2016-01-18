@@ -1,0 +1,417 @@
+
+<root available-locales="es_ES,en_US" default-locale="es_ES">
+	<dynamic-element dataType="image" fieldNamespace="wcm" indexType="keyword" localizable="true" name="image" readOnly="false" repeatable="true" required="true" showLabel="true" type="wcm-image" width="">
+		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="keyword" localizable="true" name="headline" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-text-html" width="large">
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Cabecera]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Header]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="keyword" localizable="true" name="caption" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-text-html" width="large">
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Subtítulo]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Caption]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Imagen]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Image]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="integer" fieldNamespace="ddm" indexType="keyword" localizable="true" name="delayImage" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-integer" width="large">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Tiempo entre imágenes]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[En milisegundos]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Delay between images]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Miliseconds]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="integer" fieldNamespace="ddm" indexType="keyword" localizable="true" name="delayAnimation" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-integer" width="small">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Tiempo animación]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[En milisegundos]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Animation time]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Miliseconds]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element fieldNamespace="ddm" indexType="keyword" localizable="true" name="navigation" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-separator" width="">
+		<dynamic-element dataType="boolean" indexType="keyword" localizable="true" name="bullets" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Puntos]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Bullets]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="boolean" indexType="keyword" localizable="true" name="arrows" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Flechas]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Arrows]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Navegación]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+			<entry name="style">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Navigation]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+			<entry name="style">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" multiple="false" name="display_mode" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+		<dynamic-element name="option30135" type="option" value="Fade">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Fade]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Fade]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30136" type="option" value="Swing">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Swing]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Swing]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30137" type="option" value="Flutter">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Flutter]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Flutter]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30138" type="option" value="Rotate">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Rotate]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Rotate]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30139" type="option" value="Zoom">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Zoom]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Zoom]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30140" type="option" value="Collapse">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Collapse]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Collapse]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30141" type="option" value="Expand">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Expand]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Expand]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30142" type="option" value="Stripe">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Stripe]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Stripe]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30143" type="option" value="Parabola">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Parabola]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Parabola]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30144" type="option" value="Float">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Float]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Float]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30145" type="option" value="Fly">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Fly]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Fly]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="option30146" type="option" value="Slide">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Slide]]>
+				</entry>
+			</meta-data>
+			<meta-data locale="es_ES">
+				<entry name="label">
+					<![CDATA[Slide]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Animación de transición]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[["Fade"]]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Transition animation]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[["Fade"]]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="integer" fieldNamespace="ddm" indexType="keyword" localizable="true" name="width" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-integer" width="large">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Ancho por defecto]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[0]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Pixeles]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Default width]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[0]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Pixels]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="integer" fieldNamespace="ddm" indexType="keyword" localizable="true" name="height" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-integer" width="large">
+		<meta-data locale="es_ES">
+			<entry name="label">
+				<![CDATA[Alto por defecto]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[0]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Pixeles]]>
+			</entry>
+		</meta-data>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Default height]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[0]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Pixels]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

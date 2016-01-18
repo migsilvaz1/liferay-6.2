@@ -1,0 +1,1 @@
+<div>$languageUtil.format($locale, "logo.download"): <a href="$document.getData()">$name.getData()</a> #if($size.getData()!="") - $size.getData()kb #end</div> 
